@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+        <variables>
+            <colorSchemeName>steam-os</colorSchemeName>
+            <backgroundColor>0D141C</backgroundColor>
+            <backgroundColor2>2d2d2d</backgroundColor2>
+            <mainColor>AAACB0</mainColor>
+            <highlightColor>82f0ff</highlightColor>
+            <secondaryColor>ffffff</secondaryColor>
+            <tertiaryColor>858585</tertiaryColor>
+            <systemColor>3aa5ab</systemColor>
+            <placeholderColor>505050</placeholderColor>
+        </variables>
+</theme>

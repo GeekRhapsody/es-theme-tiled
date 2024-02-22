@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+        <variables>
+            <colorSchemeName>dark</colorSchemeName>
+            <backgroundColor>323232</backgroundColor>
+            <backgroundColor2>2d2d2d</backgroundColor2>
+            <mainColor>0afdca</mainColor>
+            <highlightColor>82f0ff</highlightColor>
+            <secondaryColor>f4f4f4</secondaryColor>
+            <tertiaryColor>858585</tertiaryColor>
+            <systemColor>3aa5ab</systemColor>
+            <placeholderColor>505050</placeholderColor>
+        </variables>
+</theme>

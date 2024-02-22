@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Theme: es-theme-tiled
+author: Claudio Filipe
+license: creative commons CC-BY-NC-SA
+-->
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="menu">
+  
+    <menuText name="menutitle">
+      <fontSize>0.034</fontSize>
+      <color>${secondaryColor}</color>
+    </menuText>
+  
+    <menuText name="menutext">
+      <fontSize>0.026</fontSize>
+      <fontSize tinyScreen="true">0.034</fontSize>
+      <color>${secondaryColor}</color>
+      <separatorColor>${tertiaryColor}</separatorColor>
+      <selectorColor>${secondaryColor}</selectorColor>
+      <selectorColorEnd>${secondaryColor}</selectorColorEnd>
+      <selectedColor>${backgroundColor}</selectedColor>
+      <selectorGradientType>horizontal</selectorGradientType>
+    </menuText>
+
+    <menuTextSmall name="menutextsmall">
+      <fontSize>0.016</fontSize>
+      <color>${tertiaryColor}</color>
+    </menuTextSmall>
+  
+    <menuBackground name="menubg">
+      <color>${backgroundColor}</color>
+      <cornerSize>32 32</cornerSize>
+      <scrollbarColor>${secondaryColor}</scrollbarColor>
+      <scrollbarCorner>0.49</scrollbarCorner>
+      <scrollbarSize>0.003</scrollbarSize>
+      <scrollbarAlignment>innerright</scrollbarAlignment>
+    </menuBackground>
+  
+    <menuText name="menufooter">
+      <fontSize>0.02</fontSize>
+      <color>${tertiaryColor}</color>
+    </menuText>
+  
+    <menuGroup name="menugroup">
+      <fontSize>0.018</fontSize>
+      <color>${secondaryColor}</color>
+      <backgroundColor>${backgroundColor}</backgroundColor>
+      <lineSpacing>2.5</lineSpacing>
+    </menuGroup>
+
+  
+  </view>
+</theme>

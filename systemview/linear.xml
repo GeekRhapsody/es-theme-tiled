@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="system">
+      <carousel name="systemcarousel">
+        <type>horizontal</type>
+        <pos>0.0 0.0</pos>
+        <logoAlignment>middle</logoAlignment>         
+        <size>1 1</size>
+        <logoScale>1.65</logoScale>
+        <zIndex>3</zIndex>          
+        <logoSize>0.18 0.18</logoSize>
+        <color>00000000</color>
+        <maxLogoCount>7</maxLogoCount>       		
+      </carousel>
+      <image name="logo">
+		<path>./art/${artstyle}/${system.theme}.${artextension}</path>
+	  </image>	  
+	<image name="background" extra="true">
+	 <origin>0 0</origin>
+	 <pos>0 0</pos>
+	 <size>1 1</size>
+	 <zIndex>2</zIndex>                 	  
+	 <visible>true</visible>
+	 <color>${backgroundColor}</color>
+	 <path>./_inc/images/bg_color.png</path>
+	</image>
+      <text name="systemInfo">     
+         <pos>0.0 0.65</pos>
+         <backgroundColor>00000000</backgroundColor>
+         <color>${secondaryColor}</color>
+         <fontPath>./_inc/fonts/Cabin-Bold.ttf</fontPath>
+	     <fontSize>0.03</fontSize>
+         <zIndex>5</zIndex>	     
+      </text>            
+      <helpsystem name="help">
+         <fontPath>./_inc/fonts/Cabin-Bold.ttf</fontPath>
+         <fontSize>0.025</fontSize>     
+         <pos>0.01 0.97</pos>      
+         <textColor>${secondaryColor}</textColor>
+         <iconColor>${secondaryColor}</iconColor>
+      </helpsystem>	 
+
+  </view>
+</theme>
