@@ -39,6 +39,18 @@
 			<zIndex>3</zIndex>
 			<scale>0.965</scale>
 		  </image>		
+            <image name="logoDropShadow" pos="0.5" origin="0.5" maxSize="1" linearSmooth="true" ifSubset="artstyle:carbon">
+              <path>firstfile("${themePath}/art/logos/" + {system:theme} + ".png","${themePath}/art/logos/" + {system:theme} + ".svg")</path>
+              <padding>3 3 -3 -3</padding>
+              <color>00000080</color>
+              <zIndex>5</zIndex>
+			  <scale>0.8</scale>
+         	</image>
+            <image name="theLogoImage" pos="0.5" origin="0.5" maxSize="1" linearSmooth="true" ifSubset="artstyle:carbon">
+              <path>firstfile("${themePath}/art/logos/" + {system:theme} + ".png","${themePath}/art/logos/" + {system:theme} + ".svg")</path>
+              <zIndex>6</zIndex>
+			  <scale>0.8</scale>
+            </image>		  
 	</gridtile>
 
 	<gridtile name="selected">
