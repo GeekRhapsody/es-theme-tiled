@@ -32,10 +32,10 @@
 	</imagegrid> 
    
     <imagegrid name="gamegrid">	
-      <autoLayout>0 3</autoLayout>
 	  <margin>${grid.itemspacing.px}</margin>
-	  <cellProportion>1.3</cellProportion>
 	  <padding>0.015 0.009 0.008 0.011</padding>
+	  <cellProportion>1.2</cellProportion>
+	  <autoLayout>0 3</autoLayout>
 	  <animateSelection></animateSelection>
 	  <showVideoAtDelay>1200</showVideoAtDelay>	  
 	  <imageSource>image</imageSource>

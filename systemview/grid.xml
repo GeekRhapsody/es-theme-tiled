@@ -6,7 +6,7 @@
     <borderFrame>${themePath}/art/framewsel.png</borderFrame>
     <grid.itemspacing.px>12 * ${screen.height} / 1080</grid.itemspacing.px>
     <grid.paddingtop>0.04</grid.paddingtop>
-  </variables>  
+  </variables>
   <view name="system">
     <imagegrid name="imagegrid">
       <zIndex>20</zIndex>
@@ -20,89 +20,92 @@
       <scrollbarCorner>0.49</scrollbarCorner>
       <scrollbarSize>0.005</scrollbarSize>
       <scrollbarAlignment>right</scrollbarAlignment>
-	  <path>${themePath}/art/${artstyle}/{system:theme}.${artextension}</path>
+      <itemTemplate>
+        <image name="background" extra="true">
+          <origin>0 0</origin>
+          <pos>0 0</pos>
+          <size>1 1</size>
+          <zIndex>2</zIndex>
+          <visible>true</visible>
+          <color>${tertiaryColor}</color>
+          <path>./_inc/images/bg_color.png</path>
+          <roundCorners>${corners}</roundCorners>
+          <storyboard event="activate" repeat="forever">
+            <animation property="color" from="${tertiaryColor}" to="${secondaryColor}"/>
+          </storyboard>
+          <storyboard event="deactivate">
+            <animation property="color" from="${secondaryColor}" to="${tertiaryColor}"/>
+          </storyboard>
+        </image>
+        <image name="SystemArt" extra="true">
+          <path>${themePath}/art/${artstyle}/{system:theme}.${artextension}</path>
+          <pos>0.5</pos>
+          <origin>0.5</origin>
+          <minSize>1 1</minSize>
+          <linearSmooth>true</linearSmooth>
+          <roundCorners>${corners}</roundCorners>
+          <color>FFFFFFB3</color>
+          <zIndex>3</zIndex>
+          <scale>0.963</scale>
+          <storyboard event="activate">
+            <animation property="color" from="FFFFFFB3" to="FFFFFFFF"/>
+          </storyboard>
+          <storyboard event="deactivate">
+            <animation property="color" from="FFFFFFFF" to="FFFFFFB3"/>
+          </storyboard>
+        </image>
+        <image name="LogoDropShadow" pos="0.5" origin="0.5" maxSize="1" linearSmooth="true" ifSubset="artstyle:carbon">
+          <path>firstfile("${themePath}/art/logos/" + {system:theme} + ".png","${themePath}/art/logos/" + {system:theme} + ".svg")</path>
+          <padding>3 3 -3 -3</padding>
+          <color>00000080</color>
+          <zIndex>5</zIndex>
+          <scale>0.8</scale>
+        </image>
+        <image name="LogoImage" pos="0.5" origin="0.5" maxSize="1" linearSmooth="true" ifSubset="artstyle:carbon">
+          <path>firstfile("${themePath}/art/logos/" + {system:theme} + ".png","${themePath}/art/logos/" + {system:theme} + ".svg")</path>
+          <zIndex>6</zIndex>
+          <scale>0.8</scale>
+          <storyboard event="activate">
+            <animation property="color" from="FFFFFFB3" to="FFFFFFFF"/>
+          </storyboard>
+          <storyboard event="deactivate">
+            <animation property="color" from="FFFFFFFF" to="FFFFFFB3"/>
+          </storyboard>
+        </image>
+      </itemTemplate>
     </imagegrid>
-	
-	<gridtile name="default">
-		<imageColor>FFFFFF00</imageColor>
-		<backgroundEdgeColor>${tertiaryColor}</backgroundEdgeColor>
-		<backgroundCenterColor>${tertiaryColor}</backgroundCenterColor>
-		
-		  <image name="SystemArt" extra="true">
-			<color>FFFFFFFF</color>
-			<path>${themePath}/art/${artstyle}/{system:theme}.${artextension}</path>
-			<pos>0.5</pos>
-			<origin>0.5</origin>
-			<minSize>1 1</minSize>            
-			<linearSmooth>true</linearSmooth>
-			<roundCorners>${corners}</roundCorners>
-			<zIndex>3</zIndex>
-			<scale>0.965</scale>
-		  </image>		
-            <image name="logoDropShadow" pos="0.5" origin="0.5" maxSize="1" linearSmooth="true" ifSubset="artstyle:carbon">
-              <path>firstfile("${themePath}/art/logos/" + {system:theme} + ".png","${themePath}/art/logos/" + {system:theme} + ".svg")</path>
-              <padding>3 3 -3 -3</padding>
-              <color>00000080</color>
-              <zIndex>5</zIndex>
-			  <scale>0.8</scale>
-         	</image>
-            <image name="theLogoImage" pos="0.5" origin="0.5" maxSize="1" linearSmooth="true" ifSubset="artstyle:carbon">
-              <path>firstfile("${themePath}/art/logos/" + {system:theme} + ".png","${themePath}/art/logos/" + {system:theme} + ".svg")</path>
-              <zIndex>6</zIndex>
-			  <scale>0.8</scale>
-            </image>		  
-	</gridtile>
+    <image name="background" extra="true">
+      <origin>0 0</origin>
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <zIndex>2</zIndex>
+      <visible>true</visible>
+      <color>${backgroundColor}</color>
+      <path>./_inc/images/bg_color.png</path>
+    </image>
+    <text name="systemInfo">
+      <visible>false</visible>
+    </text>
+    <text name="mySystemInfo" extra="true">
+      <text>{system:fullName} ({system:total} Games)</text>
+      <size>1 0</size>
+      <pos>0.0 0.005</pos>
+      <alignment>center</alignment>
+      <backgroundColor>FFFF0000</backgroundColor>
+      <color>${secondaryColor}</color>
+      <fontPath>./_inc/fonts/Cabin-Bold.ttf</fontPath>
+      <fontSize>0.025</fontSize>
+      <zIndex>5</zIndex>
+    </text>
+    <helpsystem name="help">
+      <fontPath>./_inc/fonts/Cabin-Bold.ttf</fontPath>
+      <fontSize>0.025</fontSize>
+      <pos>0.01 0.97</pos>
+      <textColor>${secondaryColor}</textColor>
+      <iconColor>${secondaryColor}</iconColor>
+    </helpsystem>
 
-	<gridtile name="selected">
-		  <image name="SystemArt" extra="true">
-			<color>FFFFFF00</color>
-			<path>${themePath}/art/${artstyle}/{system:theme}.${artextension}</path>
-			<pos>0.5</pos>
-			<origin>0.5</origin>
-			<minSize>1 1</minSize>            
-			<linearSmooth>true</linearSmooth>
-			<roundCorners>${corners}</roundCorners>
-			<zIndex>3</zIndex>
-			<scale>0.965</scale>
-		  </image>					
-		<backgroundEdgeColor>${secondaryColor}</backgroundEdgeColor>
-		<backgroundCenterColor>${secondaryColor}</backgroundCenterColor>
-		<imageColor>FFFFFFFF</imageColor>
-	</gridtile>
-
-	  
-	<image name="background" extra="true">
-	 <origin>0 0</origin>
-	 <pos>0 0</pos>
-	 <size>1 1</size>
-	 <zIndex>2</zIndex>                 	  
-	 <visible>true</visible>
-	 <color>${backgroundColor}</color>
-	 <path>./_inc/images/bg_color.png</path>
-	</image>
-      <text name="systemInfo">     
-		<visible>false</visible>
-      </text>            
-	  <text name="mySystemInfo" extra="true">
-		 <text>{system:fullName} ({system:total} Games)</text>
-		 <size>1 0</size>
-         <pos>0.0 0.005</pos>
-		 <alignment>center</alignment>
-         <backgroundColor>FFFF0000</backgroundColor>
-         <color>${secondaryColor}</color>
-         <fontPath>./_inc/fonts/Cabin-Bold.ttf</fontPath>
-	     <fontSize>0.025</fontSize>
-         <zIndex>5</zIndex>	     	  
-	  </text>
-      <helpsystem name="help">
-         <fontPath>./_inc/fonts/Cabin-Bold.ttf</fontPath>
-         <fontSize>0.025</fontSize>     
-         <pos>0.01 0.97</pos>      
-         <textColor>${secondaryColor}</textColor>
-         <iconColor>${secondaryColor}</iconColor>
-      </helpsystem>	 
-
-	<controllerActivity name="controllerActivity" extra="true">
+    <controllerActivity name="controllerActivity" extra="true">
       <pos>0.11 0.612</pos>
       <size>0.185 0.023</size>
       <itemSpacing>0.003</itemSpacing>
@@ -112,13 +115,13 @@
       <wheelPath>./art/wheel.svg</wheelPath>
       <activityColor>A0A0FFC0</activityColor>
       <hotkeyColor>FFA0A0C0</hotkeyColor>
-    </controllerActivity>	  
-	
-      <batteryIndicator name="batteryIndicator" extra="true">
-		 <pos>0.2 0.75</pos>
-         <color>${secondaryColor}</color>
-         <itemSpacing>1</itemSpacing>
-      </batteryIndicator>	  	  
-	  
+    </controllerActivity>
+
+    <batteryIndicator name="batteryIndicator" extra="true">
+      <pos>0.2 0.75</pos>
+      <color>${secondaryColor}</color>
+      <itemSpacing>1</itemSpacing>
+    </batteryIndicator>
+
   </view>
 </theme>
