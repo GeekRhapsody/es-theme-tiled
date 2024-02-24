@@ -42,7 +42,8 @@
 	  <scrollbarColor>${secondaryColor}</scrollbarColor>
       <scrollbarCorner>0.49</scrollbarCorner>
       <scrollbarSize>0.005</scrollbarSize>
-      <scrollbarAlignment>right</scrollbarAlignment>	  
+      <scrollbarAlignment>right</scrollbarAlignment>	 
+	  <autoLayoutSelectedZoom>1.04</autoLayoutSelectedZoom>
     </imagegrid>   
 	
 	<gridtile name="default">		
