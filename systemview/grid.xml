@@ -22,7 +22,7 @@
       <scrollbarAlignment>right</scrollbarAlignment>
       <itemTemplate>
         <storyboard event="activate">
-          <animation property="scale" to="1.03" duration="150" mode="easeOut"/>
+          <animation property="scale" to="1.05" duration="150" mode="easeOut"/>
         </storyboard>
         <storyboard event="deactivate">
           <animation property="scale" to="1" duration="250" mode="easeOut"/>
