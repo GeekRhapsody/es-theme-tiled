@@ -21,6 +21,12 @@
       <scrollbarSize>0.005</scrollbarSize>
       <scrollbarAlignment>right</scrollbarAlignment>
       <itemTemplate>
+        <storyboard event="activate">
+          <animation property="scale" to="1.03" duration="150" mode="easeOut"/>
+        </storyboard>
+        <storyboard event="deactivate">
+          <animation property="scale" to="1" duration="250" mode="easeOut"/>
+        </storyboard>      
         <image name="background" extra="true">
           <origin>0 0</origin>
           <pos>0 0</pos>
