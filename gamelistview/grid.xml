@@ -53,7 +53,7 @@
 		<backgroundCenterColor>${tertiaryColor}</backgroundCenterColor>
 		<padding>8 8</padding>		
 
-		<text name="shortName">
+		<text name="shortName" extra="true">
 		  <pos>0 0.8</pos>
 		  <padding>0.020</padding>
 		  <size>1 0.2</size>
@@ -65,7 +65,7 @@
 		  <fontSize>0.020</fontSize>
 		  <glowColor>000000</glowColor>
 		  <glowSize>3</glowSize>
-		  <visible if="exists({game:image}) == 'true'">false</visible>
+
 		</text>		
 
     </gridtile>	

@@ -50,15 +50,26 @@
           <minSize>1 1</minSize>
           <linearSmooth>true</linearSmooth>
           <roundCorners>${corners}</roundCorners>
-          <color>FFFFFFB3</color>
           <zIndex>3</zIndex>
           <scale>0.963</scale>
-          <storyboard event="activate">
-            <animation property="color" from="FFFFFFB3" to="FFFFFFFF"/>
+        </image>
+        <image name="SystemArtshade" extra="true">
+          <origin>0 0</origin>
+          <pos>0 0</pos>
+          <size>1 1</size>
+          <zIndex>2</zIndex>
+          <visible>true</visible>
+          <color>000000</color>
+          <opacity>0.4</opacity>
+          <path>./_inc/images/bg_color.png</path>
+          <roundCorners>${corners}</roundCorners>
+          <storyboard event="activate" >
+            <animation property="opacity" from="0.4" to="0" duration="150" mode="linear"/>
           </storyboard>
           <storyboard event="deactivate">
-            <animation property="color" from="FFFFFFFF" to="FFFFFFB3"/>
+            <animation property="opacity" from="0" to="0.4" duration="150" mode="linear"/>
           </storyboard>
+          <zIndex>30</zIndex>
         </image>
         <image name="LogoDropShadow" pos="0.5" origin="0.5" maxSize="1" linearSmooth="true" ifSubset="artstyle:carbon">
           <path>firstfile("${themePath}/art/logos/" + {system:theme} + ".png","${themePath}/art/logos/" + {system:theme} + ".svg")</path>

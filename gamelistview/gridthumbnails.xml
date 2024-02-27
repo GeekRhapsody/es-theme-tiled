@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="gridthumbnails" inherits="grid" displayName="Grid (Thumbnails)">
+
+		<imagegrid name="gamegrid">
+			<imageSource>thumbnail</imageSource>
+			<showVideoAtDelay>-1</showVideoAtDelay>	  
+		</imagegrid>
+
+		<gridtile name="default">
+			<imageSizeMode>maxSize</imageSizeMode>
+			<text name="shortName">
+				<visible>false</visible>
+			</text>			
+		</gridtile>
+	</customView>
+</theme>

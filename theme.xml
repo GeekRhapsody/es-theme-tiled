@@ -28,6 +28,7 @@
   
   
   <include>./gamelistview/grid.xml</include>
+  <include>./gamelistview/gridthumbnails.xml</include>
   <include>./gamelistview/detailed.xml</include>
   
   <include>./menu.xml</include>
