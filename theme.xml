@@ -37,7 +37,7 @@
   
   <include>./menu.xml</include>
 
-   <view name="system,grid">
+   <view name="system,grid,detailed">
 		<image name="background" extra="true">
 		 <origin>0 0</origin>
 		 <pos>0 0</pos>

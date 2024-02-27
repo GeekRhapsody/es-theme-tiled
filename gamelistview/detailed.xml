@@ -2,6 +2,35 @@
 <theme>
   <formatVersion>7</formatVersion>
   <view name="detailed">
-    
+
+		<image name="systemLogo" extra="true">
+			<maxSize>0.050 1</maxSize>
+			<pos>0.045 0.020</pos>
+			<origin>0.5 0.5</origin>
+			<path>firstfile("${themePath}/art/logos/" + {system:theme} + ".png","${themePath}/art/logos/" + {system:theme} + ".svg")</path>
+		</image>
+
+    <textlist name="gamelist">
+      <lines>22</lines>
+      <primaryColor>C0C0C0</primaryColor>
+      <secondaryColor>F0F0F0</secondaryColor>
+      <selectorColor>${centerFadeColor}</selectorColor>
+      <selectedColor>FFFFFFFF</selectedColor>
+      <extraTextColor>606060</extraTextColor>
+      <!-- extraText color is for texts located between [] or () -->
+      <extraTextSelectedColor>A0A0A0</extraTextSelectedColor>
+      <forceUppercase>0</forceUppercase>
+      <pos>0.021 0.045</pos>
+      <size>0.33 0.89</size>
+      <alignment>left</alignment>
+      <horizontalMargin>0.00</horizontalMargin>
+      <fontSize>0.029</fontSize>
+      <scrollbarColor>96969620</scrollbarColor>
+      <scrollbarCorner>0.49</scrollbarCorner>
+      <scrollbarSize>0.0065</scrollbarSize>
+      <scrollbarAlignment>outerright</scrollbarAlignment>
+      <horizontalMargin>0.005</horizontalMargin>
+    </textlist>
+
   </view>
 </theme>
