@@ -3,13 +3,156 @@
 	<formatVersion>7</formatVersion>
 	<customView name="gridthumbnails" inherits="grid" displayName="Grid (Thumbnails)">
 
-
 		<imagegrid name="gamegrid">
 			<autoLayout>0 3</autoLayout>
-			<cellProportion>1.2</cellProportion>
+			<cellProportion>0.7</cellProportion>
+
+			<autoLayout if="{system.name} == 'atarist'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'atarist'">0.8</cellProportion>
+
+			<autoLayout if="{system.name} == 'atari7800'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'atari7800'">0.7</cellProportion>
+
+			<autoLayout if="{system.name} == 'lynx'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'lynx'">0.8</cellProportion>
+
+			<autoLayout if="{system.name} == 'jaguar'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'jaguar'">0.7</cellProportion>
+
+			<autoLayout if="{system.name} == 'wswan'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'wswan'">0.7</cellProportion>
+			<autoLayout if="{system.name} == 'wswanc'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'wswanc'">0.7</cellProportion>
+
+			<autoLayout if="{system.name} == 'gamate'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'gamate'">0.7</cellProportion>
+
+			<autoLayout if="{system.name} == 'amiga4000'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'amiga4000'">0.7</cellProportion>
+
+			<autoLayout if="{system.name} == 'megadrive'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'megadrive'">0.7</cellProportion>
+
+			<autoLayout if="{system.name} == 'mastersystem'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'mastersystem'">0.7</cellProportion>
+
+			<autoLayout if="{system.name} == 'gamegear'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'gamegear'">0.7</cellProportion>
+
+			<autoLayout if="{system.name} == 'saturn'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'saturn'">0.7</cellProportion>
+
+			<autoLayout if="{system.name} == 'segacd'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'segacd'">0.7</cellProportion>
+
+			<autoLayout if="{system.name} == 'sega32x'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'sega32x'">0.7</cellProportion>
+
+			<autoLayout if="{system.name} == 'megaduck'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'megaduck'">1.35</cellProportion>
+
+			<autoLayout if="{system.name} == 'pico8'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'pico8'">0.7</cellProportion>
+
+			<autoLayout if="{system.name} == 'tic80'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'tic80'">0.7</cellProportion>
+
+			<autoLayout if="{system.name} == 'fmtowns'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'fmtowns'">0.7</cellProportion>
+
+			<autoLayout if="{system.name} == 'vectrex'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'vectrex'">0.7</cellProportion>
+
+			<autoLayout if="{system.name} == 'dos'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'dos'">0.7</cellProportion>
+
+			<autoLayout if="{system.name} == 'msx'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'msx'">0.7</cellProportion>
+			<autoLayout if="{system.name} == 'msx1'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'msx1'">0.7</cellProportion>
+			<autoLayout if="{system.name} == 'msx2'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'msx2'">0.7</cellProportion>
+			<autoLayout if="{system.name} == 'msxturbor'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'msxturbor'">0.7</cellProportion>
+
+
+			<autoLayout if="{system.name} == 'xbox'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'xbox'">0.7</cellProportion>
+
+			<autoLayout if="{system.name} == 'xbox360'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'xbox360'">0.7</cellProportion>
+
+			<autoLayout if="{system.name} == 'gw'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'gw'">1.25</cellProportion>
+
+			<autoLayout if="{system.name} == 'nes'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'nes'">0.7</cellProportion>
+
+			<autoLayout if="{system.name} == 'n64'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'n64'">1.25</cellProportion>
+
+			<autoLayout if="{system.name} == 'fds'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'fds'">1</cellProportion>
+
+			<autoLayout if="{system.name} == 'gb'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'gb'">1</cellProportion>
+
+			<autoLayout if="{system.name} == 'snes'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'snes'">1.25</cellProportion>
+
+			<autoLayout if="{system.name} == 'satellaview'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'satellaview'">0.6</cellProportion>
+
+			<autoLayout if="{system.name} == 'virtualboy'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'virtualboy'">1</cellProportion>
+
+			<autoLayout if="{system.name} == 'gbc'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'gbc'">1</cellProportion>
+
+			<autoLayout if="{system.name} == 'gamecube'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'gamecube'">0.7</cellProportion>
+
+			<autoLayout if="{system.name} == 'gba'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'gba'">1</cellProportion>
+
+			<autoLayout if="{system.name} == 'pokemini'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'pokemini'">1</cellProportion>
 
 			<autoLayout if="{system.name} == 'nds'">0 3</autoLayout>
 			<cellProportion if="{system.name} == 'nds'">1</cellProportion>
+
+			<autoLayout if="{system.name} == 'switch'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'switch'">0.6</cellProportion>
+
+			<autoLayout if="{system.name} == 'neogeo'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'neogeo'">0.7</cellProportion>
+			<autoLayout if="{system.name} == 'neogeocd'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'neogeocd'">1</cellProportion>
+			<autoLayout if="{system.name} == 'ngp'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'ngp'">0.9</cellProportion>
+			<autoLayout if="{system.name} == 'ngpc'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'ngpc'">0.9</cellProportion>
+
+			<autoLayout if="{system.name} == 'psx'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'psx'">1</cellProportion>
+			<autoLayout if="{system.name} == 'ps2'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'ps2'">0.7</cellProportion>
+			<autoLayout if="{system.name} == 'ps3'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'ps3'">0.7</cellProportion>
+			<autoLayout if="{system.name} == 'psp'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'psp'">0.6</cellProportion>
+
+			<autoLayout if="{system.name} == 'x68000'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'x68000'">0.7</cellProportion>
+
+			<autoLayout if="{system.name} == 'zx81'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'zx81'">0.7</cellProportion>
+
+			<autoLayout if="{system.name} == 'zxspectrum'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'zxspectrum'">0.7</cellProportion>
+
+			<autoLayout if="{system.name} == 'Windows'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'Windows'">0.7</cellProportion>
 		</imagegrid>
 
 		<imagegrid name="gamegrid">
@@ -41,7 +184,18 @@
 				</image>
 
 				<image name="GameArt" extra="true">
-					<path>{game:thumbnail}</path>
+					<path>firstfile({game:thumbnail},{game:image})</path>
+					<pos>0.5</pos>
+					<origin>0.5</origin>
+					<minSize>1 1</minSize>
+					<linearSmooth>true</linearSmooth>
+					<roundCorners>${corners}</roundCorners>
+					<zIndex>3</zIndex>
+					<scale>0.963</scale>
+				</image>
+				<image name="GameArtDefault" extra="true">
+					<visible>!exists({game:thumbnail}) && !exists({game:image})</visible>
+					<path>./art/defgame.png</path>
 					<pos>0.5</pos>
 					<origin>0.5</origin>
 					<minSize>1 1</minSize>
@@ -69,22 +223,35 @@
 					</storyboard>
 					<zIndex>30</zIndex>
 				</image>
-
-				<video name="GameVideo" extra="true">
-					<path>none</path>
-					<pos>0.5</pos>
-					<origin>0.5</origin>
-					<maxSize>1 1</maxSize>
-					<storyboard event="activate" repeat="forever">
-						<animation property="path" from="none" to="{game:video}"/>
-					</storyboard>
-					<storyboard event="deactivate">
-						<animation property="path" from="{game:video}" to="none"/>
-					</storyboard>
-					<zIndex>40</zIndex>
-				</video>
-
 			</itemTemplate>
 		</imagegrid>
+
+		<video name="GameVideo" extra="true" ifSubset="factbox:yes">
+			<path>{game:video}</path>
+			<pos>0.872 0.213</pos>
+			<origin>0.5 0.5</origin>
+			<horizontalAlignment>center</horizontalAlignment>
+			<verticalAlignment>center</verticalAlignment>
+			<maxSize>0.235 0.331</maxSize>
+			<delay>1.5</delay>
+			<zIndex>10</zIndex>
+
+			<image name="VideoBackground" extra="true">
+				<visible>exists({game:video})</visible>
+				<pos>0 0</pos>
+				<origin>0 0</origin>
+				<size>1 1</size>
+				<zIndex>9</zIndex>
+				<color>00000000</color>
+				<path>./_inc/images/bg_color.png</path>
+				<roundCorners>${corners}</roundCorners>
+				<storyboard event="change" begin="1500">
+					<animation property="color" from="00000000" to="${backgroundColor}"/>
+				</storyboard>
+				<storyboard event="deactivate">
+					<animation property="color" to="00000000"/>
+				</storyboard>
+			</image>
+		</video>
 	</customView>
 </theme>

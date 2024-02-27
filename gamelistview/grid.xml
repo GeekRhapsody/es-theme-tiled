@@ -10,7 +10,7 @@
 
 	<view name="grid">
 		<text name="mySystemInfo" extra="true">
-			<text>{system:fullName} ({system:total} Games)</text>
+			<text>{system:name} {game:name}</text>
 			<size>1 0</size>
 			<pos>0.0 0.005</pos>
 			<alignment>center</alignment>
@@ -19,6 +19,12 @@
 			<fontSize>0.025</fontSize>
 			<zIndex>5</zIndex>
 		</text>
+		<image name="systemLogo" extra="true">
+			<maxSize>0.050 1</maxSize>
+			<pos>0.045 0.020</pos>
+			<origin>0.5 0.5</origin>
+			<path>firstfile("${themePath}/art/logos/" + {system:theme} + ".png","${themePath}/art/logos/" + {system:theme} + ".svg")</path>
+		</image>
 
 		<imagegrid name="gamegrid" ifSubset="factbox:no">
 			<pos>0.005 0.04</pos>
@@ -35,14 +41,28 @@
 			<autoLayout>0 3</autoLayout>
 			<cellProportion>1.2</cellProportion>
 
+			<autoLayout if="{system.name} == 'nes'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'nes'">1.1</cellProportion>
+
+			<autoLayout if="{system.name} == 'fds'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'fds'">1.1</cellProportion>
+
 			<autoLayout if="{system.name} == 'nds'">0 2</autoLayout>
 			<cellProportion if="{system.name} == 'nds'">0.75</cellProportion>
-		</imagegrid>
 
+			<autoLayout if="{system.name} == 'dreamcast'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'dreamcast'">1.56</cellProportion>
+
+			<autoLayout if="{system.name} == 'dos'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'dos'">1.56</cellProportion>
+
+			<autoLayout if="{system.name} == 'Windows'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'Windows'">1.7</cellProportion>
+		</imagegrid>
 
 		<imagegrid name="gamegrid">
 			<margin>${grid.itemspacing.px}</margin>
-			<padding>0.015 0.009 0.008 0.011</padding>
+			<padding>0.015 0.011 0.011 0.011</padding>
 			<animateSelection></animateSelection>
 			<showVideoAtDelay>1200</showVideoAtDelay>
 			<imageSource>image</imageSource>
