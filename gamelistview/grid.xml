@@ -39,7 +39,10 @@
 
 		<imagegrid name="gamegrid">
 			<autoLayout>0 3</autoLayout>
-			<cellProportion>1.2</cellProportion>
+			<cellProportion>1.5</cellProportion>
+
+			<autoLayout if="{system.name} == 'cdi'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'cdi'">1.4</cellProportion>
 
 			<autoLayout if="{system.name} == 'nes'">0 3</autoLayout>
 			<cellProportion if="{system.name} == 'nes'">1.1</cellProportion>
@@ -50,11 +53,44 @@
 			<autoLayout if="{system.name} == 'nds'">0 2</autoLayout>
 			<cellProportion if="{system.name} == 'nds'">0.75</cellProportion>
 
+			<autoLayout if="{system.name} == '3ds'">0 3</autoLayout>
+			<cellProportion if="{system.name} == '3ds'">1.4</cellProportion>
+
+			<autoLayout if="{system.name} == 'wii'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'wii'">1.65</cellProportion>
+
+			<autoLayout if="{system.name} == 'wiiu'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'wiiu'">1.65</cellProportion>
+
+			<autoLayout if="{system.name} == 'switch'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'switch'">1.65</cellProportion>
+
 			<autoLayout if="{system.name} == 'dreamcast'">0 3</autoLayout>
 			<cellProportion if="{system.name} == 'dreamcast'">1.56</cellProportion>
 
 			<autoLayout if="{system.name} == 'dos'">0 3</autoLayout>
 			<cellProportion if="{system.name} == 'dos'">1.56</cellProportion>
+
+			<autoLayout if="{system.name} == 'dos'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'dos'">1.56</cellProportion>
+
+			<autoLayout if="{system.name} == 'xbox'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'xbox'">1.56</cellProportion>
+
+			<autoLayout if="{system.name} == 'xbox360'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'xbox360'">1.56</cellProportion>
+
+			<autoLayout if="{system.name} == 'neogeo'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'neogeo'">1.5</cellProportion>
+			<autoLayout if="{system.name} == 'neogeocd'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'neogeocd'">1.5</cellProportion>
+			<autoLayout if="{system.name} == 'ngp'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'ngp'">1.1</cellProportion>
+			<autoLayout if="{system.name} == 'ngpc'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'ngpc'">1.1</cellProportion>
+
+			<autoLayout if="{system.name} == 'supervision'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'supervision'">1.1</cellProportion>
 
 			<autoLayout if="{system.name} == 'Windows'">0 3</autoLayout>
 			<cellProportion if="{system.name} == 'Windows'">1.7</cellProportion>
@@ -151,9 +187,6 @@
 			<zIndex>5</zIndex>
 			<scale>1</scale>
 		</image>
-
-
-
 
 		<text name="labelGameTime" extra="true" ifSubset="factbox:yes">
 			<text>Play Time</text>
