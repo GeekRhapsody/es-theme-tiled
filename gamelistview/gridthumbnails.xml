@@ -3,6 +3,15 @@
 	<formatVersion>7</formatVersion>
 	<customView name="gridthumbnails" inherits="grid" displayName="Grid (Thumbnails)">
 
+
+		<imagegrid name="gamegrid">
+			<autoLayout>0 3</autoLayout>
+			<cellProportion>1.2</cellProportion>
+
+			<autoLayout if="{system.name} == 'nds'">0 3</autoLayout>
+			<cellProportion if="{system.name} == 'nds'">1</cellProportion>
+		</imagegrid>
+
 		<imagegrid name="gamegrid">
 			<imageSource>thumbnail</imageSource>
 			<showVideoAtDelay>-1</showVideoAtDelay>
@@ -43,23 +52,23 @@
 				</image>
 
 				<image name="GameArtShade" extra="true">
-				<origin>0 0</origin>
-				<pos>0 0</pos>
-				<size>1 1</size>
-				<zIndex>2</zIndex>
-				<visible>true</visible>
-				<color>000000</color>
-				<opacity>${shadeStrength}</opacity>
-				<path>./_inc/images/bg_color.png</path>
-				<roundCorners>${corners}</roundCorners>
-				<storyboard event="activate" >
-					<animation property="opacity" from="${shadeStrength}" to="0" duration="150" mode="linear"/>
-				</storyboard>
-				<storyboard event="deactivate">
-					<animation property="opacity" from="0" to="${shadeStrength}" duration="150" mode="linear"/>
-				</storyboard>
-				<zIndex>30</zIndex>
-				</image>				
+					<origin>0 0</origin>
+					<pos>0 0</pos>
+					<size>1 1</size>
+					<zIndex>2</zIndex>
+					<visible>true</visible>
+					<color>000000</color>
+					<opacity>${shadeStrength}</opacity>
+					<path>./_inc/images/bg_color.png</path>
+					<roundCorners>${corners}</roundCorners>
+					<storyboard event="activate">
+						<animation property="opacity" from="${shadeStrength}" to="0" duration="150" mode="linear"/>
+					</storyboard>
+					<storyboard event="deactivate">
+						<animation property="opacity" from="0" to="${shadeStrength}" duration="150" mode="linear"/>
+					</storyboard>
+					<zIndex>30</zIndex>
+				</image>
 
 				<video name="GameVideo" extra="true">
 					<path>none</path>

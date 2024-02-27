@@ -74,6 +74,5 @@
          <itemSpacing>0</itemSpacing>
       </batteryIndicator>	    	
    </view>
-   
-   <include>./layouts/${system.theme}.xml</include>
+  
 </theme>
