@@ -53,7 +53,7 @@
           <zIndex>3</zIndex>
           <scale>0.963</scale>
         </image>
-        <image name="SystemArtshade" extra="true">
+        <image name="SystemArtShade" extra="true">
           <origin>0 0</origin>
           <pos>0 0</pos>
           <size>1 1</size>
