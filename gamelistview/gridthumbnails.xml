@@ -5,14 +5,77 @@
 
 		<imagegrid name="gamegrid">
 			<imageSource>thumbnail</imageSource>
-			<showVideoAtDelay>-1</showVideoAtDelay>	  
-		</imagegrid>
+			<showVideoAtDelay>-1</showVideoAtDelay>
+			<itemTemplate>
+				<storyboard event="activate">
+					<animation property="scale" to="1.05" duration="150" mode="easeOut"/>
+				</storyboard>
+				<storyboard event="deactivate">
+					<animation property="scale" to="1" duration="250" mode="easeOut"/>
+				</storyboard>
 
-		<gridtile name="default">
-			<imageSizeMode>maxSize</imageSizeMode>
-			<text name="shortName">
-				<visible>false</visible>
-			</text>			
-		</gridtile>
+				<image name="background" extra="true">
+					<origin>0 0</origin>
+					<pos>0 0</pos>
+					<size>1 1</size>
+					<zIndex>2</zIndex>
+					<visible>true</visible>
+					<color>${tertiaryColor}</color>
+					<path>./_inc/images/bg_color.png</path>
+					<roundCorners>${corners}</roundCorners>
+					<storyboard event="activate" repeat="forever">
+						<animation property="color" from="${tertiaryColor}" to="${secondaryColor}"/>
+					</storyboard>
+					<storyboard event="deactivate">
+						<animation property="color" from="${secondaryColor}" to="${tertiaryColor}"/>
+					</storyboard>
+				</image>
+
+				<image name="GameArt" extra="true">
+					<path>{game:thumbnail}</path>
+					<pos>0.5</pos>
+					<origin>0.5</origin>
+					<minSize>1 1</minSize>
+					<linearSmooth>true</linearSmooth>
+					<roundCorners>${corners}</roundCorners>
+					<zIndex>3</zIndex>
+					<scale>0.963</scale>
+				</image>
+
+				<image name="GameArtShade" extra="true">
+				<origin>0 0</origin>
+				<pos>0 0</pos>
+				<size>1 1</size>
+				<zIndex>2</zIndex>
+				<visible>true</visible>
+				<color>000000</color>
+				<opacity>${shadeStrength}</opacity>
+				<path>./_inc/images/bg_color.png</path>
+				<roundCorners>${corners}</roundCorners>
+				<storyboard event="activate" >
+					<animation property="opacity" from="${shadeStrength}" to="0" duration="150" mode="linear"/>
+				</storyboard>
+				<storyboard event="deactivate">
+					<animation property="opacity" from="0" to="${shadeStrength}" duration="150" mode="linear"/>
+				</storyboard>
+				<zIndex>30</zIndex>
+				</image>				
+
+				<video name="GameVideo" extra="true">
+					<path>none</path>
+					<pos>0.5</pos>
+					<origin>0.5</origin>
+					<maxSize>1 1</maxSize>
+					<storyboard event="activate" repeat="forever">
+						<animation property="path" from="none" to="{game:video}"/>
+					</storyboard>
+					<storyboard event="deactivate">
+						<animation property="path" from="{game:video}" to="none"/>
+					</storyboard>
+					<zIndex>40</zIndex>
+				</video>
+
+			</itemTemplate>
+		</imagegrid>
 	</customView>
 </theme>

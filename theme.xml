@@ -2,6 +2,10 @@
 <theme> 
  <formatVersion>7</formatVersion>
 
+  <variables>
+    <shadeStrength>0.4</shadeStrength>
+  </variables>
+
   <subset name="factbox" displayName="Factbox">
     <include name="yes" displayName="Yes"/>
     <include name="no" displayName="No"/>

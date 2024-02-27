@@ -60,14 +60,14 @@
           <zIndex>2</zIndex>
           <visible>true</visible>
           <color>000000</color>
-          <opacity>0.4</opacity>
+          <opacity>${shadeStrength}</opacity>
           <path>./_inc/images/bg_color.png</path>
           <roundCorners>${corners}</roundCorners>
           <storyboard event="activate" >
-            <animation property="opacity" from="0.4" to="0" duration="150" mode="linear"/>
+            <animation property="opacity" from="${shadeStrength}" to="0" duration="150" mode="linear"/>
           </storyboard>
           <storyboard event="deactivate">
-            <animation property="opacity" from="0" to="0.4" duration="150" mode="linear"/>
+            <animation property="opacity" from="0" to="${shadeStrength}" duration="150" mode="linear"/>
           </storyboard>
           <zIndex>30</zIndex>
         </image>

@@ -47,7 +47,7 @@
     </imagegrid>   
 	
 	<gridtile name="default">		
-		<imageColor>FFFFFFB3</imageColor>
+		<imageColor>FFFFFFFF</imageColor>
 		<imageSizeMode>minSize</imageSizeMode>
 		<backgroundEdgeColor>${tertiaryColor}</backgroundEdgeColor>
 		<backgroundCenterColor>${tertiaryColor}</backgroundCenterColor>
@@ -64,9 +64,27 @@
 		  <multiLine>false</multiLine>
 		  <fontSize>0.020</fontSize>
 		  <glowColor>000000</glowColor>
-		  <glowSize>3</glowSize>
-
+		  <glowSize>3</glowSize>		  
 		</text>		
+
+        <image name="ArtShade" extra="true">
+          <origin>0 0</origin>
+          <pos>0 0</pos>
+          <size>1 1</size>
+          <zIndex>2</zIndex>
+          <visible>true</visible>
+          <color>000000</color>
+          <opacity>0.4</opacity>
+          <path>./_inc/images/bg_color.png</path>
+          <roundCorners>${corners}</roundCorners>
+          <storyboard event="activate" >
+            <animation property="opacity" from="0.4" to="0" duration="150" mode="linear"/>
+          </storyboard>
+          <storyboard event="deactivate">
+            <animation property="opacity" from="0" to="0.4" duration="150" mode="linear"/>
+          </storyboard>
+          <zIndex>30</zIndex>
+        </image>
 
     </gridtile>	
 	
