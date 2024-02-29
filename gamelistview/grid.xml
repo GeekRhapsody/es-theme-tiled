@@ -21,7 +21,7 @@
 		</text>
 		<image name="systemLogo" extra="true">
 			<maxSize>0.050 1</maxSize>
-			<pos>0.045 0.020</pos>
+			<pos>0.05 0.020</pos>
 			<origin>0.5 0.5</origin>
 			<path>firstfile("${themePath}/art/logos/" + {system:theme} + ".png","${themePath}/art/logos/" + {system:theme} + ".svg")</path>
 		</image>
