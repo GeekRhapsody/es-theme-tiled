@@ -3,19 +3,12 @@
   <formatVersion>7</formatVersion>
   <view name="detailed">
 
-    <image name="systemLogo" extra="true">
-      <maxSize>0.050 1</maxSize>
-      <pos>0.045 0.020</pos>
-      <origin>0.5 0.5</origin>
-      <path>firstfile("${themePath}/art/logos/" + {system:theme} + ".png","${themePath}/art/logos/" + {system:theme} + ".svg")</path>
-    </image>
-
     <textlist name="gamelist">
-      <lines>22</lines>
+      <lines>21</lines>
       <primaryColor>${tertiaryColor}</primaryColor>
       <secondaryColor>${tertiaryColor}</secondaryColor>
-      <selectorColor></selectorColor>
-      <selectedColor>${secondaryColor}</selectedColor>
+      <selectorColor>${secondaryColor}</selectorColor>
+      <selectedColor>${backgroundColor}</selectedColor>
       <extraTextColor>606060</extraTextColor>
       <!-- extraText color is for texts located between [] or () -->
       <extraTextSelectedColor>A0A0A0</extraTextSelectedColor>
@@ -94,8 +87,8 @@
 
     <text name="labelDev" extra="true">
       <text>Developer</text>
-      <pos>0.89 0.430</pos>
-      <size>0.23 0.017</size>
+      <pos>0.89 0.100</pos>
+      <size>0.105 0.017</size>
       <alignment>left</alignment>
       <color>${tertiaryColor}</color>
       <fontSize>0.015</fontSize>
@@ -103,8 +96,8 @@
     </text>
     <text name="valDeveloper" extra="true">
       <text>{game:developer}</text>
-      <pos>0.89 0.445</pos>
-      <size>0.23 0.022</size>
+      <pos>0.89 0.115</pos>
+      <size>0.105 0.022</size>
       <alignment>left</alignment>
       <color>${secondaryColor}</color>
       <fontSize>0.020</fontSize>
@@ -113,7 +106,7 @@
 
     <text name="labelPublisher" extra="true">
       <text>Publisher</text>
-      <pos>0.89 0.480</pos>
+      <pos>0.89 0.155</pos>
       <size>0.23 0.017</size>
       <alignment>left</alignment>
       <color>${tertiaryColor}</color>
@@ -122,8 +115,8 @@
     </text>
     <text name="publisher" extra="true">
       <text>{game:publisher}</text>
-      <pos>0.89 0.495</pos>
-      <size>0.23 0.022</size>
+      <pos>0.89 0.170</pos>
+      <size>0.105 0.022</size>
       <alignment>left</alignment>
       <color>${secondaryColor}</color>
       <fontSize>0.020</fontSize>
@@ -132,8 +125,8 @@
 
     <text name="labelReleaseDate" extra="true">
       <text>Release Date</text>
-      <pos>0.89 0.530</pos>
-      <size>0.89 0.017</size>
+      <pos>0.89 0.210</pos>
+      <size>0.105 0.017</size>
       <alignment>left</alignment>
       <color>${tertiaryColor}</color>
       <fontSize>0.015</fontSize>
@@ -141,8 +134,27 @@
     </text>
     <text name="ReleaseDate" extra="true">
       <text>{game:releasedate}</text>
-      <pos>0.89 0.545</pos>
-      <size>0.23 0.022</size>
+      <pos>0.89 0.225</pos>
+      <size>0.105 0.022</size>
+      <alignment>left</alignment>
+      <color>${secondaryColor}</color>
+      <fontSize>0.020</fontSize>
+      <zIndex>5</zIndex>
+    </text>
+
+    <text name="labelPlayers" extra="true">
+      <text>Players</text>
+      <pos>0.89 0.265</pos>
+      <size>0.105 0.017</size>
+      <alignment>left</alignment>
+      <color>${tertiaryColor}</color>
+      <fontSize>0.015</fontSize>
+      <zIndex>5</zIndex>
+    </text>
+    <text name="Players" extra="true">
+      <text>{game:players}</text>
+      <pos>0.89 0.280</pos>
+      <size>0.105 0.022</size>
       <alignment>left</alignment>
       <color>${secondaryColor}</color>
       <fontSize>0.020</fontSize>

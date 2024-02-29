@@ -19,12 +19,6 @@
 			<fontSize>0.025</fontSize>
 			<zIndex>5</zIndex>
 		</text>
-		<image name="systemLogo" extra="true">
-			<maxSize>0.050 1</maxSize>
-			<pos>0.05 0.020</pos>
-			<origin>0.5 0.5</origin>
-			<path>firstfile("${themePath}/art/logos/" + {system:theme} + ".png","${themePath}/art/logos/" + {system:theme} + ".svg")</path>
-		</image>
 
 		<imagegrid name="gamegrid" ifSubset="factbox:no">
 			<pos>0.005 0.04</pos>

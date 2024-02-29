@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<theme> 
- <formatVersion>7</formatVersion>
+<theme>
+  <formatVersion>7</formatVersion>
 
   <variables>
     <shadeStrength>0.4</shadeStrength>
@@ -9,56 +9,67 @@
   <subset name="factbox" displayName="Factbox">
     <include name="yes" displayName="Yes"/>
     <include name="no" displayName="No"/>
-  </subset>                   
+  </subset>
 
   <subset name="colorway" displayName="Colorway">
-	<include name="light" displayName="Light" tinyScreen="false">./colorway/light.xml</include>    
-	<include name="dark" displayName="Dark">./colorway/dark.xml</include>
-    <include name="extradark" displayName="Extra Dark" tinyScreen="false">./colorway/extradark.xml</include>    
-	<include name="steamos" displayName="Steam OS" tinyScreen="false">./colorway/steamos.xml</include>    
+    <include name="light" displayName="Light" tinyScreen="false">./colorway/light.xml</include>
+    <include name="dark" displayName="Dark">./colorway/dark.xml</include>
+    <include name="extradark" displayName="Extra Dark" tinyScreen="false">./colorway/extradark.xml</include>
+    <include name="steamos" displayName="Steam OS" tinyScreen="false">./colorway/steamos.xml</include>
   </subset>
 
   <subset name="artstyle" displayName="Art Style">
     <include name="modern" displayName="Modern" tinyScreen="false">./art/modern.xml</include>
     <include name="nso" displayName="NSO">./art/nso.xml</include>
-	<include name="controlers" displayName="Controlers">./art/controlers.xml</include>
-	<include name="carbon" displayName="Carbon">./art/carbon.xml</include>
+    <include name="controlers" displayName="Controlers">./art/controlers.xml</include>
+    <include name="carbon" displayName="Carbon">./art/carbon.xml</include>
   </subset>
 
   <subset name="systemview" displayName="System View">
     <include name="grid" displayName="Grid">./systemview/grid.xml</include>
-    <include name="linear" displayName="Linear" tinyScreen="false">./systemview/linear.xml</include>    
-  </subset>                   
-  
-  
+    <include name="linear" displayName="Linear" tinyScreen="false">./systemview/linear.xml</include>
+  </subset>
+
+
   <include>./gamelistview/grid.xml</include>
   <include>./gamelistview/gridthumbnails.xml</include>
   <include>./gamelistview/detailed.xml</include>
-  
+
   <include>./menu.xml</include>
 
-   <view name="system,grid,detailed">
-		<image name="background" extra="true">
-		 <origin>0 0</origin>
-		 <pos>0 0</pos>
-		 <size>1 1</size>
-		 <zIndex>2</zIndex>                 	  
-		 <visible>true</visible>
-		 <color>${backgroundColor}</color>
-		 <path>./_inc/images/bg_color.png</path>
-		</image>
-   
-      <helpsystem name="help">
-         <fontPath>./_inc/fonts/Cabin-Bold.ttf</fontPath>
-         <fontSize>0.025</fontSize>     
-         <pos>0.01 0.97</pos>      
-         <textColor>${secondaryColor}</textColor>
-         <iconColor>${secondaryColor}</iconColor>
-      </helpsystem>	 	  	 
-   </view>  	
-   
-   <view name="screen">
-   	<controllerActivity name="controllerActivity">
+  <view name="system,grid,detailed">
+    <image name="background" extra="true">
+      <origin>0 0</origin>
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <zIndex>2</zIndex>
+      <visible>true</visible>
+      <color>${backgroundColor}</color>
+      <path>./_inc/images/bg_color.png</path>
+    </image>
+
+    <helpsystem name="help">
+      <fontPath>./_inc/fonts/Cabin-Bold.ttf</fontPath>
+      <fontSize>0.025</fontSize>
+      <pos>0.01 0.97</pos>
+      <textColor>${secondaryColor}</textColor>
+      <iconColor>${secondaryColor}</iconColor>
+    </helpsystem>
+  </view>
+
+  <view name="grid,detailed">
+    <image name="systemLogo" extra="true">
+      <maxSize>0.200 0.039</maxSize>
+      <pos>0.022 0.006</pos>    
+      <padding>0.005 0.005 0.005 0.005</padding>  
+      <horizontalAlignment>left</horizontalAlignment>
+      <verticalAlignment>center</verticalAlignment>
+      <path>firstfile("${themePath}/art/logos/" + {system:theme} + ".png","${themePath}/art/logos/" + {system:theme} + ".svg")</path>
+    </image>
+  </view>
+
+  <view name="screen">
+    <controllerActivity name="controllerActivity">
       <pos>0.01 0.012</pos>
       <size>0.185 0.023</size>
       <itemSpacing>0.003</itemSpacing>
@@ -68,11 +79,11 @@
       <wheelPath>./art/wheel.svg</wheelPath>
       <activityColor>A0A0FFC0</activityColor>
       <hotkeyColor>FFA0A0C0</hotkeyColor>
-    </controllerActivity>	  	  
-      <batteryIndicator name="batteryIndicator">
-         <color>${secondaryColor}</color>
-         <itemSpacing>0</itemSpacing>
-      </batteryIndicator>	    	
-   </view>
-  
+    </controllerActivity>
+    <batteryIndicator name="batteryIndicator">
+      <color>${secondaryColor}</color>
+      <itemSpacing>0</itemSpacing>
+    </batteryIndicator>
+  </view>
+
 </theme>
