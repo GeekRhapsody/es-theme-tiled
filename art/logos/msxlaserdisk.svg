@@ -6,8 +6,8 @@
    viewBox="-0.463 -70.905 442.77412 213.76795"
    xml:space="preserve"
    id="svg6"
-   sodipodi:docname="msxlaserdisk.svg"
-   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="msxlaserdisk-w.svg"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -22,16 +22,18 @@
    inkscape:pagecheckerboard="0"
    showgrid="false"
    inkscape:zoom="1.9931985"
-   inkscape:cx="241.82238"
-   inkscape:cy="142.73541"
+   inkscape:cx="231.28655"
+   inkscape:cy="142.98626"
    inkscape:window-width="1920"
    inkscape:window-height="1017"
    inkscape:window-x="-8"
    inkscape:window-y="-8"
    inkscape:window-maximized="1"
-   inkscape:current-layer="svg6" />
+   inkscape:current-layer="svg6"
+   inkscape:showpageshadow="0"
+   inkscape:deskcolor="#d1d1d1" />
     <path
-   style="fill:#221f1f;fill-opacity:1;stroke-width:0.843337"
+   style="fill:#6d7278;fill-opacity:1;stroke-width:0.843337"
    d="M -0.463,-70.905 H 442.31112 V 142.86294 H -0.463 Z"
    id="path2" /><g
    fill-rule="evenodd"
