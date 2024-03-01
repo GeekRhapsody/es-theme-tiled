@@ -200,6 +200,16 @@
 			<fontSize>0.020</fontSize>
 			<zIndex>5</zIndex>
 		</text>
+		<text name="GameTimeNone" extra="true">
+			<text>None</text>
+			<pos>0.76 0.395</pos>
+			<size>0.23 0</size>
+			<alignment>left</alignment>
+			<color>${secondaryColor}</color>
+			<fontSize>0.020</fontSize>
+			<zIndex>5</zIndex>
+			<visible>empty(expandseconds({game:gametime}))</visible>
+		</text>
 
 		<text name="labelDev" extra="true" ifSubset="factbox:yes">
 			<text>Developer</text>
