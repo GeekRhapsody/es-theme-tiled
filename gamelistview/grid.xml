@@ -10,7 +10,7 @@
 
 	<view name="grid">
 		<text name="mySystemInfo" extra="true">
-			<text>{system:name} {game:name}</text>
+			<text>{game:name}</text>
 			<size>1 0</size>
 			<pos>0.0 0.005</pos>
 			<alignment>center</alignment>

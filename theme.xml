@@ -30,6 +30,58 @@
     <include name="linear" displayName="Linear" tinyScreen="false">./systemview/linear.xml</include>
   </subset>
 
+  <subset name="sysgridsize" displayName="Default System Grid Size">
+    <include name="automatic" displayName="Automatic"/>
+    <include name="1x1" displayName="1X1"/>
+    <include name="1x2" displayName="1X2"/>
+    <include name="1x3" displayName="1X3"/>
+    <include name="1x4" displayName="1X4"/>
+    <include name="1x5" displayName="1X5"/>
+    <include name="1x6" displayName="1X6"/>
+    <include name="1x7" displayName="1X7"/>
+    <include name="2x1" displayName="2X1"/>
+    <include name="2x2" displayName="2X2"/>
+    <include name="2x3" displayName="2X3"/>
+    <include name="2x4" displayName="2X4"/>
+    <include name="2x5" displayName="2X5"/>
+    <include name="2x6" displayName="2X6"/>
+    <include name="2x7" displayName="2X7"/>
+    <include name="3x1" displayName="3X1"/>
+    <include name="3x2" displayName="3X2"/>
+    <include name="3x3" displayName="3X3"/>
+    <include name="3x4" displayName="3X4"/>
+    <include name="3x5" displayName="3X5"/>
+    <include name="3x6" displayName="3X6"/>
+    <include name="3x7" displayName="3X7"/>
+    <include name="4x1" displayName="4X1"/>
+    <include name="4x2" displayName="4X2"/>
+    <include name="4x3" displayName="4X3"/>
+    <include name="4x4" displayName="4X4"/>
+    <include name="4x5" displayName="4X5"/>
+    <include name="4x6" displayName="4X6"/>
+    <include name="4x7" displayName="4X7"/>
+    <include name="5x1" displayName="5X1"/>
+    <include name="5x2" displayName="5X2"/>
+    <include name="5x3" displayName="5X3"/>
+    <include name="5x4" displayName="5X4"/>
+    <include name="5x5" displayName="5X5"/>
+    <include name="5x6" displayName="5X6"/>
+    <include name="5x7" displayName="5X7"/>
+    <include name="6x1" displayName="6X1"/>
+    <include name="6x2" displayName="6X2"/>
+    <include name="6x3" displayName="6X3"/>
+    <include name="6x4" displayName="6X4"/>
+    <include name="6x5" displayName="6X5"/>
+    <include name="6x6" displayName="6X6"/>
+    <include name="6x7" displayName="6X7"/>    
+    <include name="7x1" displayName="7X1"/>
+    <include name="7x2" displayName="7X2"/>
+    <include name="7x3" displayName="7X3"/>
+    <include name="7x4" displayName="7X4"/>
+    <include name="7x5" displayName="7X5"/>
+    <include name="7x6" displayName="7X6"/>
+    <include name="7x7" displayName="7X7"/>    
+  </subset>
 
   <include>./gamelistview/grid.xml</include>
   <include>./gamelistview/gridthumbnails.xml</include>
@@ -60,8 +112,8 @@
   <view name="grid,detailed">
     <image name="systemLogo" extra="true">
       <maxSize>0.200 0.039</maxSize>
-      <pos>0.022 0.006</pos>    
-      <padding>0.005 0.005 0.005 0.005</padding>  
+      <pos>0.022 0.006</pos>
+      <padding>0.005 0.005 0.005 0.005</padding>
       <horizontalAlignment>left</horizontalAlignment>
       <verticalAlignment>center</verticalAlignment>
       <path>firstfile("${themePath}/art/logos/" + {system:theme} + ".png","${themePath}/art/logos/" + {system:theme} + ".svg")</path>
