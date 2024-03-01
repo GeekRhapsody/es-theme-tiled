@@ -2,7 +2,7 @@
 <theme>
 	<formatVersion>7</formatVersion>
         <variables>
-            <colorSchemeName>steam-os</colorSchemeName>
+            <colorSchemeName>steamos</colorSchemeName>
             <backgroundColor>0D141C</backgroundColor>
             <backgroundColor2>2d2d2d</backgroundColor2>
             <mainColor>AAACB0</mainColor>

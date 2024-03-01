@@ -44,8 +44,8 @@ license: creative commons CC-BY-NC-SA
     </menuText>
   
     <menuTextEdit name="menutextedit">
-      <inactive>./art/textinput_ninepatch.png</inactive>
-      <active>./art/textinput_ninepatch_active.png</active>
+      <inactive>./colorway/${colorSchemeName}_inactive.png</inactive>
+      <active>./colorway/${colorSchemeName}_active.png</active>
     </menuTextEdit>
 
     <menuGroup name="menugroup">
