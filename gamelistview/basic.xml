@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="basic">
+    <textlist name="gamelist">
+      <lines>21</lines>
+      <primaryColor>${tertiaryColor}</primaryColor>
+      <secondaryColor>${tertiaryColor}</secondaryColor>
+      <selectorColor>${secondaryColor}</selectorColor>
+      <selectedColor>${backgroundColor}</selectedColor>
+      <extraTextColor>606060</extraTextColor>
+      <!-- extraText color is for texts located between [] or () -->
+      <extraTextSelectedColor>A0A0A0</extraTextSelectedColor>
+      <forceUppercase>0</forceUppercase>
+      <pos>0.021 0.045</pos>
+      <size>0.33 0.89</size>
+      <alignment>left</alignment>
+      <horizontalMargin>0.00</horizontalMargin>
+      <fontSize>0.029</fontSize>
+      <scrollbarColor>96969620</scrollbarColor>
+      <scrollbarCorner>0.49</scrollbarCorner>
+      <scrollbarSize>0.0065</scrollbarSize>
+      <scrollbarAlignment>outerright</scrollbarAlignment>
+      <horizontalMargin>0.005</horizontalMargin>
+    </textlist>
+  </view>
+</theme>
