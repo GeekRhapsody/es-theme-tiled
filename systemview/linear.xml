@@ -2,44 +2,123 @@
 <theme>
   <formatVersion>7</formatVersion>
   <view name="system">
-      <carousel name="systemcarousel">
-        <type>horizontal</type>
-        <pos>0.0 0.0</pos>
-        <logoAlignment>middle</logoAlignment>         
-        <size>1 1</size>
-        <logoScale>1.65</logoScale>
-        <zIndex>3</zIndex>          
-        <logoSize>0.18 0.18</logoSize>
-        <color>00000000</color>
-        <maxLogoCount>7</maxLogoCount>       		
-      </carousel>
-      <image name="logo">
-		<path>./art/${artstyle}/${system.theme}.${artextension}</path>
-	  </image>	  
-	<image name="background" extra="true">
-	 <origin>0 0</origin>
-	 <pos>0 0</pos>
-	 <size>1 1</size>
-	 <zIndex>2</zIndex>                 	  
-	 <visible>true</visible>
-	 <color>${backgroundColor}</color>
-	 <path>./_inc/images/bg_color.png</path>
-	</image>
-      <text name="systemInfo">     
-         <pos>0.0 0.65</pos>
-         <backgroundColor>00000000</backgroundColor>
-         <color>${secondaryColor}</color>
-         <fontPath>./_inc/fonts/Cabin-Bold.ttf</fontPath>
-	     <fontSize>0.03</fontSize>
-         <zIndex>5</zIndex>	     
-      </text>            
-      <helpsystem name="help">
-         <fontPath>./_inc/fonts/Cabin-Bold.ttf</fontPath>
-         <fontSize>0.025</fontSize>     
-         <pos>0.01 0.97</pos>      
-         <textColor>${secondaryColor}</textColor>
-         <iconColor>${secondaryColor}</iconColor>
-      </helpsystem>	 
+    <carousel name="systemcarousel">
+      <type>horizontal</type>
+      <pos>0.0 0.0</pos>
+      <logoAlignment>middle</logoAlignment>
+      <size>1 1</size>
+      <logoScale>1.65</logoScale>
+      <zIndex>3</zIndex>
+      <logoSize>0.095 0.18</logoSize>
+      <color>00000000</color>
+      <maxLogoCount>7</maxLogoCount>
+      <itemTemplate>
+        <storyboard event="activate">
+          <animation property="scale" to="1.05" duration="150" mode="easeOut"/>
+        </storyboard>
+        <storyboard event="deactivate">
+          <animation property="scale" to="1" duration="250" mode="easeOut"/>
+        </storyboard>      
+        <image name="background" extra="true">
+          <origin>0 0</origin>
+          <pos>0 0</pos>
+          <size>1 1</size>
+          <zIndex>2</zIndex>
+          <visible>true</visible>
+          <color>${tertiaryColor}</color>
+          <path>./_inc/images/bg_color.png</path>
+          <roundCorners>${corners}</roundCorners>
+          <storyboard event="activate" repeat="forever">
+            <animation property="color" from="${tertiaryColor}" to="${secondaryColor}"/>
+          </storyboard>
+          <storyboard event="deactivate">
+            <animation property="color" from="${secondaryColor}" to="${tertiaryColor}"/>
+          </storyboard>
+        </image>
+        <image name="backgroundInner" extra="true">
+          <origin>0.5 0.5</origin>
+          <pos>0.5 0.5</pos>
+          <size>1 1</size>
+          <zIndex>3</zIndex>
+          <visible>true</visible>
+          <color>${tertiaryColor}</color>
+          <path>./_inc/images/bg_color.png</path>
+          <roundCorners>${corners}</roundCorners>
+          <scale>0.963</scale>
+        </image>
+
+        <image name="SystemArt" extra="true">
+          <path>${themePath}/art/${artstyle}/{system:theme}.${artextension}</path>
+          <pos>0.5</pos>
+          <origin>0.5</origin>
+          <minSize>1 1</minSize>
+          <linearSmooth>true</linearSmooth>
+          <roundCorners>${corners}</roundCorners>
+          <zIndex>3</zIndex>
+          <scale>0.963</scale>
+        </image>
+        <image name="SystemArtShade" extra="true">
+          <origin>0 0</origin>
+          <pos>0 0</pos>
+          <size>1 1</size>
+          <zIndex>4</zIndex>
+          <visible>true</visible>
+          <color>000000</color>
+          <opacity>${shadeStrength}</opacity>
+          <path>./_inc/images/bg_color.png</path>
+          <roundCorners>${corners}</roundCorners>
+          <storyboard event="activate" >
+            <animation property="opacity" from="${shadeStrength}" to="0" duration="150" mode="linear"/>
+          </storyboard>
+          <storyboard event="deactivate">
+            <animation property="opacity" from="0" to="${shadeStrength}" duration="150" mode="linear"/>
+          </storyboard>
+          <zIndex>30</zIndex>
+        </image>
+        <image name="LogoDropShadow" pos="0.5" origin="0.5" maxSize="1" linearSmooth="true" ifSubset="artstyle:carbon">
+          <path>firstfile("${themePath}/art/logos/" + {system:theme} + ".png","${themePath}/art/logos/" + {system:theme} + ".svg")</path>
+          <padding>3 3 -3 -3</padding>
+          <color>00000080</color>
+          <zIndex>5</zIndex>
+          <scale>0.8</scale>
+        </image>
+        <image name="LogoImage" pos="0.5" origin="0.5" maxSize="1" linearSmooth="true" ifSubset="artstyle:carbon">
+          <path>firstfile("${themePath}/art/logos/" + {system:theme} + ".png","${themePath}/art/logos/" + {system:theme} + ".svg")</path>
+          <zIndex>6</zIndex>
+          <scale>0.8</scale>
+          <storyboard event="activate">
+            <animation property="color" from="FFFFFFB3" to="FFFFFFFF"/>
+          </storyboard>
+          <storyboard event="deactivate">
+            <animation property="color" from="FFFFFFFF" to="FFFFFFB3"/>
+          </storyboard>
+        </image>
+      </itemTemplate>
+    </carousel>
+    <image name="background" extra="true">
+      <origin>0 0</origin>
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <zIndex>2</zIndex>
+      <visible>true</visible>
+      <color>${backgroundColor}</color>
+      <path>./_inc/images/bg_color.png</path>
+    </image>
+    <text name="systemInfo">    
+      <pos>0.0 0.65</pos>
+      <backgroundColor>00000000</backgroundColor>
+      <color>${secondaryColor}</color>
+      <fontPath>./_inc/fonts/Cabin-Bold.ttf</fontPath>
+      <fontSize>0.03</fontSize>
+      <zIndex>5</zIndex>
+    </text>
+    <helpsystem name="help">
+      <fontPath>./_inc/fonts/Cabin-Bold.ttf</fontPath>
+      <fontSize>0.025</fontSize>
+      <pos>0.01 0.97</pos>
+      <textColor>${secondaryColor}</textColor>
+      <iconColor>${secondaryColor}</iconColor>
+    </helpsystem>
 
   </view>
 </theme>

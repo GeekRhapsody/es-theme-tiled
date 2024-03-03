@@ -91,7 +91,17 @@
           <storyboard event="deactivate">
             <animation property="color" from="${secondaryColor}" to="${tertiaryColor}"/>
           </storyboard>
-        </image>
+        </image>        
+        <image name="backgroundInner" extra="true">
+          <origin>0.5 0.5</origin>
+          <pos>0.5 0.5</pos>
+          <size>1 1</size>
+          <zIndex>3</zIndex>
+          <color>182580</color>
+          <path>./_inc/images/bg_color.png</path>
+          <roundCorners>${corners}</roundCorners>
+          <scale>0.963</scale>
+        </image>        
         <image name="SystemArt" extra="true">
           <path>${themePath}/art/${artstyle}/{system:theme}.${artextension}</path>
           <pos>0.5</pos>
@@ -153,7 +163,7 @@
       <visible>false</visible>
     </text>
     <text name="mySystemInfo" extra="true">
-      <text>{system:fullName} ({system:total} Games)</text>
+      <text>{system:manufacturer} - {system:fullName} ({system:total} Games)</text>
       <size>1 0</size>
       <pos>0.0 0.005</pos>
       <alignment>center</alignment>
