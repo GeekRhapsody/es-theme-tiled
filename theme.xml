@@ -12,9 +12,9 @@
   </subset>
 
   <subset name="colorway" displayName="Colorway">
-    <include name="light" displayName="Light" tinyScreen="false">./colorway/light.xml</include>
-    <include name="dark" displayName="Dark">./colorway/dark.xml</include>
     <include name="extradark" displayName="Extra Dark" tinyScreen="false">./colorway/extradark.xml</include>
+    <include name="dark" displayName="Dark">./colorway/dark.xml</include>
+    <include name="light" displayName="Light" tinyScreen="false">./colorway/light.xml</include>
     <include name="steamos" displayName="Steam OS" tinyScreen="false">./colorway/steamos.xml</include>
   </subset>
 
@@ -73,23 +73,24 @@
     <include name="6x4" displayName="6X4"/>
     <include name="6x5" displayName="6X5"/>
     <include name="6x6" displayName="6X6"/>
-    <include name="6x7" displayName="6X7"/>    
+    <include name="6x7" displayName="6X7"/>
     <include name="7x1" displayName="7X1"/>
     <include name="7x2" displayName="7X2"/>
     <include name="7x3" displayName="7X3"/>
     <include name="7x4" displayName="7X4"/>
     <include name="7x5" displayName="7X5"/>
     <include name="7x6" displayName="7X6"/>
-    <include name="7x7" displayName="7X7"/>    
+    <include name="7x7" displayName="7X7"/>
   </subset>
 
   <include>./gamelistview/grid.xml</include>
   <include>./gamelistview/gridthumbnails.xml</include>
   <include>./gamelistview/detailed.xml</include>
+  <include>./gamelistview/basic.xml</include>
 
   <include>./menu.xml</include>
 
-  <view name="system,grid,detailed">
+  <view name="system,grid,detailed,basic">
     <image name="background" extra="true">
       <origin>0 0</origin>
       <pos>0 0</pos>
@@ -109,7 +110,7 @@
     </helpsystem>
   </view>
 
-  <view name="grid,detailed">
+  <view name="grid,detailed,basic">
     <image name="systemLogo" extra="true">
       <maxSize>0.200 0.039</maxSize>
       <pos>0.022 0.006</pos>
@@ -137,5 +138,4 @@
       <itemSpacing>0</itemSpacing>
     </batteryIndicator>
   </view>
-
 </theme>
