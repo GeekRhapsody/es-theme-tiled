@@ -171,6 +171,16 @@
 			<zIndex>6</zIndex>
 			<scale>1</scale>
 		</image>
+		<image name="GameCartridge" extra="true" ifSubset="factbox:yes">
+			<path>{game:cartridge}</path>
+			<pos>0.900 0.25</pos>
+			<maxSize>0.09 0.12</maxSize>
+			<horizontalAlignment>right</horizontalAlignment>
+			<verticalAlignment>bottom</verticalAlignment>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>7</zIndex>
+			<scale>1</scale>
+		</image>		
 		<image name="TheGameImage" extra="true" ifSubset="factbox:yes">
 			<path>{game:image}</path>
 			<pos>0.885 0.213</pos>
