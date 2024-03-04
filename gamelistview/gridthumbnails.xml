@@ -108,23 +108,6 @@
 			<maxSize>0.235 0.331</maxSize>
 			<delay>1.5</delay>
 			<zIndex>10</zIndex>
-
-			<image name="VideoBackground" extra="true">
-				<visible>exists({game:video})</visible>
-				<pos>0 0</pos>
-				<origin>0 0</origin>
-				<size>1 1</size>
-				<zIndex>9</zIndex>
-				<color>00000000</color>
-				<path>./_inc/images/bg_color.png</path>
-				<roundCorners>${corners}</roundCorners>
-				<storyboard event="change" begin="1500">
-					<animation property="color" from="00000000" to="${backgroundColor}"/>
-				</storyboard>
-				<storyboard event="deactivate">
-					<animation property="color" to="00000000"/>
-				</storyboard>
-			</image>
 		</video>
 	</customView>
 </theme>
