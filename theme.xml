@@ -14,13 +14,11 @@
   <subset name="colorway" displayName="Colorway">
     <include name="extradark" displayName="Extra Dark" tinyScreen="false">./colorway/extradark.xml</include>
     <include name="dark" displayName="Dark">./colorway/dark.xml</include>
-    <include name="light" displayName="Light" tinyScreen="false">./colorway/light.xml</include>
     <include name="steamos" displayName="Steam OS" tinyScreen="false">./colorway/steamos.xml</include>
   </subset>
 
   <subset name="artstyle" displayName="Art Style">
     <include name="modern" displayName="Modern" tinyScreen="false">./art/modern.xml</include>
-    <include name="nso" displayName="NSO">./art/nso.xml</include>
     <include name="controlers" displayName="Controlers">./art/controlers.xml</include>
     <include name="carbon" displayName="Carbon">./art/carbon.xml</include>
   </subset>
