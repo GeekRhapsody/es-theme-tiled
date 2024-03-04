@@ -25,6 +25,7 @@
 			<cellProportion if="{system.name} == 'ngpc'">0.9</cellProportion>
 			<cellProportion if="{system.name} == 'psx'">1</cellProportion>
 			<cellProportion if="{system.name} == 'psp'">0.6</cellProportion>
+			<cellProportion if="{system.name} == 'dreamcast'">1.1</cellProportion>
 		</imagegrid>
 
 		<imagegrid name="gamegrid">
