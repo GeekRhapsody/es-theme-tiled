@@ -39,6 +39,7 @@
 			<cellProportion if="{system.name} == 'nes'">1.1</cellProportion>
 			<cellProportion if="{system.name} == 'fds'">1.1</cellProportion>
 			<cellProportion if="{system.name} == 'gb'">1.1</cellProportion>
+			<cellProportion if="{system.name} == 'gbc'">1.1</cellProportion>
 
 			<autoLayout if="{system.name} == 'nds'">0 2</autoLayout>
 			<cellProportion if="{system.name} == 'nds'">0.75</cellProportion>
