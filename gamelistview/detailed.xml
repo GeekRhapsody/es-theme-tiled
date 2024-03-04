@@ -66,6 +66,17 @@
       <scale>1</scale>
     </image>
 
+    <video name="GameVideo" extra="true">
+      <path>{game:video}</path>
+      <pos>0.625 0.375</pos>
+      <origin>0.5 0.5</origin>
+      <horizontalAlignment>center</horizontalAlignment>
+      <verticalAlignment>center</verticalAlignment>
+      <maxSize>0.51 0.68</maxSize>
+      <delay>1.5</delay>
+      <zIndex>10</zIndex>
+    </video>
+
     <text name="labelGameTime" extra="true">
       <text>Play Time</text>
       <pos>0.89 0.045</pos>
