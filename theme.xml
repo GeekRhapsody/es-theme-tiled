@@ -85,8 +85,9 @@
   <include>./gamelistview/gridthumbnails.xml</include>
   <include>./gamelistview/detailed.xml</include>
   <include>./gamelistview/basic.xml</include>
-
   <include>./menu.xml</include>
+
+  <theme defaultView="grid">
 
   <view name="system,grid,detailed,basic">
     <image name="background" extra="true">
@@ -136,4 +137,5 @@
       <itemSpacing>0</itemSpacing>
     </batteryIndicator>
   </view>
+  
 </theme>
