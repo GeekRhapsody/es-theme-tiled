@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<theme>
+<theme defaultView="grid">
   <formatVersion>7</formatVersion>
-
   <variables>
     <shadeStrength>0.4</shadeStrength>
   </variables>
@@ -86,9 +85,7 @@
   <include>./gamelistview/detailed.xml</include>
   <include>./gamelistview/basic.xml</include>
   <include>./menu.xml</include>
-
-  <theme defaultView="grid">
-
+  
   <view name="system,grid,detailed,basic">
     <image name="background" extra="true">
       <origin>0 0</origin>
