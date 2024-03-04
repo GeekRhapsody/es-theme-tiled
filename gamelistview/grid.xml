@@ -180,7 +180,7 @@
 			<linearSmooth>true</linearSmooth>
 			<zIndex>7</zIndex>
 			<scale>1</scale>
-		</image>		
+		</image>
 		<image name="TheGameImage" extra="true" ifSubset="factbox:yes">
 			<path>{game:image}</path>
 			<pos>0.885 0.213</pos>

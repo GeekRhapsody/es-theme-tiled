@@ -45,6 +45,16 @@
       <zIndex>6</zIndex>
       <scale>1</scale>
     </image>
+    <image name="GameCartridge" extra="true" ifSubset="factbox:yes">
+      <path>firstfile({game:cartridge},directory({game:path}) + "/images/" + {game:stem} + "-cartridge.png")</path>
+      <pos>0.73 0.485</pos>
+      <maxSize>0.13 0.230</maxSize>
+      <horizontalAlignment>right</horizontalAlignment>
+      <verticalAlignment>bottom</verticalAlignment>
+      <linearSmooth>true</linearSmooth>
+      <zIndex>7</zIndex>
+      <scale>1</scale>
+    </image>
     <image name="TheGameImage" extra="true">
       <path>{game:image}</path>
       <pos>0.63 0.360</pos>
