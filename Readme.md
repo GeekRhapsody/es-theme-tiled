@@ -24,4 +24,4 @@ Assets for the Controllers style taken from es-de-moderntheme-nsoicons: https://
 
 Used screenshots for systems : https://www.screenscraper.fr/
 
-Thanks mikakunin for the additional system art
+Thanks to mikakunin for the additional system art
