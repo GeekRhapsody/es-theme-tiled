@@ -16,9 +16,11 @@ A simple, clean, grid-based EmulationStation theme designed for Steam Deck and o
 - Steam OS
 
 ## **Acknowledgments**
-Some assets talen from Alekfull-NX: https://github.com/fagnerpc/Alekfull-NX
+Assets for the Modern style taken from Alekfull-NX: https://github.com/fagnerpc/Alekfull-NX
 
-Some assets taken from es-theme-carbon: https://github.com/fabricecaruso/es-theme-carbon
+Assets for the Carbon style taken from es-theme-carbon: https://github.com/fabricecaruso/es-theme-carbon
+
+Assets for the Controllers style taken from es-de-moderntheme-nsoicons: https://github.com/szymon-kulak/es-de-moderntheme-nsoicons by Szymon Kulak
 
 Used screenshots for systems : https://www.screenscraper.fr/
 
