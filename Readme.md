@@ -21,3 +21,5 @@ Some assets talen from Alekfull-NX: https://github.com/fagnerpc/Alekfull-NX
 Some assets taken from es-theme-carbon: https://github.com/fabricecaruso/es-theme-carbon
 
 Used screenshots for systems : https://www.screenscraper.fr/
+
+Thanks mikakunin for the additional system art
