@@ -18,7 +18,6 @@
 
   <subset name="artstyle" displayName="Art Style">
     <include name="modern" displayName="Modern" tinyScreen="false">./art/modern.xml</include>
-    <include name="controlers" displayName="Controlers">./art/controlers.xml</include>
     <include name="carbon" displayName="Carbon">./art/carbon.xml</include>
   </subset>
 
