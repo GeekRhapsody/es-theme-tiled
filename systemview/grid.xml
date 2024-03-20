@@ -11,7 +11,7 @@
     <imagegrid name="imagegrid">
       <zIndex>20</zIndex>
       <pos>0.005 0.04</pos>
-      <size>0.99 0.91</size>      
+      <size>0.99 0.91</size>
       <autoLayout ifSubset="sysgridsize:1x1">1 1</autoLayout>
       <autoLayout ifSubset="sysgridsize:1x2">1 2</autoLayout>
       <autoLayout ifSubset="sysgridsize:1x3">1 3</autoLayout>
@@ -75,7 +75,7 @@
         </storyboard>
         <storyboard event="deactivate">
           <animation property="scale" to="1" duration="250" mode="easeOut"/>
-        </storyboard>      
+        </storyboard>
         <image name="background" extra="true">
           <origin>0 0</origin>
           <pos>0 0</pos>
@@ -91,7 +91,7 @@
           <storyboard event="deactivate">
             <animation property="color" from="${secondaryColor}" to="${tertiaryColor}"/>
           </storyboard>
-        </image>        
+        </image>
         <image name="backgroundInner" extra="true">
           <origin>0.5 0.5</origin>
           <pos>0.5 0.5</pos>
@@ -101,7 +101,7 @@
           <path>./_inc/images/bg_color.png</path>
           <roundCorners>${corners}</roundCorners>
           <scale>0.963</scale>
-        </image>        
+        </image>
         <image name="SystemArt" extra="true">
           <path>${themePath}/art/${artstyle}/{system:theme}.${artextension}</path>
           <pos>0.5</pos>
@@ -122,7 +122,7 @@
           <opacity>${shadeStrength}</opacity>
           <path>./_inc/images/bg_color.png</path>
           <roundCorners>${corners}</roundCorners>
-          <storyboard event="activate" >
+          <storyboard event="activate">
             <animation property="opacity" from="${shadeStrength}" to="0" duration="150" mode="linear"/>
           </storyboard>
           <storyboard event="deactivate">
@@ -130,6 +130,17 @@
           </storyboard>
           <zIndex>30</zIndex>
         </image>
+        <text name="fallbackText" alignment="center" multiLine="true">
+          <visible>!exists("${themePath}/art/${artstyle}/" + {system:theme} + ".${artextension}")</visible>
+          <text>{system:fullName}</text>
+          <fontSize>0.04</fontSize>
+          <color>white</color>
+          <glowOffset>1 1</glowOffset>
+          <glowColor>0000002a</glowColor>
+          <glowSize>3</glowSize>
+          <scale>0.8</scale>
+          <zIndex>10</zIndex>
+        </text>
         <image name="LogoDropShadow" pos="0.5" origin="0.5" maxSize="1" linearSmooth="true" ifSubset="artstyle:carbon">
           <path>firstfile("${themePath}/art/logos/" + {system:theme} + ".png","${themePath}/art/logos/" + {system:theme} + ".svg")</path>
           <padding>3 3 -3 -3</padding>
