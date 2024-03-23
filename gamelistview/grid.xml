@@ -58,6 +58,7 @@
 			<cellProportion if="{system.name} == 'ngpc'">1.1</cellProportion>
 			<cellProportion if="{system.name} == 'supervision'">1.1</cellProportion>
 			<cellProportion if="{system.name} == 'Windows'">1.7</cellProportion>
+			<cellProportion if="{system.name} == 'retrobat'">1</cellProportion>
 		</imagegrid>
 
 		<imagegrid name="gamegrid">
@@ -77,6 +78,7 @@
 		<gridtile name="default">
 			<imageColor>FFFFFFFF</imageColor>
 			<imageSizeMode>minSize</imageSizeMode>
+			<imageSizeMode if="{system.name} == 'retrobat'">maxSize</imageSizeMode>
 			<backgroundEdgeColor>${tertiaryColor}</backgroundEdgeColor>
 			<backgroundCenterColor>${tertiaryColor}</backgroundCenterColor>
 			<padding>8 8</padding>
