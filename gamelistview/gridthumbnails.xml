@@ -6,6 +6,7 @@
 		<imagegrid name="gamegrid">
 			<autoLayout>0 3</autoLayout>
 			<cellProportion>0.75</cellProportion>
+			<cellProportion if="{system.name} == 'lynx'">0.85</cellProportion>
 			<cellProportion if="{system.name} == '3do'">1.1</cellProportion>
 			<cellProportion if="{system.name} == 'megaduck'">1.35</cellProportion>
 			<cellProportion if="{system.name} == 'gw'">1.25</cellProportion>
@@ -16,6 +17,7 @@
 			<cellProportion if="{system.name} == 'satellaview'">0.6</cellProportion>
 			<cellProportion if="{system.name} == 'virtualboy'">1</cellProportion>
 			<cellProportion if="{system.name} == 'gbc'">1</cellProportion>
+			<cellProportion if="{system.name} == '3ds'">1</cellProportion>
 			<cellProportion if="{system.name} == 'gba'">1</cellProportion>
 			<cellProportion if="{system.name} == 'pokemini'">1</cellProportion>
 			<cellProportion if="{system.name} == 'nds'">1</cellProportion>
