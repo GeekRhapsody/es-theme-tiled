@@ -29,6 +29,7 @@
 			<cellProportion if="{system.name} == 'psp'">0.6</cellProportion>
 			<cellProportion if="{system.name} == 'dreamcast'">1.1</cellProportion>
 			<cellProportion if="{system.name} == 'windows3x'">0.85</cellProportion>
+			<cellProportion if="{system.name} == 'retrobat'">1</cellProportion>
 		</imagegrid>
 
 		<imagegrid name="gamegrid">
@@ -65,6 +66,7 @@
 					<pos>0.5</pos>
 					<origin>0.5</origin>
 					<minSize>1 1</minSize>
+					<maxSize if="{system.name} == 'retrobat'">1 1</maxSize>
 					<linearSmooth>true</linearSmooth>
 					<roundCorners>${corners}</roundCorners>
 					<zIndex>3</zIndex>
