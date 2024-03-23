@@ -97,6 +97,20 @@
 					</storyboard>
 					<zIndex>30</zIndex>
 				</image>
+
+				<image>
+					<pos>0.025 0.030</pos>
+					<maxSize>0.2 0.09</maxSize>
+					<visible>{game:favorite}</visible>
+					<path>./art/favorite.png</path>
+				</image>
+
+				<image>
+					<pos>0.025 0.875</pos>
+					<maxSize>0.2 0.09</maxSize>
+					<visible>{game:hasSaveState}</visible>
+					<path>./art/SaveState.png</path>
+				</image>
 			</itemTemplate>
 		</imagegrid>
 
