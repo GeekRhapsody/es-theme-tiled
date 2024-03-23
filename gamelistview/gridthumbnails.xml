@@ -5,7 +5,8 @@
 
 		<imagegrid name="gamegrid">
 			<autoLayout>0 3</autoLayout>
-			<cellProportion>0.75</cellProportion>
+			<cellProportion>0.75</cellProportion>			
+			<cellProportion if="{system.name} == 'lynx'">0.85</cellProportion>
 			<cellProportion if="{system.name} == '3do'">1.1</cellProportion>
 			<cellProportion if="{system.name} == 'megaduck'">1.35</cellProportion>
 			<cellProportion if="{system.name} == 'gw'">1.25</cellProportion>
@@ -16,6 +17,7 @@
 			<cellProportion if="{system.name} == 'satellaview'">0.6</cellProportion>
 			<cellProportion if="{system.name} == 'virtualboy'">1</cellProportion>
 			<cellProportion if="{system.name} == 'gbc'">1</cellProportion>
+			<cellProportion if="{system.name} == '3ds'">1</cellProportion>
 			<cellProportion if="{system.name} == 'gba'">1</cellProportion>
 			<cellProportion if="{system.name} == 'pokemini'">1</cellProportion>
 			<cellProportion if="{system.name} == 'nds'">1</cellProportion>
@@ -26,6 +28,7 @@
 			<cellProportion if="{system.name} == 'psx'">1</cellProportion>
 			<cellProportion if="{system.name} == 'psp'">0.6</cellProportion>
 			<cellProportion if="{system.name} == 'dreamcast'">1.1</cellProportion>
+			<cellProportion if="{system.name} == 'windows3x'">0.85</cellProportion>
 		</imagegrid>
 
 		<imagegrid name="gamegrid">
@@ -96,6 +99,20 @@
 						<animation property="opacity" from="0" to="${shadeStrength}" duration="150" mode="linear"/>
 					</storyboard>
 					<zIndex>30</zIndex>
+				</image>
+
+				<image>
+					<pos>0.025 0.030</pos>
+					<maxSize>0.2 0.09</maxSize>
+					<visible>{game:favorite}</visible>
+					<path>./art/favorite.png</path>
+				</image>
+
+				<image>
+					<pos>0.025 0.875</pos>
+					<maxSize>0.2 0.09</maxSize>
+					<visible>{game:hasSaveState}</visible>
+					<path>./art/SaveState.png</path>
 				</image>
 			</itemTemplate>
 		</imagegrid>
