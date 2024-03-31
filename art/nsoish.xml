@@ -2,7 +2,7 @@
 <theme>
 	<formatVersion>7</formatVersion>
         <variables>
-            <artstyle>nso</artstyle>
-            <artextension>jpg</artextension>
+            <artstyle>nsoish</artstyle>
+            <artextension>webp</artextension>
         </variables>
 </theme>
