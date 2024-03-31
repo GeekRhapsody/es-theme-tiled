@@ -83,14 +83,23 @@
 			<backgroundCenterColor>${tertiaryColor}</backgroundCenterColor>
 			<padding>8 8</padding>
 
-			<image>				
-				<pos>0.025 0.030</pos>
-				<maxSize>0.2 0.09</maxSize>
+			<image>
+				<pos>0.8 0</pos>
+				<maxSize>0.2 0.2</maxSize>
 				<visible>{game:favorite}</visible>
-				<path>./art/favorite.png</path>
+				<horizontalAlignment>right</horizontalAlignment>
+				<path>./_inc/images/favorite.svg</path>
+				<roundCorners>${corners}</roundCorners>
+				<color>808080</color>
+				<storyboard event="activate">
+					<animation property="color" from="808080" to="${secondaryColor}" duration="150" mode="linear"/>
+				</storyboard>
+				<storyboard event="deactivate">
+					<animation property="color" from="${secondaryColor}" to="808080" duration="150" mode="linear"/>
+				</storyboard>				
 			</image>
 
-			<image>				
+			<image>
 				<pos>0.025 0.875</pos>
 				<maxSize>0.2 0.09</maxSize>
 				<visible>{game:hasSaveState}</visible>
