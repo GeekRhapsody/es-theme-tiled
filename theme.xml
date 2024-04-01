@@ -11,20 +11,27 @@
   </subset>
 
   <subset name="colorway" displayName="Colorway">
-    <include name="extradark" displayName="Extra Dark" tinyScreen="false">./colorway/extradark.xml</include>
+    <include name="extradark" displayName="Extra Dark">./colorway/extradark.xml</include>
     <include name="dark" displayName="Dark">./colorway/dark.xml</include>
-    <include name="steamos" displayName="Steam OS" tinyScreen="false">./colorway/steamos.xml</include>
+    <include name="steamos" displayName="Steam OS">./colorway/steamos.xml</include>
+  </subset>
+
+  <subset name="font" displayName="Font">
+    <include name="cabinbold" displayName="Cabin Bold"/>
+    <include name="couture" displayName="Couture"/>
+    <include name="nswitchui" displayName="Nintendo Switch UI"/>
+    <include name="gb" displayName="GameBoy"/>
   </subset>
 
   <subset name="artstyle" displayName="Art Style">
-    <include name="modern" displayName="Modern" tinyScreen="false">./art/modern.xml</include>
-    <include name="nsoish" displayName="NSOish" tinyScreen="false">./art/nsoish.xml</include>
+    <include name="modern" displayName="Modern">./art/modern.xml</include>
+    <include name="nsoish" displayName="NSOish">./art/nsoish.xml</include>
     <include name="carbon" displayName="Carbon">./art/carbon.xml</include>
   </subset>
 
   <subset name="systemview" displayName="System View">
     <include name="grid" displayName="Grid">./systemview/grid.xml</include>
-    <include name="linear" displayName="Linear" tinyScreen="false">./systemview/linear.xml</include>
+    <include name="linear" displayName="Linear">./systemview/linear.xml</include>
   </subset>
 
   <subset name="sysgridsize" displayName="Default System Grid Size">
@@ -85,7 +92,7 @@
   <include>./gamelistview/detailed.xml</include>
   <include>./gamelistview/basic.xml</include>
   <include>./menu.xml</include>
-  
+
   <view name="system,grid,detailed,basic">
     <image name="background" extra="true">
       <origin>0 0</origin>
@@ -98,11 +105,14 @@
     </image>
 
     <helpsystem name="help">
-      <fontPath>./_inc/fonts/Cabin-Bold.ttf</fontPath>
       <fontSize>0.025</fontSize>
       <pos>0.01 0.97</pos>
       <textColor>${secondaryColor}</textColor>
       <iconColor>${secondaryColor}</iconColor>
+			<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
+			<fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
+			<fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
+			<fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>			      
     </helpsystem>
   </view>
 
@@ -134,5 +144,5 @@
       <itemSpacing>0</itemSpacing>
     </batteryIndicator>
   </view>
-  
+
 </theme>

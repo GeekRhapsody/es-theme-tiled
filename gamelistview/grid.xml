@@ -15,9 +15,12 @@
 			<pos>0.0 0.005</pos>
 			<alignment>center</alignment>
 			<color>${secondaryColor}</color>
-			<fontPath>./_inc/fonts/Cabin-Bold.ttf</fontPath>
 			<fontSize>0.025</fontSize>
 			<zIndex>5</zIndex>
+			<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
+			<fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
+			<fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
+			<fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>			
 		</text>
 
 		<imagegrid name="gamegrid" ifSubset="factbox:no">
@@ -113,7 +116,7 @@
 				</storyboard>
 				<storyboard event="deactivate">
 					<animation property="color" from="${secondaryColor}" to="${tertiaryColor}" duration="150" mode="linear"/>
-				</storyboard>				
+				</storyboard>
 			</image>
 
 
@@ -129,6 +132,10 @@
 				<fontSize>0.020</fontSize>
 				<glowColor>000000</glowColor>
 				<glowSize>3</glowSize>
+				<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
+				<fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
+				<fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
+				<fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
 			</text>
 
 			<image name="ArtShade" extra="true">
@@ -207,6 +214,10 @@
 			<color>${tertiaryColor}</color>
 			<fontSize>0.015</fontSize>
 			<zIndex>5</zIndex>
+			<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
+			<fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
+			<fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
+			<fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>			
 		</text>
 		<text name="GameTime" extra="true" ifSubset="factbox:yes">
 			<text>expandseconds({game:gametime})</text>
@@ -215,6 +226,10 @@
 			<alignment>left</alignment>
 			<color>${secondaryColor}</color>
 			<fontSize>0.020</fontSize>
+			<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
+			<fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
+			<fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
+			<fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
 			<zIndex>5</zIndex>
 		</text>
 		<text name="GameTimeNone" extra="true">
@@ -226,6 +241,10 @@
 			<fontSize>0.020</fontSize>
 			<zIndex>5</zIndex>
 			<visible>empty(expandseconds({game:gametime}))</visible>
+			<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
+			<fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
+			<fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
+			<fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
 		</text>
 
 		<text name="labelDev" extra="true" ifSubset="factbox:yes">
@@ -236,6 +255,10 @@
 			<color>${tertiaryColor}</color>
 			<fontSize>0.015</fontSize>
 			<zIndex>5</zIndex>
+			<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
+			<fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
+			<fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
+			<fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
 		</text>
 		<text name="valDeveloper" extra="true" ifSubset="factbox:yes">
 			<text>{game:developer}</text>
@@ -245,6 +268,10 @@
 			<color>${secondaryColor}</color>
 			<fontSize>0.020</fontSize>
 			<zIndex>5</zIndex>
+			<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
+			<fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
+			<fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
+			<fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>			
 		</text>
 
 		<text name="labelPublisher" extra="true" ifSubset="factbox:yes">
@@ -255,6 +282,10 @@
 			<color>${tertiaryColor}</color>
 			<fontSize>0.015</fontSize>
 			<zIndex>5</zIndex>
+			<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
+			<fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
+			<fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
+			<fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>			
 		</text>
 		<text name="publisher" extra="true" ifSubset="factbox:yes">
 			<text>{game:publisher}</text>
@@ -264,6 +295,10 @@
 			<color>${secondaryColor}</color>
 			<fontSize>0.020</fontSize>
 			<zIndex>5</zIndex>
+			<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
+			<fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
+			<fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
+			<fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>			
 		</text>
 
 		<text name="labelReleaseDate" extra="true" ifSubset="factbox:yes">
@@ -274,6 +309,10 @@
 			<color>${tertiaryColor}</color>
 			<fontSize>0.015</fontSize>
 			<zIndex>5</zIndex>
+			<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
+			<fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
+			<fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
+			<fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
 		</text>
 		<text name="ReleaseDate" extra="true" ifSubset="factbox:yes">
 			<text>{game:releasedate}</text>
@@ -283,6 +322,10 @@
 			<color>${secondaryColor}</color>
 			<fontSize>0.020</fontSize>
 			<zIndex>5</zIndex>
+			<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
+			<fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
+			<fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
+			<fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
 		</text>
 
 		<text name="labelDescription" extra="true" ifSubset="factbox:yes">
@@ -293,17 +336,25 @@
 			<color>${tertiaryColor}</color>
 			<fontSize>0.015</fontSize>
 			<zIndex>5</zIndex>
+			<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
+			<fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
+			<fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
+			<fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
 		</text>
 
 		<text name="md_description" ifSubset="factbox:yes">
 			<text>{game:desc}</text>
-			<pos>0.76 0.595</pos>
+			<pos>0.76 0.598</pos>
 			<size>0.23 0.35</size>
 			<alignment>left</alignment>
 			<horizontalAlignment>top</horizontalAlignment>
 			<color>${secondaryColor}</color>
 			<fontSize>0.020</fontSize>
 			<zIndex>5</zIndex>
+			<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
+			<fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
+			<fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
+			<fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
 		</text>
 	</view>
 </theme>

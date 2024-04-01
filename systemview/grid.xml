@@ -180,7 +180,10 @@
       <alignment>center</alignment>
       <backgroundColor>FFFF0000</backgroundColor>
       <color>${secondaryColor}</color>
-      <fontPath>./_inc/fonts/Cabin-Bold.ttf</fontPath>
+      <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
+      <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
+      <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
+      <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
       <fontSize>0.025</fontSize>
       <zIndex>5</zIndex>
     </text>
