@@ -34,7 +34,7 @@
     <include name="linear" displayName="Linear">./systemview/linear.xml</include>
   </subset>
 
-  <subset name="sysgridsize" displayName="Default System Grid Size">
+  <subset name="sysgridsize" displayName="System Grid Size">
     <include name="automatic" displayName="Automatic"/>
     <include name="1x1" displayName="1X1"/>
     <include name="1x2" displayName="1X2"/>
@@ -85,6 +85,13 @@
     <include name="7x5" displayName="7X5"/>
     <include name="7x6" displayName="7X6"/>
     <include name="7x7" displayName="7X7"/>
+  </subset>
+
+  <subset name="sysgridcolor" displayName="System Grid Background">
+    <include name="blue" displayName="Blue"/>
+    <include name="green" displayName="Green"/>
+    <include name="red" displayName="Red"/>
+    <include name="black" displayName="Black"/>
   </subset>
 
   <include>./gamelistview/grid.xml</include>
