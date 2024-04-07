@@ -116,10 +116,10 @@
       <pos>0.01 0.97</pos>
       <textColor>${secondaryColor}</textColor>
       <iconColor>${secondaryColor}</iconColor>
-			<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
-			<fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
-			<fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
-			<fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>			      
+      <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
+      <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
+      <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
+      <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
     </helpsystem>
   </view>
 
@@ -136,7 +136,7 @@
 
   <view name="screen">
     <controllerActivity name="controllerActivity">
-      <pos>0.01 0.012</pos>
+      <pos>0.008 0.012</pos>
       <size>0.185 0.023</size>
       <itemSpacing>0.003</itemSpacing>
       <color>${secondaryColor}</color>
@@ -147,8 +147,8 @@
       <hotkeyColor>FFA0A0C0</hotkeyColor>
     </controllerActivity>
     <batteryIndicator name="batteryIndicator">
+      <pos>0.963 0.012</pos>
       <color>${secondaryColor}</color>
-      <itemSpacing>0</itemSpacing>
     </batteryIndicator>
   </view>
 
