@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+    <include>./theme.xml</include>    
+    <view name="splash">
+
+        <image name="background" visible="true">
+            <pos>0.5 0.2</pos>
+            <roundCorners>0</roundCorners>
+            <maxSize>0.958 0.61</maxSize>
+            <origin>0.5 0</origin>                                    
+            <path>{game:thumbnail}</path>
+        </image>
+
+        <image name="background_extra" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <zIndex>0</zIndex>
+            <visible>true</visible>
+            <color>${backgroundColor}</color>
+            <path>./_inc/images/bg_color.png</path>
+        </image>
+
+        <text name="label">
+            <color>${secondaryColor}</color>
+            <forceUppercase>false</forceUppercase>
+            <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
+            <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
+            <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
+            <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+            <zIndex>500</zIndex>
+        </text>
+
+    </view>
+
+</theme>
