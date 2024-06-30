@@ -10,6 +10,14 @@
     <include name="no" displayName="No"/>
   </subset>
 
+  <subset name="factboxmedia" displayName="Factbox Media">
+    <include name="thumbcart" displayName="Thumbnail + Cartridge"/>
+    <include name="mix" displayName="Mix Image"/>
+    <include name="image" displayName="Image"/>
+    <include name="thumb" displayName="Thumbnail"/>
+    <include name="cartridge" displayName="Cartridge"/>
+  </subset>
+
   <subset name="colorway" displayName="Colorway">
     <include name="extradark" displayName="Extra Dark">./colorway/extradark.xml</include>
     <include name="dark" displayName="Dark">./colorway/dark.xml</include>
@@ -99,6 +107,7 @@
   <include>./gamelistview/detailed.xml</include>
   <include>./gamelistview/basic.xml</include>
   <include>./menu.xml</include>
+  <include>./gamelistview/factbox.xml</include>
 
   <view name="system,grid,detailed,basic">
     <image name="background" extra="true">
