@@ -85,9 +85,9 @@
 			<backgroundCenterColor>${tertiaryColor}</backgroundCenterColor>
 			<padding>8 8</padding>
 
-			<image>
+			<image name="favoriteIndicator">
 				<pos>0.8 0</pos>
-				<maxSize>0.2 0.2</maxSize>
+				<maxSize>0.199 0.199</maxSize>
 				<visible>{game:favorite}</visible>
 				<horizontalAlignment>right</horizontalAlignment>
 				<path>./_inc/images/favorite.svg</path>
@@ -101,9 +101,9 @@
 				</storyboard>
 			</image>
 
-			<image>
+			<image name="saveStateIndicator">
 				<pos>0.8 0.8</pos>
-				<maxSize>0.2 0.2</maxSize>
+				<maxSize>0.199 0.199</maxSize>
 				<horizontalAlignment>right</horizontalAlignment>
 				<roundCorners>${corners}</roundCorners>
 				<visible>{game:hasSaveState}</visible>
@@ -117,7 +117,6 @@
 					<animation property="color" from="${secondaryColor}" to="${tertiaryColor}" duration="150" mode="linear"/>
 				</storyboard>
 			</image>
-
 
 			<text name="shortName" extra="true">
 				<pos>0 0.8</pos>

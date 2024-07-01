@@ -96,10 +96,12 @@
           <origin>0.5 0.5</origin>
           <pos>0.5 0.5</pos>
           <size>1 1</size>
-          <zIndex>3</zIndex>          
+          <zIndex>3</zIndex> 
+          <color>182580</color>
+          <color ifSubset="sysgridcolor:tertiary">${tertiaryColor}</color>  
           <color ifSubset="sysgridcolor:green">0e7a0d</color>
           <color ifSubset="sysgridcolor:red">e4000f</color>
-          <color ifSubset="sysgridcolor:black">080808</color>
+          <color ifSubset="sysgridcolor:black">080808</color>                    
           <color ifSubset="sysgridcolor:blue">182580</color>          
           <path>./_inc/images/bg_color.png</path>
           <roundCorners>${corners}</roundCorners>

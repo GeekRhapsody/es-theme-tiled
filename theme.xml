@@ -100,10 +100,21 @@
     <include name="green" displayName="Green"/>
     <include name="red" displayName="Red"/>
     <include name="black" displayName="Black"/>
+    <include name="tertiary" displayName="None"/>
+  </subset>
+
+  <subset name="gamegridcolor" displayName="Gamelist Grid Background">
+    <include name="tertiary" displayName="None"/>
+    <include name="blue" displayName="Blue"/>
+    <include name="green" displayName="Green"/>
+    <include name="red" displayName="Red"/>
+    <include name="black" displayName="Black"/>
+    <include name="white" displayName="White"/>
   </subset>
 
   <include>./gamelistview/grid.xml</include>
   <include>./gamelistview/gridthumbnails.xml</include>
+  <include>./gamelistview/gridmarquees.xml</include>
   <include>./gamelistview/detailed.xml</include>
   <include>./gamelistview/basic.xml</include>
   <include>./menu.xml</include>
