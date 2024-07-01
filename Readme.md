@@ -11,7 +11,7 @@ A simple, clean, grid-based EmulationStation theme designed for Steam Deck and o
 ![Box Grid](./screenshots/gamegrid2.png)
 
 ## **Marquee Grid**
-![Box Grid](./screenshots/gamegrid3.png)
+![Marquee Grid](./screenshots/gamegrid3.png)
 
 ## Colorways
 - Extra Dark
