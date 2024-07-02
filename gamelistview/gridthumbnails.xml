@@ -101,7 +101,7 @@
 					<storyboard event="deactivate">
 						<animation property="opacity" from="0" to="${shadeStrength}" duration="150" mode="linear"/>
 					</storyboard>
-					<scale>1.1</scale>
+					<scale>1.005</scale>
 					<zIndex>30</zIndex>
 				</image>
 

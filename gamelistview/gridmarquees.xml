@@ -84,7 +84,7 @@
 					<storyboard event="deactivate">
 						<animation property="opacity" from="0" to="${shadeStrength}" duration="150" mode="linear"/>
 					</storyboard>
-					<scale>1.1</scale>
+					<scale>1.005</scale>
 					<zIndex>30</zIndex>
 				</image>
 
@@ -93,6 +93,7 @@
 					<maxSize>0.199 0.199</maxSize>
 					<visible>{game:favorite}</visible>
 					<horizontalAlignment>right</horizontalAlignment>
+					<verticalAlignment>bottom</verticalAlignment>
 					<path>./_inc/images/favorite.svg</path>
 					<color>808080</color>
 					<storyboard event="activate">

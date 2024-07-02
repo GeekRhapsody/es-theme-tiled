@@ -84,7 +84,7 @@
 					<storyboard event="deactivate">
 						<animation property="opacity" from="0" to="${shadeStrength}" duration="150" mode="linear"/>
 					</storyboard>
-					<scale>1.1</scale>
+					<scale>1.005</scale>
 					<zIndex>30</zIndex>
 				</image>
 
@@ -107,6 +107,7 @@
 					<pos>0.8 0.8</pos>
 					<maxSize>0.199 0.199</maxSize>
 					<horizontalAlignment>right</horizontalAlignment>
+					<verticalAlignment>bottom</verticalAlignment>
 					<visible>{game:hasSaveState}</visible>
 					<path>./_inc/images/SaveState.svg</path>
 					<color>${tertiaryColor}</color>
