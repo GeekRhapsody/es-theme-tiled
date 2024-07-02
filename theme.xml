@@ -115,6 +115,7 @@
   <include>./gamelistview/grid.xml</include>
   <include>./gamelistview/gridthumbnails.xml</include>
   <include>./gamelistview/gridmarquees.xml</include>
+  <include>./gamelistview/gridcartridges.xml</include>
   <include>./gamelistview/detailed.xml</include>
   <include>./gamelistview/basic.xml</include>
   <include>./menu.xml</include>
@@ -133,9 +134,10 @@
 
     <helpsystem name="help">
       <fontSize>0.025</fontSize>
-      <pos>0.01 0.97</pos>
+      <pos>0.012 0.957</pos>
       <textColor>${secondaryColor}</textColor>
       <iconColor>${secondaryColor}</iconColor>
+      <backgroundColor>FF0000</backgroundColor>
       <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
       <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
       <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
@@ -156,20 +158,59 @@
 
   <view name="screen">
     <controllerActivity name="controllerActivity">
-      <pos>0.008 0.012</pos>
-      <size>0.185 0.023</size>
-      <itemSpacing>0.003</itemSpacing>
-      <color>${secondaryColor}</color>
-      <imagePath>./art/gamepad.svg</imagePath>
-      <gunPath>./art/gun.svg</gunPath>
-      <wheelPath>./art/wheel.svg</wheelPath>
-      <activityColor>A0A0FFC0</activityColor>
-      <hotkeyColor>FFA0A0C0</hotkeyColor>
+      <visible>false</visible>
     </controllerActivity>
     <batteryIndicator name="batteryIndicator">
-      <pos>0.963 0.012</pos>
-      <color>${secondaryColor}</color>
+      <visible>false</visible>
     </batteryIndicator>
+    <text name="clock">
+      <visible>false</visible>
+    </text>
+
+    <stackpanel name="system-indicators" extra="true">
+      <visible>true</visible>
+      <h>0.025</h>
+      <size>0.1 0.07</size>
+      <pos>0.89 0.957</pos>      <!-- 0 20 -->
+      <orientation>horizontal</orientation>
+      <separator>6</separator>
+      <horizontalAlignment>right</horizontalAlignment>
+      <reverse>true</reverse>
+      <clock name="system-clock" extra="true">
+        <color>${secondaryColor}</color>
+        <fontSize>0.025</fontSize>
+        <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
+        <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
+        <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
+        <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+        <lineSpacing>1</lineSpacing>
+      </clock>      
+      <batteryText name="system-battery-text" extra="true">
+        <color>${secondaryColor}</color>
+        <fontSize>0.025</fontSize>
+        <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
+        <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
+        <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
+        <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+        <lineSpacing>1</lineSpacing>
+      </batteryText>
+      <batteryIcon name="system-battery-icon" extra="true">
+        <maxSize>1 1</maxSize>
+        <color>${secondaryColor}</color>
+        <full>./_inc/images/battery-icon-100.svg</full>
+        <at75>./_inc/images/battery-icon-75.svg</at75>
+        <at50>./_inc/images/battery-icon-50.svg</at50>
+        <at25>./_inc/images/battery-icon-25.svg</at25>
+        <empty>./_inc/images/battery-icon-0.svg</empty>
+        <incharge>./_inc/images/battery-icon-charging.svg</incharge>
+      </batteryIcon>
+      <networkIcon name="system-network-icon" extra="true">
+        <maxSize>1 1</maxSize>
+        <color>${secondaryColor}</color>
+        <networkIcon>./_inc/images/network-icon-on.svg</networkIcon>
+        <planemodeIcon>./_inc/images/network-icon-off.svg</planemodeIcon>
+      </networkIcon>
+    </stackpanel>
   </view>
 
 </theme>

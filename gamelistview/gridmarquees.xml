@@ -4,7 +4,7 @@
 	<customView name="gridmarquees" inherits="grid" displayName="Grid (Marquees)">
 
 		<imagegrid name="gamegrid">
-			<autoLayout>4 0</autoLayout>
+			<autoLayout>3 0</autoLayout>
 			<cellProportion>1.75</cellProportion>
 		</imagegrid>
 
@@ -28,7 +28,6 @@
 					<visible>true</visible>
 					<color>${tertiaryColor}</color>
 					<path>./_inc/images/bg_color.png</path>
-					<roundCorners>${corners}</roundCorners>
 					<storyboard event="activate" repeat="forever">
 						<animation property="color" from="${tertiaryColor}" to="${secondaryColor}"/>
 					</storyboard>
@@ -48,7 +47,6 @@
 					<color ifSubset="gamegridcolor:blue">182580</color>
 					<color ifSubset="gamegridcolor:tertiary">${tertiaryColor}</color>
 					<path>./_inc/images/bg_color.png</path>
-					<roundCorners>${corners}</roundCorners>
 					<scale>0.963</scale>
 				</image>
 				<image name="GameArt" extra="true">
@@ -80,13 +78,13 @@
 					<color>000000</color>
 					<opacity>${shadeStrength}</opacity>
 					<path>./_inc/images/bg_color.png</path>
-					<roundCorners>${corners}</roundCorners>
 					<storyboard event="activate">
 						<animation property="opacity" from="${shadeStrength}" to="0" duration="150" mode="linear"/>
 					</storyboard>
 					<storyboard event="deactivate">
 						<animation property="opacity" from="0" to="${shadeStrength}" duration="150" mode="linear"/>
 					</storyboard>
+					<scale>1.005</scale>
 					<zIndex>30</zIndex>
 				</image>
 
@@ -95,8 +93,8 @@
 					<maxSize>0.199 0.199</maxSize>
 					<visible>{game:favorite}</visible>
 					<horizontalAlignment>right</horizontalAlignment>
+					<verticalAlignment>bottom</verticalAlignment>
 					<path>./_inc/images/favorite.svg</path>
-					<roundCorners>${corners}</roundCorners>
 					<color>808080</color>
 					<storyboard event="activate">
 						<animation property="color" from="808080" to="${secondaryColor}" duration="150" mode="linear"/>
@@ -107,10 +105,9 @@
 				</image>
 
 				<image name="SaveStateIndicator">
-					<pos>0.8 0.8</pos>
+					<pos>0.8 0.798</pos>
 					<maxSize>0.199 0.199</maxSize>
 					<horizontalAlignment>right</horizontalAlignment>
-					<roundCorners>${corners}</roundCorners>
 					<visible>{game:hasSaveState}</visible>
 					<path>./_inc/images/SaveState.svg</path>
 					<color>${tertiaryColor}</color>

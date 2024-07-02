@@ -78,12 +78,13 @@
 		</imagegrid>
 
 		<gridtile name="default">
+			<backgroundCornerSize>0 0</backgroundCornerSize>
 			<imageColor>FFFFFFFF</imageColor>
 			<imageSizeMode>minSize</imageSizeMode>
 			<imageSizeMode if="{system.name} == 'retrobat'">maxSize</imageSizeMode>
 			<backgroundEdgeColor>${tertiaryColor}</backgroundEdgeColor>
 			<backgroundCenterColor>${tertiaryColor}</backgroundCenterColor>
-			<padding>8 8</padding>
+			<padding>3 3</padding>
 
 			<image name="favoriteIndicator">
 				<pos>0.8 0</pos>
@@ -91,25 +92,23 @@
 				<visible>{game:favorite}</visible>
 				<horizontalAlignment>right</horizontalAlignment>
 				<path>./_inc/images/favorite.svg</path>
-				<roundCorners>${corners}</roundCorners>
 				<color>808080</color>
 				<storyboard event="activate">
-					<animation property="color" from="808080" to="${secondaryColor}" duration="150" mode="linear"/>
+					<animation property="color" from="${tertiaryColor}" to="${secondaryColor}" duration="150" mode="linear"/>
 				</storyboard>
 				<storyboard event="deactivate">
-					<animation property="color" from="${secondaryColor}" to="808080" duration="150" mode="linear"/>
-				</storyboard>
+					<animation property="color" from="${secondaryColor}" to="${tertiaryColor}" duration="150" mode="linear"/>
+				</storyboard>				
 			</image>
 
 			<image name="saveStateIndicator">
-				<pos>0.8 0.8</pos>
+				<pos>0.8 0.799</pos>
 				<maxSize>0.199 0.199</maxSize>
 				<horizontalAlignment>right</horizontalAlignment>
-				<roundCorners>${corners}</roundCorners>
+				<verticalAlignment>bottom</verticalAlignment>
 				<visible>{game:hasSaveState}</visible>
 				<path>./_inc/images/SaveState.svg</path>
 				<color>${tertiaryColor}</color>
-				<scale>0.98</scale>
 				<storyboard event="activate">
 					<animation property="color" from="${tertiaryColor}" to="${secondaryColor}" duration="150" mode="linear"/>
 				</storyboard>
@@ -145,13 +144,13 @@
 				<color>000000</color>
 				<opacity>0.4</opacity>
 				<path>./_inc/images/bg_color.png</path>
-				<roundCorners>${corners}</roundCorners>
 				<storyboard event="activate">
 					<animation property="opacity" from="0.4" to="0" duration="150" mode="linear"/>
 				</storyboard>
 				<storyboard event="deactivate">
 					<animation property="opacity" from="0" to="0.4" duration="150" mode="linear"/>
 				</storyboard>
+				<scale>1.005</scale>
 				<zIndex>30</zIndex>
 			</image>
 		</gridtile>

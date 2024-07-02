@@ -1,40 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
-	<customView name="gridthumbnails" inherits="grid" displayName="Grid (Thumbnails)">
+	<customView name="gridcartridges" inherits="grid" displayName="Grid (Cartridges)">
 
 		<imagegrid name="gamegrid">
-			<autoLayout>0 3</autoLayout>
-			<cellProportion>0.75</cellProportion>
-			<cellProportion if="{system.name} == 'amigacd32'">1</cellProportion>
-			<cellProportion if="{system.name} == 'lynx'">0.85</cellProportion>
-			<cellProportion if="{system.name} == '3do'">1.1</cellProportion>
-			<cellProportion if="{system.name} == 'megaduck'">1.35</cellProportion>
-
-			<autoLayout if="{system.name} == 'gw'">0 4</autoLayout>
-			<cellProportion if="{system.name} == 'gw'">1.75</cellProportion>
-
-			<cellProportion if="{system.name} == 'n64'">1.25</cellProportion>
-			<cellProportion if="{system.name} == 'fds'">1</cellProportion>
-			<cellProportion if="{system.name} == 'gb'">1</cellProportion>
-			<cellProportion if="{system.name} == 'snes'">1.25</cellProportion>
-			<cellProportion if="{system.name} == 'satellaview'">0.6</cellProportion>
-			<cellProportion if="{system.name} == 'virtualboy'">1</cellProportion>
-			<cellProportion if="{system.name} == 'gbc'">1</cellProportion>
-			<cellProportion if="{system.name} == '3ds'">1</cellProportion>
-			<cellProportion if="{system.name} == 'gba'">1</cellProportion>
-			<cellProportion if="{system.name} == 'pokemini'">1</cellProportion>
-			<cellProportion if="{system.name} == 'nds'">1</cellProportion>
-			<cellProportion if="{system.name} == 'switch'">0.65</cellProportion>
-			<cellProportion if="{system.name} == 'neogeocd'">1</cellProportion>
-			<cellProportion if="{system.name} == 'ngp'">0.9</cellProportion>
-			<cellProportion if="{system.name} == 'ngpc'">0.9</cellProportion>
-			<cellProportion if="{system.name} == 'psx'">1</cellProportion>
-			<cellProportion if="{system.name} == 'ps3'">0.85</cellProportion>
-			<cellProportion if="{system.name} == 'psp'">0.6</cellProportion>
-			<cellProportion if="{system.name} == 'dreamcast'">1.1</cellProportion>
-			<cellProportion if="{system.name} == 'windows3x'">0.85</cellProportion>
-			<cellProportion if="{system.name} == 'retrobat'">1</cellProportion>
+			<autoLayout>4 0</autoLayout>
+			<cellProportion>1</cellProportion>
 		</imagegrid>
 
 		<imagegrid name="gamegrid">
@@ -64,28 +35,40 @@
 						<animation property="color" from="${secondaryColor}" to="${tertiaryColor}"/>
 					</storyboard>
 				</image>
-
+				<image name="backgroundInner" extra="true">
+					<origin>0.5 0.5</origin>
+					<pos>0.5 0.5</pos>
+					<size>1 1</size>
+					<zIndex>3</zIndex>
+					<color ifSubset="gamegridcolor:green">0e7a0d</color>
+					<color ifSubset="gamegridcolor:red">e4000f</color>
+					<color ifSubset="gamegridcolor:black">080808</color>
+					<color ifSubset="gamegridcolor:white">f4f4f4</color>
+					<color ifSubset="gamegridcolor:blue">182580</color>
+					<color ifSubset="gamegridcolor:tertiary">${tertiaryColor}</color>
+					<path>./_inc/images/bg_color.png</path>
+					<scale>0.963</scale>
+				</image>
 				<image name="GameArt" extra="true">
-					<path>firstfile({game:thumbnail},{game:image})</path>
+					<path>firstfile({game:cartridge},directory({game:path}) + "/images/" + {game:stem} + "-cartridge.png")</path>
 					<pos>0.5</pos>
 					<origin>0.5</origin>
-					<minSize>1 1</minSize>
-					<maxSize if="{system.name} == 'retrobat'">1 1</maxSize>
+					<maxSize>1 1</maxSize>
 					<linearSmooth>true</linearSmooth>
 					<zIndex>3</zIndex>
-					<scale>0.963</scale>
+					<scale>0.95</scale>
 				</image>
-				<image name="GameArtDefault" extra="true">
-					<visible>!exists({game:thumbnail}) && !exists({game:image})</visible>
-					<path>./art/defgame.png</path>
-					<pos>0.5</pos>
-					<origin>0.5</origin>
-					<minSize>1 1</minSize>
-					<linearSmooth>true</linearSmooth>
-					<zIndex>3</zIndex>
-					<scale>0.963</scale>
-				</image>
-
+				<text name="fallbackText" alignment="center" multiLine="true">
+					<visible>!exists({game:cartridge}) && !exists(directory({game:path}) + "/images/" + {game:stem} + "-cartridge.png")</visible>
+					<text>{game:name}</text>
+					<fontSize>0.04</fontSize>
+					<color>white</color>
+					<glowOffset>1 1</glowOffset>
+					<glowColor>0000002a</glowColor>
+					<glowSize>3</glowSize>
+					<scale>0.8</scale>
+					<zIndex>10</zIndex>
+				</text>
 				<image name="GameArtShade" extra="true">
 					<origin>0 0</origin>
 					<pos>0 0</pos>
@@ -105,9 +88,9 @@
 					<zIndex>30</zIndex>
 				</image>
 
-				<image name="favoriteIndicator">
-					<pos>0.798 0</pos>
-					<maxSize>0.2 0.2</maxSize>
+				<image>
+					<pos>0.8 0</pos>
+					<maxSize>0.199 0.199</maxSize>
 					<visible>{game:favorite}</visible>
 					<horizontalAlignment>right</horizontalAlignment>
 					<path>./_inc/images/favorite.svg</path>
@@ -120,8 +103,8 @@
 					</storyboard>
 				</image>
 
-				<image name="saveStateIndicator">
-					<pos>0.798 0.798</pos>
+				<image name="SaveStateIndicator">
+					<pos>0.8 0.8</pos>
 					<maxSize>0.199 0.199</maxSize>
 					<horizontalAlignment>right</horizontalAlignment>
 					<verticalAlignment>bottom</verticalAlignment>
@@ -135,6 +118,7 @@
 						<animation property="color" from="${secondaryColor}" to="${tertiaryColor}" duration="150" mode="linear"/>
 					</storyboard>
 				</image>
+
 			</itemTemplate>
 		</imagegrid>
 	</customView>
