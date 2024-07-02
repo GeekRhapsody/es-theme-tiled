@@ -5,19 +5,6 @@
     <shadeStrength>0.4</shadeStrength>
   </variables>
 
-  <subset name="aspect-ratio" displayName="Aspect Ratio">
-    <include if="{screen.ratio} == '16/9'" name="16-9" displayName="16:9 (Detected)" />
-    <include if="{screen.ratio} == '16/10'" name="16-10" displayName="16:10 (Detected)" />
-    <include if="{screen.ratio} == '4/3'" name="4-3" displayName="4:3 (Detected)" />
-    <include if="{screen.ratio} == '3/2'" name="3-2" displayName="3:2 (Detected)" />
-    <include name="16-9" displayName="16:9" />
-    <include name="16-10" displayName="16:10" />
-    <include name="4-3" displayName="4:3" />
-    <include name="3-2" displayName="3:2" />
-    <include name="5-3" displayName="5:3" />
-    <include name="1-1" displayName="1:1" />
-  </subset>
-
   <subset name="factbox" displayName="Factbox">
     <include name="yes" displayName="Yes"/>
     <include name="no" displayName="No"/>
@@ -174,21 +161,56 @@
       <visible>false</visible>
     </controllerActivity>
     <batteryIndicator name="batteryIndicator">
-      <pos>0.963 0.012</pos>
-      <color>${secondaryColor}</color>
+      <visible>false</visible>
     </batteryIndicator>
     <text name="clock">
-      <pos>0.932 0.95</pos>
-      <size>0.06 0</size>
-      <color>${secondaryColor}</color>
-      <fontSize>0.025</fontSize>
-      <horizontalAlignment>right</horizontalAlignment>
-      <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
-      <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
-      <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
-      <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+      <visible>false</visible>
     </text>
 
+    <stackpanel name="system-indicators" extra="true">
+      <visible>true</visible>
+      <h>0.025</h>
+      <size>0.1 0.07</size>
+      <pos>0.89 0.957</pos>      <!-- 0 20 -->
+      <orientation>horizontal</orientation>
+      <separator>6</separator>
+      <horizontalAlignment>right</horizontalAlignment>
+      <reverse>true</reverse>
+      <clock name="system-clock" extra="true">
+        <color>${secondaryColor}</color>
+        <fontSize>0.025</fontSize>
+        <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
+        <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
+        <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
+        <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+        <lineSpacing>1</lineSpacing>
+      </clock>      
+      <batteryText name="system-battery-text" extra="true">
+        <color>${secondaryColor}</color>
+        <fontSize>0.025</fontSize>
+        <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
+        <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
+        <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
+        <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+        <lineSpacing>1</lineSpacing>
+      </batteryText>
+      <batteryIcon name="system-battery-icon" extra="true">
+        <maxSize>1 1</maxSize>
+        <color>${secondaryColor}</color>
+        <full>./_inc/images/battery-icon-100.svg</full>
+        <at75>./_inc/images/battery-icon-75.svg</at75>
+        <at50>./_inc/images/battery-icon-50.svg</at50>
+        <at25>./_inc/images/battery-icon-25.svg</at25>
+        <empty>./_inc/images/battery-icon-0.svg</empty>
+        <incharge>./_inc/images/battery-icon-charging.svg</incharge>
+      </batteryIcon>
+      <networkIcon name="system-network-icon" extra="true">
+        <maxSize>1 1</maxSize>
+        <color>${secondaryColor}</color>
+        <networkIcon>./_inc/images/network-icon-on.svg</networkIcon>
+        <planemodeIcon>./_inc/images/network-icon-off.svg</planemodeIcon>
+      </networkIcon>
+    </stackpanel>
   </view>
 
 </theme>

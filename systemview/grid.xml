@@ -192,31 +192,5 @@
       <fontSize>0.025</fontSize>
       <zIndex>5</zIndex>
     </text>
-    <helpsystem name="help">
-      <fontPath>./_inc/fonts/Cabin-Bold.ttf</fontPath>
-      <fontSize>0.025</fontSize>
-      <pos>0.01 0.97</pos>
-      <textColor>${secondaryColor}</textColor>
-      <iconColor>${secondaryColor}</iconColor>
-    </helpsystem>
-
-    <controllerActivity name="controllerActivity" extra="true">
-      <pos>0.11 0.612</pos>
-      <size>0.185 0.023</size>
-      <itemSpacing>0.003</itemSpacing>
-      <color>${secondaryColor}</color>
-      <imagePath>./art/gamepad.svg</imagePath>
-      <gunPath>./art/gun.svg</gunPath>
-      <wheelPath>./art/wheel.svg</wheelPath>
-      <activityColor>A0A0FFC0</activityColor>
-      <hotkeyColor>FFA0A0C0</hotkeyColor>
-    </controllerActivity>
-
-    <batteryIndicator name="batteryIndicator" extra="true">
-      <pos>0.2 0.75</pos>
-      <color>${secondaryColor}</color>
-      <itemSpacing>1</itemSpacing>
-    </batteryIndicator>
-
   </view>
 </theme>
