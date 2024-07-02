@@ -5,6 +5,19 @@
     <shadeStrength>0.4</shadeStrength>
   </variables>
 
+  <subset name="aspect-ratio" displayName="Aspect Ratio">
+    <include if="{screen.ratio} == '16/9'" name="16-9" displayName="16:9 (Detected)" />
+    <include if="{screen.ratio} == '16/10'" name="16-10" displayName="16:10 (Detected)" />
+    <include if="{screen.ratio} == '4/3'" name="4-3" displayName="4:3 (Detected)" />
+    <include if="{screen.ratio} == '3/2'" name="3-2" displayName="3:2 (Detected)" />
+    <include name="16-9" displayName="16:9" />
+    <include name="16-10" displayName="16:10" />
+    <include name="4-3" displayName="4:3" />
+    <include name="3-2" displayName="3:2" />
+    <include name="5-3" displayName="5:3" />
+    <include name="1-1" displayName="1:1" />
+  </subset>
+
   <subset name="factbox" displayName="Factbox">
     <include name="yes" displayName="Yes"/>
     <include name="no" displayName="No"/>
@@ -134,9 +147,10 @@
 
     <helpsystem name="help">
       <fontSize>0.025</fontSize>
-      <pos>0.035 0.957</pos>
+      <pos>0.012 0.957</pos>
       <textColor>${secondaryColor}</textColor>
       <iconColor>${secondaryColor}</iconColor>
+      <backgroundColor>FF0000</backgroundColor>
       <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
       <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
       <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
@@ -167,12 +181,13 @@
       <activityColor>A0A0FFC0</activityColor>
       <hotkeyColor>FFA0A0C0</hotkeyColor>
     </controllerActivity>
-    <batteryIndicator name="batteryIndicator">
+    <batteryIndicator name="batteryIndicator">      
       <pos>0.963 0.012</pos>
       <color>${secondaryColor}</color>
     </batteryIndicator>
     <text name="clock">
-      <pos>0.915 0.95</pos>
+      <pos>0.932 0.95</pos>
+      <size>0.06 0</size>
       <color>${secondaryColor}</color>
       <fontSize>0.025</fontSize>
       <horizontalAlignment>right</horizontalAlignment>
