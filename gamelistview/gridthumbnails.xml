@@ -57,7 +57,6 @@
 					<visible>true</visible>
 					<color>${tertiaryColor}</color>
 					<path>./_inc/images/bg_color.png</path>
-					<roundCorners>${corners}</roundCorners>
 					<storyboard event="activate" repeat="forever">
 						<animation property="color" from="${tertiaryColor}" to="${secondaryColor}"/>
 					</storyboard>
@@ -73,7 +72,6 @@
 					<minSize>1 1</minSize>
 					<maxSize if="{system.name} == 'retrobat'">1 1</maxSize>
 					<linearSmooth>true</linearSmooth>
-					<roundCorners>${corners}</roundCorners>
 					<zIndex>3</zIndex>
 					<scale>0.963</scale>
 				</image>
@@ -84,7 +82,6 @@
 					<origin>0.5</origin>
 					<minSize>1 1</minSize>
 					<linearSmooth>true</linearSmooth>
-					<roundCorners>${corners}</roundCorners>
 					<zIndex>3</zIndex>
 					<scale>0.963</scale>
 				</image>
@@ -98,7 +95,6 @@
 					<color>000000</color>
 					<opacity>${shadeStrength}</opacity>
 					<path>./_inc/images/bg_color.png</path>
-					<roundCorners>${corners}</roundCorners>
 					<storyboard event="activate">
 						<animation property="opacity" from="${shadeStrength}" to="0" duration="150" mode="linear"/>
 					</storyboard>
@@ -114,7 +110,6 @@
 					<visible>{game:favorite}</visible>
 					<horizontalAlignment>right</horizontalAlignment>
 					<path>./_inc/images/favorite.svg</path>
-					<roundCorners>${corners}</roundCorners>
 					<color>808080</color>
 					<storyboard event="activate">
 						<animation property="color" from="808080" to="${secondaryColor}" duration="150" mode="linear"/>
@@ -129,7 +124,6 @@
 					<maxSize>0.199 0.199</maxSize>
 					<horizontalAlignment>right</horizontalAlignment>
 					<verticalAlignment>bottom</verticalAlignment>
-					<roundCorners>${corners}</roundCorners>
 					<visible>{game:hasSaveState}</visible>
 					<path>./_inc/images/SaveState.svg</path>
 					<color>${tertiaryColor}</color>
