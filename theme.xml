@@ -115,6 +115,7 @@
   <include>./gamelistview/grid.xml</include>
   <include>./gamelistview/gridthumbnails.xml</include>
   <include>./gamelistview/gridmarquees.xml</include>
+  <include>./gamelistview/gridcartridges.xml</include>
   <include>./gamelistview/detailed.xml</include>
   <include>./gamelistview/basic.xml</include>
   <include>./menu.xml</include>
@@ -133,7 +134,7 @@
 
     <helpsystem name="help">
       <fontSize>0.025</fontSize>
-      <pos>0.01 0.97</pos>
+      <pos>0.035 0.957</pos>
       <textColor>${secondaryColor}</textColor>
       <iconColor>${secondaryColor}</iconColor>
       <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
@@ -170,6 +171,17 @@
       <pos>0.963 0.012</pos>
       <color>${secondaryColor}</color>
     </batteryIndicator>
+    <text name="clock">
+      <pos>0.915 0.95</pos>
+      <color>${secondaryColor}</color>
+      <fontSize>0.025</fontSize>
+      <horizontalAlignment>right</horizontalAlignment>
+      <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
+      <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
+      <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
+      <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+    </text>
+
   </view>
 
 </theme>
