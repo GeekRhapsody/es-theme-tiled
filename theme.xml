@@ -171,17 +171,9 @@
 
   <view name="screen">
     <controllerActivity name="controllerActivity">
-      <pos>0.008 0.012</pos>
-      <size>0.185 0.023</size>
-      <itemSpacing>0.003</itemSpacing>
-      <color>${secondaryColor}</color>
-      <imagePath>./art/gamepad.svg</imagePath>
-      <gunPath>./art/gun.svg</gunPath>
-      <wheelPath>./art/wheel.svg</wheelPath>
-      <activityColor>A0A0FFC0</activityColor>
-      <hotkeyColor>FFA0A0C0</hotkeyColor>
+      <visible>false</visible>
     </controllerActivity>
-    <batteryIndicator name="batteryIndicator">      
+    <batteryIndicator name="batteryIndicator">
       <pos>0.963 0.012</pos>
       <color>${secondaryColor}</color>
     </batteryIndicator>
