@@ -101,11 +101,12 @@
 					<storyboard event="deactivate">
 						<animation property="opacity" from="0" to="${shadeStrength}" duration="150" mode="linear"/>
 					</storyboard>
+					<scale>1.1</scale>
 					<zIndex>30</zIndex>
 				</image>
 
-				<image>
-					<pos>0.8 0</pos>
+				<image name="favoriteIndicator">
+					<pos>0.798 0</pos>
 					<maxSize>0.2 0.2</maxSize>
 					<visible>{game:favorite}</visible>
 					<horizontalAlignment>right</horizontalAlignment>
@@ -120,7 +121,7 @@
 				</image>
 
 				<image name="saveStateIndicator">
-					<pos>0.8 0.8</pos>
+					<pos>0.798 0.798</pos>
 					<maxSize>0.199 0.199</maxSize>
 					<horizontalAlignment>right</horizontalAlignment>
 					<verticalAlignment>bottom</verticalAlignment>

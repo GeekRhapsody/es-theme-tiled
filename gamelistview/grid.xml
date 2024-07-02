@@ -94,21 +94,20 @@
 				<path>./_inc/images/favorite.svg</path>
 				<color>808080</color>
 				<storyboard event="activate">
-					<animation property="color" from="808080" to="${secondaryColor}" duration="150" mode="linear"/>
+					<animation property="color" from="${tertiaryColor}" to="${secondaryColor}" duration="150" mode="linear"/>
 				</storyboard>
 				<storyboard event="deactivate">
-					<animation property="color" from="${secondaryColor}" to="808080" duration="150" mode="linear"/>
-				</storyboard>
+					<animation property="color" from="${secondaryColor}" to="${tertiaryColor}" duration="150" mode="linear"/>
+				</storyboard>				
 			</image>
 
 			<image name="saveStateIndicator">
-				<pos>0.8 0.8</pos>
+				<pos>0.8 0.799</pos>
 				<maxSize>0.199 0.199</maxSize>
 				<horizontalAlignment>right</horizontalAlignment>
 				<visible>{game:hasSaveState}</visible>
 				<path>./_inc/images/SaveState.svg</path>
 				<color>${tertiaryColor}</color>
-				<scale>0.98</scale>
 				<storyboard event="activate">
 					<animation property="color" from="${tertiaryColor}" to="${secondaryColor}" duration="150" mode="linear"/>
 				</storyboard>
@@ -150,6 +149,7 @@
 				<storyboard event="deactivate">
 					<animation property="opacity" from="0" to="0.4" duration="150" mode="linear"/>
 				</storyboard>
+				<scale>1.1</scale>
 				<zIndex>30</zIndex>
 			</image>
 		</gridtile>

@@ -4,7 +4,7 @@
 	<customView name="gridmarquees" inherits="grid" displayName="Grid (Marquees)">
 
 		<imagegrid name="gamegrid">
-			<autoLayout>4 0</autoLayout>
+			<autoLayout>3 0</autoLayout>
 			<cellProportion>1.75</cellProportion>
 		</imagegrid>
 
@@ -84,6 +84,7 @@
 					<storyboard event="deactivate">
 						<animation property="opacity" from="0" to="${shadeStrength}" duration="150" mode="linear"/>
 					</storyboard>
+					<scale>1.1</scale>
 					<zIndex>30</zIndex>
 				</image>
 
@@ -103,7 +104,7 @@
 				</image>
 
 				<image name="SaveStateIndicator">
-					<pos>0.8 0.8</pos>
+					<pos>0.8 0.798</pos>
 					<maxSize>0.199 0.199</maxSize>
 					<horizontalAlignment>right</horizontalAlignment>
 					<visible>{game:hasSaveState}</visible>
