@@ -44,6 +44,7 @@
     <include name="modern" displayName="Modern">./art/modern.xml</include>
     <include name="nsoish" displayName="NSOish">./art/nsoish.xml</include>
     <include name="carbon" displayName="Carbon">./art/carbon.xml</include>
+    <include name="logos" displayName="Logos">./art/carbon.xml</include>
   </subset>
 
   <subset name="systemview" displayName="System View">
