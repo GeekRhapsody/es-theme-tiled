@@ -222,7 +222,7 @@
   <view name="grid,detailed,basic">
     <image name="systemLogo" extra="true">
       <maxSize>0.200 0.039</maxSize>
-      <pos>0.022 0.006</pos>
+      <pos>0.012 0.005</pos>
       <padding>0.005 0.005 0.005 0.005</padding>
       <horizontalAlignment>left</horizontalAlignment>
       <verticalAlignment>center</verticalAlignment>
