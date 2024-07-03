@@ -31,10 +31,20 @@
     <include name="gb" displayName="GameBoy"/>
   </subset>
 
+  <subset name="iconset" displayName="Help Icons">
+    <include name="default" displayName="Default"/>
+    <include name="arcade" displayName="Arcade"/>
+    <include name="psx" displayName="Playstation"/>
+    <include name="snes" displayName="SNES"/>
+    <include name="switch" displayName="Switch"/>
+    <include name="xbox" displayName="XBox"/>
+  </subset>
+
   <subset name="artstyle" displayName="Art Style">
     <include name="modern" displayName="Modern">./art/modern.xml</include>
     <include name="nsoish" displayName="NSOish">./art/nsoish.xml</include>
     <include name="carbon" displayName="Carbon">./art/carbon.xml</include>
+    <include name="logos" displayName="Logos">./art/carbon.xml</include>
   </subset>
 
   <subset name="systemview" displayName="System View">
@@ -133,7 +143,7 @@
     </image>
 
     <helpsystem name="help">
-      <fontSize>0.025</fontSize>
+      <fontSize>0.024</fontSize>
       <pos>0.012 0.957</pos>
       <textColor>${secondaryColor}</textColor>
       <iconColor>${secondaryColor}</iconColor>
@@ -142,13 +152,78 @@
       <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
       <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
       <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+      <iconA>:/help/buttons_east.svg</iconA>
+      <iconB>:/help/buttons_south.svg</iconB>
+      <iconX>:/help/buttons_north.svg</iconX>
+      <iconY>:/help/buttons_west.svg</iconY>
+
+      <iconUpDown ifSubset="iconset:arcade">./_inc/iconsets/arcade/updown.png</iconUpDown>
+      <iconLeftRight ifSubset="iconset:arcade">./_inc/iconsets/arcade/leftright.png</iconLeftRight>
+      <iconUpDownLeftRight ifSubset="iconset:arcade">./_inc/iconsets/arcade/all.png</iconUpDownLeftRight>
+      <iconA ifSubset="iconset:arcade">./_inc/iconsets/arcade/a.png</iconA>
+      <iconB ifSubset="iconset:arcade">./_inc/iconsets/arcade/b.png</iconB>
+      <iconX ifSubset="iconset:arcade">./_inc/iconsets/arcade/x.png</iconX>
+      <iconY ifSubset="iconset:arcade">./_inc/iconsets/arcade/y.png</iconY>
+      <iconL ifSubset="iconset:arcade">./_inc/iconsets/arcade/l.png</iconL>
+      <iconR ifSubset="iconset:arcade">./_inc/iconsets/arcade/r.png</iconR>
+      <iconStart ifSubset="iconset:arcade">./_inc/iconsets/arcade/start.png</iconStart>
+      <iconSelect ifSubset="iconset:arcade">./_inc/iconsets/arcade/select.png</iconSelect>
+
+      <iconUpDown ifSubset="iconset:psx">./_inc/iconsets/psx/updown.png</iconUpDown>
+      <iconLeftRight ifSubset="iconset:psx">./_inc/iconsets/psx/leftright.png</iconLeftRight>
+      <iconUpDownLeftRight ifSubset="iconset:psx">./_inc/iconsets/psx/all.png</iconUpDownLeftRight>
+      <iconA ifSubset="iconset:psx">./_inc/iconsets/psx/a.png</iconA>
+      <iconB ifSubset="iconset:psx">./_inc/iconsets/psx/b.png</iconB>
+      <iconX ifSubset="iconset:psx">./_inc/iconsets/psx/x.png</iconX>
+      <iconY ifSubset="iconset:psx">./_inc/iconsets/psx/y.png</iconY>
+      <iconL ifSubset="iconset:psx">./_inc/iconsets/psx/l.png</iconL>
+      <iconR ifSubset="iconset:psx">./_inc/iconsets/psx/r.png</iconR>
+      <iconStart ifSubset="iconset:psx">./_inc/iconsets/psx/start.png</iconStart>
+      <iconSelect ifSubset="iconset:psx">./_inc/iconsets/psx/select.png</iconSelect>
+
+      <iconUpDown ifSubset="iconset:snes">./_inc/iconsets/snes/updown.png</iconUpDown>
+      <iconLeftRight ifSubset="iconset:snes">./_inc/iconsets/snes/leftright.png</iconLeftRight>
+      <iconUpDownLeftRight ifSubset="iconset:snes">./_inc/iconsets/snes/all.png</iconUpDownLeftRight>
+      <iconA ifSubset="iconset:snes">./_inc/iconsets/snes/a.png</iconA>
+      <iconB ifSubset="iconset:snes">./_inc/iconsets/snes/b.png</iconB>
+      <iconX ifSubset="iconset:snes">./_inc/iconsets/snes/x.png</iconX>
+      <iconY ifSubset="iconset:snes">./_inc/iconsets/snes/y.png</iconY>
+      <iconL ifSubset="iconset:snes">./_inc/iconsets/snes/l.png</iconL>
+      <iconR ifSubset="iconset:snes">./_inc/iconsets/snes/r.png</iconR>
+      <iconStart ifSubset="iconset:snes">./_inc/iconsets/snes/start.png</iconStart>
+      <iconSelect ifSubset="iconset:snes">./_inc/iconsets/snes/select.png</iconSelect>
+
+      <iconUpDown ifSubset="iconset:switch">./_inc/iconsets/switch/updown.png</iconUpDown>
+      <iconLeftRight ifSubset="iconset:switch">./_inc/iconsets/switch/leftright.png</iconLeftRight>
+      <iconUpDownLeftRight ifSubset="iconset:switch">./_inc/iconsets/switch/all.png</iconUpDownLeftRight>
+      <iconA ifSubset="iconset:switch">./_inc/iconsets/switch/a.png</iconA>
+      <iconB ifSubset="iconset:switch">./_inc/iconsets/switch/b.png</iconB>
+      <iconX ifSubset="iconset:switch">./_inc/iconsets/switch/x.png</iconX>
+      <iconY ifSubset="iconset:switch">./_inc/iconsets/switch/y.png</iconY>
+      <iconL ifSubset="iconset:switch">./_inc/iconsets/switch/l.png</iconL>
+      <iconR ifSubset="iconset:switch">./_inc/iconsets/switch/r.png</iconR>
+      <iconStart ifSubset="iconset:switch">./_inc/iconsets/switch/start.png</iconStart>
+      <iconSelect ifSubset="iconset:switch">./_inc/iconsets/switch/select.png</iconSelect>
+
+      <iconUpDown ifSubset="iconset:xbox">./_inc/iconsets/xbox/updown.png</iconUpDown>
+      <iconLeftRight ifSubset="iconset:xbox">./_inc/iconsets/xbox/leftright.png</iconLeftRight>
+      <iconUpDownLeftRight ifSubset="iconset:xbox">./_inc/iconsets/xbox/all.png</iconUpDownLeftRight>
+      <iconA ifSubset="iconset:xbox">./_inc/iconsets/xbox/a.png</iconA>
+      <iconB ifSubset="iconset:xbox">./_inc/iconsets/xbox/b.png</iconB>
+      <iconX ifSubset="iconset:xbox">./_inc/iconsets/xbox/x.png</iconX>
+      <iconY ifSubset="iconset:xbox">./_inc/iconsets/xbox/y.png</iconY>
+      <iconL ifSubset="iconset:xbox">./_inc/iconsets/xbox/l.png</iconL>
+      <iconR ifSubset="iconset:xbox">./_inc/iconsets/xbox/r.png</iconR>
+      <iconStart ifSubset="iconset:xbox">./_inc/iconsets/xbox/start.png</iconStart>
+      <iconSelect ifSubset="iconset:xbox">./_inc/iconsets/xbox/select.png</iconSelect>
+
     </helpsystem>
   </view>
 
   <view name="grid,detailed,basic">
     <image name="systemLogo" extra="true">
       <maxSize>0.200 0.039</maxSize>
-      <pos>0.022 0.006</pos>
+      <pos>0.012 0.005</pos>
       <padding>0.005 0.005 0.005 0.005</padding>
       <horizontalAlignment>left</horizontalAlignment>
       <verticalAlignment>center</verticalAlignment>
@@ -171,7 +246,7 @@
       <visible>true</visible>
       <h>0.025</h>
       <size>0.1 0.07</size>
-      <pos>0.89 0.957</pos>      <!-- 0 20 -->
+      <pos>0.89 0.957</pos>
       <orientation>horizontal</orientation>
       <separator>6</separator>
       <horizontalAlignment>right</horizontalAlignment>
@@ -184,7 +259,7 @@
         <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
         <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
         <lineSpacing>1</lineSpacing>
-      </clock>      
+      </clock>
       <batteryText name="system-battery-text" extra="true">
         <color>${secondaryColor}</color>
         <fontSize>0.025</fontSize>

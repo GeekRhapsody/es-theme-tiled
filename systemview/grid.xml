@@ -69,7 +69,7 @@
       <scrollbarCorner>0.49</scrollbarCorner>
       <scrollbarSize>0.005</scrollbarSize>
       <scrollbarAlignment>right</scrollbarAlignment>
-      <itemTemplate>
+      <itemTemplate ifSubset="artstyle:modern">
         <storyboard event="activate">
           <animation property="scale" to="1.05" duration="150" mode="easeOut"/>
         </storyboard>
@@ -96,13 +96,13 @@
           <origin>0.5 0.5</origin>
           <pos>0.5 0.5</pos>
           <size>1 1</size>
-          <zIndex>3</zIndex> 
+          <zIndex>3</zIndex>
           <color>182580</color>
-          <color ifSubset="sysgridcolor:tertiary">${tertiaryColor}</color>  
+          <color ifSubset="sysgridcolor:tertiary">${tertiaryColor}</color>
           <color ifSubset="sysgridcolor:green">0e7a0d</color>
           <color ifSubset="sysgridcolor:red">e4000f</color>
-          <color ifSubset="sysgridcolor:black">080808</color>                    
-          <color ifSubset="sysgridcolor:blue">182580</color>          
+          <color ifSubset="sysgridcolor:black">080808</color>
+          <color ifSubset="sysgridcolor:blue">182580</color>
           <path>./_inc/images/bg_color.png</path>
           <roundCorners>${corners}</roundCorners>
           <scale>0.963</scale>
@@ -165,6 +165,292 @@
           </storyboard>
         </image>
       </itemTemplate>
+
+      <itemTemplate ifSubset="artstyle:nsoish">
+        <storyboard event="activate">
+          <animation property="scale" to="1.05" duration="150" mode="easeOut"/>
+        </storyboard>
+        <storyboard event="deactivate">
+          <animation property="scale" to="1" duration="250" mode="easeOut"/>
+        </storyboard>
+        <image name="background" extra="true">
+          <origin>0 0</origin>
+          <pos>0 0</pos>
+          <size>1 1</size>
+          <zIndex>2</zIndex>
+          <visible>true</visible>
+          <color>${tertiaryColor}</color>
+          <path>./_inc/images/bg_color.png</path>
+          <roundCorners>${corners}</roundCorners>
+          <storyboard event="activate" repeat="forever">
+            <animation property="color" from="${tertiaryColor}" to="${secondaryColor}"/>
+          </storyboard>
+          <storyboard event="deactivate">
+            <animation property="color" from="${secondaryColor}" to="${tertiaryColor}"/>
+          </storyboard>
+        </image>
+        <image name="backgroundInner" extra="true">
+          <origin>0.5 0.5</origin>
+          <pos>0.5 0.5</pos>
+          <size>1 1</size>
+          <zIndex>3</zIndex>
+          <color>182580</color>
+          <color ifSubset="sysgridcolor:tertiary">${tertiaryColor}</color>
+          <color ifSubset="sysgridcolor:green">0e7a0d</color>
+          <color ifSubset="sysgridcolor:red">e4000f</color>
+          <color ifSubset="sysgridcolor:black">080808</color>
+          <color ifSubset="sysgridcolor:blue">182580</color>
+          <path>./_inc/images/bg_color.png</path>
+          <roundCorners>${corners}</roundCorners>
+          <scale>0.963</scale>
+        </image>
+        <image name="SystemArt" extra="true">
+          <path>${themePath}/art/${artstyle}/{system:theme}.${artextension}</path>
+          <pos>0.5</pos>
+          <origin>0.5</origin>
+          <minSize>1 1</minSize>
+          <linearSmooth>true</linearSmooth>
+          <roundCorners>${corners}</roundCorners>
+          <zIndex>3</zIndex>
+          <scale>0.963</scale>
+        </image>
+        <image name="SystemArtShade" extra="true">
+          <origin>0 0</origin>
+          <pos>0 0</pos>
+          <size>1 1</size>
+          <zIndex>2</zIndex>
+          <visible>true</visible>
+          <color>000000</color>
+          <opacity>${shadeStrength}</opacity>
+          <path>./_inc/images/bg_color.png</path>
+          <roundCorners>${corners}</roundCorners>
+          <storyboard event="activate">
+            <animation property="opacity" from="${shadeStrength}" to="0" duration="150" mode="linear"/>
+          </storyboard>
+          <storyboard event="deactivate">
+            <animation property="opacity" from="0" to="${shadeStrength}" duration="150" mode="linear"/>
+          </storyboard>
+          <zIndex>30</zIndex>
+        </image>
+        <text name="fallbackText" alignment="center" multiLine="true">
+          <visible>!exists("${themePath}/art/${artstyle}/" + {system:theme} + ".${artextension}")</visible>
+          <text>{system:fullName}</text>
+          <fontSize>0.04</fontSize>
+          <color>white</color>
+          <glowOffset>1 1</glowOffset>
+          <glowColor>0000002a</glowColor>
+          <glowSize>3</glowSize>
+          <scale>0.8</scale>
+          <zIndex>10</zIndex>
+        </text>
+        <image name="LogoDropShadow" pos="0.5" origin="0.5" maxSize="1" linearSmooth="true" ifSubset="artstyle:carbon">
+          <path>firstfile("${themePath}/art/logos/" + {system:theme} + ".png","${themePath}/art/logos/" + {system:theme} + ".svg")</path>
+          <padding>3 3 -3 -3</padding>
+          <color>00000080</color>
+          <zIndex>5</zIndex>
+          <scale>0.8</scale>
+        </image>
+        <image name="LogoImage" pos="0.5" origin="0.5" maxSize="1" linearSmooth="true" ifSubset="artstyle:carbon">
+          <path>firstfile("${themePath}/art/logos/" + {system:theme} + ".png","${themePath}/art/logos/" + {system:theme} + ".svg")</path>
+          <zIndex>6</zIndex>
+          <scale>0.8</scale>
+          <storyboard event="activate">
+            <animation property="color" from="FFFFFFB3" to="FFFFFFFF"/>
+          </storyboard>
+          <storyboard event="deactivate">
+            <animation property="color" from="FFFFFFFF" to="FFFFFFB3"/>
+          </storyboard>
+        </image>
+      </itemTemplate>
+
+
+      <itemTemplate ifSubset="artstyle:carbon">
+        <storyboard event="activate">
+          <animation property="scale" to="1.05" duration="150" mode="easeOut"/>
+        </storyboard>
+        <storyboard event="deactivate">
+          <animation property="scale" to="1" duration="250" mode="easeOut"/>
+        </storyboard>
+        <image name="background" extra="true">
+          <origin>0 0</origin>
+          <pos>0 0</pos>
+          <size>1 1</size>
+          <zIndex>2</zIndex>
+          <visible>true</visible>
+          <color>${tertiaryColor}</color>
+          <path>./_inc/images/bg_color.png</path>
+          <roundCorners>${corners}</roundCorners>
+          <storyboard event="activate" repeat="forever">
+            <animation property="color" from="${tertiaryColor}" to="${secondaryColor}"/>
+          </storyboard>
+          <storyboard event="deactivate">
+            <animation property="color" from="${secondaryColor}" to="${tertiaryColor}"/>
+          </storyboard>
+        </image>
+        <image name="backgroundInner" extra="true">
+          <origin>0.5 0.5</origin>
+          <pos>0.5 0.5</pos>
+          <size>1 1</size>
+          <zIndex>3</zIndex>
+          <color>182580</color>
+          <color ifSubset="sysgridcolor:tertiary">${tertiaryColor}</color>
+          <color ifSubset="sysgridcolor:green">0e7a0d</color>
+          <color ifSubset="sysgridcolor:red">e4000f</color>
+          <color ifSubset="sysgridcolor:black">080808</color>
+          <color ifSubset="sysgridcolor:blue">182580</color>
+          <path>./_inc/images/bg_color.png</path>
+          <roundCorners>${corners}</roundCorners>
+          <scale>0.963</scale>
+        </image>
+        <image name="SystemArt" extra="true">
+          <path>${themePath}/art/${artstyle}/{system:theme}.${artextension}</path>
+          <pos>0.5</pos>
+          <origin>0.5</origin>
+          <minSize>1 1</minSize>
+          <linearSmooth>true</linearSmooth>
+          <roundCorners>${corners}</roundCorners>
+          <zIndex>3</zIndex>
+          <scale>0.963</scale>
+        </image>
+        <image name="SystemArtShade" extra="true">
+          <origin>0 0</origin>
+          <pos>0 0</pos>
+          <size>1 1</size>
+          <zIndex>2</zIndex>
+          <visible>true</visible>
+          <color>000000</color>
+          <opacity>${shadeStrength}</opacity>
+          <path>./_inc/images/bg_color.png</path>
+          <roundCorners>${corners}</roundCorners>
+          <storyboard event="activate">
+            <animation property="opacity" from="${shadeStrength}" to="0" duration="150" mode="linear"/>
+          </storyboard>
+          <storyboard event="deactivate">
+            <animation property="opacity" from="0" to="${shadeStrength}" duration="150" mode="linear"/>
+          </storyboard>
+          <zIndex>30</zIndex>
+        </image>
+        <text name="fallbackText" alignment="center" multiLine="true">
+          <visible>!exists("${themePath}/art/${artstyle}/" + {system:theme} + ".${artextension}")</visible>
+          <text>{system:fullName}</text>
+          <fontSize>0.04</fontSize>
+          <color>white</color>
+          <glowOffset>1 1</glowOffset>
+          <glowColor>0000002a</glowColor>
+          <glowSize>3</glowSize>
+          <scale>0.8</scale>
+          <zIndex>10</zIndex>
+        </text>
+        <image name="LogoDropShadow" pos="0.5" origin="0.5" maxSize="1" linearSmooth="true" ifSubset="artstyle:carbon">
+          <path>firstfile("${themePath}/art/logos/" + {system:theme} + ".png","${themePath}/art/logos/" + {system:theme} + ".svg")</path>
+          <padding>3 3 -3 -3</padding>
+          <color>00000080</color>
+          <zIndex>5</zIndex>
+          <scale>0.8</scale>
+        </image>
+        <image name="LogoImage" pos="0.5" origin="0.5" maxSize="1" linearSmooth="true" ifSubset="artstyle:carbon">
+          <path>firstfile("${themePath}/art/logos/" + {system:theme} + ".png","${themePath}/art/logos/" + {system:theme} + ".svg")</path>
+          <zIndex>6</zIndex>
+          <scale>0.8</scale>
+          <storyboard event="activate">
+            <animation property="color" from="FFFFFFB3" to="FFFFFFFF"/>
+          </storyboard>
+          <storyboard event="deactivate">
+            <animation property="color" from="FFFFFFFF" to="FFFFFFB3"/>
+          </storyboard>
+        </image>
+      </itemTemplate>
+
+
+
+      <itemTemplate ifSubset="artstyle:logos">
+        <storyboard event="activate">
+          <animation property="scale" to="1.05" duration="150" mode="easeOut"/>
+        </storyboard>
+        <storyboard event="deactivate">
+          <animation property="scale" to="1" duration="250" mode="easeOut"/>
+        </storyboard>
+        <image name="background" extra="true">
+          <origin>0 0</origin>
+          <pos>0 0</pos>
+          <size>1 1</size>
+          <zIndex>2</zIndex>
+          <visible>true</visible>
+          <color>${tertiaryColor}</color>
+          <path>./_inc/images/bg_color.png</path>
+          <roundCorners>${corners}</roundCorners>
+          <storyboard event="activate" repeat="forever">
+            <animation property="color" from="${tertiaryColor}" to="${secondaryColor}"/>
+          </storyboard>
+          <storyboard event="deactivate">
+            <animation property="color" from="${secondaryColor}" to="${tertiaryColor}"/>
+          </storyboard>
+        </image>
+        <image name="backgroundInner" extra="true">
+          <origin>0.5 0.5</origin>
+          <pos>0.5 0.5</pos>
+          <size>1 1</size>
+          <zIndex>3</zIndex>
+          <color>182580</color>
+          <color ifSubset="sysgridcolor:tertiary">${tertiaryColor}</color>
+          <color ifSubset="sysgridcolor:green">0e7a0d</color>
+          <color ifSubset="sysgridcolor:red">e4000f</color>
+          <color ifSubset="sysgridcolor:black">080808</color>
+          <color ifSubset="sysgridcolor:blue">182580</color>
+          <path>./_inc/images/bg_color.png</path>
+          <roundCorners>${corners}</roundCorners>
+          <scale>0.963</scale>
+        </image>
+        <image name="SystemArtShade" extra="true">
+          <origin>0 0</origin>
+          <pos>0 0</pos>
+          <size>1 1</size>
+          <zIndex>2</zIndex>
+          <visible>true</visible>
+          <color>000000</color>
+          <opacity>${shadeStrength}</opacity>
+          <path>./_inc/images/bg_color.png</path>
+          <roundCorners>${corners}</roundCorners>
+          <storyboard event="activate">
+            <animation property="opacity" from="${shadeStrength}" to="0" duration="150" mode="linear"/>
+          </storyboard>
+          <storyboard event="deactivate">
+            <animation property="opacity" from="0" to="${shadeStrength}" duration="150" mode="linear"/>
+          </storyboard>
+          <zIndex>30</zIndex>
+        </image>
+        <text name="fallbackText" alignment="center" multiLine="true">
+          <visible>!exists("${themePath}/art/${artstyle}/" + {system:theme} + ".${artextension}")</visible>
+          <text>{system:fullName}</text>
+          <fontSize>0.04</fontSize>
+          <color>white</color>
+          <glowOffset>1 1</glowOffset>
+          <glowColor>0000002a</glowColor>
+          <glowSize>3</glowSize>
+          <scale>0.8</scale>
+          <zIndex>10</zIndex>
+        </text>
+        <image name="LogoDropShadow" pos="0.5" origin="0.5" maxSize="1" linearSmooth="true">
+          <path>firstfile("${themePath}/art/logos/" + {system:theme} + ".png","${themePath}/art/logos/" + {system:theme} + ".svg")</path>
+          <padding>3 3 -3 -3</padding>
+          <color>00000080</color>
+          <zIndex>5</zIndex>
+          <scale>0.8</scale>
+        </image>
+        <image name="LogoImage" pos="0.5" origin="0.5" maxSize="1" linearSmooth="true">
+          <path>firstfile("${themePath}/art/logos/" + {system:theme} + ".png","${themePath}/art/logos/" + {system:theme} + ".svg")</path>
+          <zIndex>6</zIndex>
+          <scale>0.8</scale>
+          <storyboard event="activate">
+            <animation property="color" from="FFFFFFB3" to="FFFFFFFF"/>
+          </storyboard>
+          <storyboard event="deactivate">
+            <animation property="color" from="FFFFFFFF" to="FFFFFFB3"/>
+          </storyboard>
+        </image>
+      </itemTemplate>
+
+
     </imagegrid>
     <image name="background" extra="true">
       <origin>0 0</origin>
