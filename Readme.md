@@ -25,6 +25,8 @@ Assets for the Carbon style taken from es-theme-carbon: https://github.com/fabri
 
 Assets for the Controllers style taken from es-de-moderntheme-nsoicons: https://github.com/szymon-kulak/es-de-moderntheme-nsoicons by Szymon Kulak
 
+Assets and code structure for system indicators taken from canvas-es: https://github.com/Siddy212/canvas-es by Siddy212
+
 Used screenshots for systems : https://www.screenscraper.fr/
 
 Thanks to mikakunin for the additional system art

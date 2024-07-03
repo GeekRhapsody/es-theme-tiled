@@ -168,10 +168,10 @@
     </text>
 
     <stackpanel name="system-indicators" extra="true">
-      <visible>true</visible>
+      <visible>true</visible>   
       <h>0.025</h>
       <size>0.1 0.07</size>
-      <pos>0.89 0.957</pos>      <!-- 0 20 -->
+      <pos>0.89 0.957</pos>
       <orientation>horizontal</orientation>
       <separator>6</separator>
       <horizontalAlignment>right</horizontalAlignment>
