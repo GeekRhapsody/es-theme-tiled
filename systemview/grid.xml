@@ -331,7 +331,7 @@
           <zIndex>30</zIndex>
         </image>
         <text name="fallbackText" alignment="center" multiLine="true">
-          <visible>!exists("${themePath}/art/${artstyle}/" + {system:theme} + ".${artextension}")</visible>
+          <visible>!exists("${themePath}/art/logos/" + {system:theme} + ".png") && !exists("${themePath}/art/logos/" + {system:theme} + ".svg")</visible>
           <text>{system:fullName}</text>
           <fontSize>0.04</fontSize>
           <color>white</color>
@@ -420,7 +420,7 @@
           <zIndex>30</zIndex>
         </image>
         <text name="fallbackText" alignment="center" multiLine="true">
-          <visible>!exists("${themePath}/art/${artstyle}/" + {system:theme} + ".${artextension}")</visible>
+          <visible>!exists("${themePath}/art/logos/" + {system:theme} + ".png") && !exists("${themePath}/art/logos/" + {system:theme} + ".svg") </visible>
           <text>{system:fullName}</text>
           <fontSize>0.04</fontSize>
           <color>white</color>
