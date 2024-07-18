@@ -34,7 +34,9 @@
 
 
 		<imagegrid name="gamegrid">
-			<autoLayout>0 3</autoLayout>
+			<autoLayout ifSubset="fontsize:small">0 4</autoLayout>
+			<autoLayout ifSubset="fontsize:medium">0 3</autoLayout>
+			<autoLayout ifSubset="fontsize:large">0 2</autoLayout>
 			<cellProportion>1.5</cellProportion>
 
 			<cellProportion if="{system.name} == 'cdi'">1.4</cellProportion>
@@ -65,7 +67,7 @@
 
 		<imagegrid name="gamegrid">
 			<margin>${grid.itemspacing.px}</margin>
-			<padding>0.011 0.007 0.011 0.011</padding>
+			<padding>0.011 0.009 0.011 0.011</padding>
 			<animateSelection></animateSelection>
 			<showVideoAtDelay>1200</showVideoAtDelay>
 			<imageSource>image</imageSource>
@@ -98,7 +100,7 @@
 				</storyboard>
 				<storyboard event="deactivate">
 					<animation property="color" from="${secondaryColor}" to="${tertiaryColor}" duration="150" mode="linear"/>
-				</storyboard>				
+				</storyboard>
 			</image>
 
 			<image name="saveStateIndicator">
