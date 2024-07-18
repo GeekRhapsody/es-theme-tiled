@@ -227,7 +227,7 @@
             <alignment>left</alignment>
             <horizontalAlignment>top</horizontalAlignment>
             <color>${secondaryColor}</color>
-            <fontSize>0.020</fontSize>
+            <fontSize>${fontSizeText}</fontSize>
             <zIndex>5</zIndex>
             <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
             <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>

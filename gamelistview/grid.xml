@@ -11,10 +11,10 @@
 		<text name="mySystemInfo" extra="true">
 			<text>{game:name}</text>
 			<size>1 0</size>
-			<pos>0.0 0.005</pos>
+			<pos>0.0 0.004</pos>
 			<alignment>center</alignment>
 			<color>${secondaryColor}</color>
-			<fontSize>0.025</fontSize>
+			<fontSize>${fontSizeHeader}</fontSize>
 			<zIndex>5</zIndex>
 			<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
 			<fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
@@ -65,7 +65,7 @@
 
 		<imagegrid name="gamegrid">
 			<margin>${grid.itemspacing.px}</margin>
-			<padding>0.015 0.011 0.011 0.011</padding>
+			<padding>0.011 0.007 0.011 0.011</padding>
 			<animateSelection></animateSelection>
 			<showVideoAtDelay>1200</showVideoAtDelay>
 			<imageSource>image</imageSource>
@@ -126,7 +126,7 @@
 				<verticalAlignment>center</verticalAlignment>
 				<alignment>center</alignment>
 				<multiLine>false</multiLine>
-				<fontSize>0.020</fontSize>
+				<fontSize>${fontSizeLabel}</fontSize>
 				<glowColor>000000</glowColor>
 				<glowSize>3</glowSize>
 				<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>

@@ -31,6 +31,12 @@
     <include name="gb" displayName="GameBoy"/>
   </subset>
 
+  <subset name="fontsize" displayName="Font Size">
+    <include name="medium" displayName="Medium">./options/fontmedium.xml</include>
+    <include name="small" displayName="Small">./options/fontsmall.xml</include>
+    <include name="large" displayName="Large">./options/fontlarge.xml</include>
+  </subset>
+
   <subset name="iconset" displayName="Help Icons">
     <include name="default" displayName="Default"/>
     <include name="arcade" displayName="Arcade"/>
