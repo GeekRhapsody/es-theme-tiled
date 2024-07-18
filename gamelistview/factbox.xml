@@ -223,7 +223,7 @@
         <text name="md_description">
             <text>{game:desc}</text>
             <pos>0.76 0.598</pos>
-            <size>0.23 0.35</size>
+            <size>0.23 0.34</size>
             <alignment>left</alignment>
             <horizontalAlignment>top</horizontalAlignment>
             <color>${secondaryColor}</color>
