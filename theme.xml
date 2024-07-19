@@ -2,7 +2,7 @@
 <theme defaultView="grid">
   <formatVersion>7</formatVersion>
   <variables>
-    <shadeStrength>0.4</shadeStrength>
+    <shadeStrength>0.3</shadeStrength>
   </variables>
 
   <subset name="factbox" displayName="Factbox">
