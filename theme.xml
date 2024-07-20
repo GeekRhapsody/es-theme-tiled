@@ -149,7 +149,7 @@
     </image>
 
     <helpsystem name="help">
-      <fontSize>0.024</fontSize>
+      <fontSize>${fontSizeFooter}</fontSize>
       <pos>0.012 0.957</pos>
       <textColor>${secondaryColor}</textColor>
       <iconColor>${secondaryColor}</iconColor>
@@ -250,7 +250,7 @@
 
     <stackpanel name="system-indicators" extra="true">
       <visible>true</visible>
-      <h>0.025</h>
+      <h>${fontSizeFooter}</h>
       <size>0.1 0.07</size>
       <pos>0.89 0.957</pos>
       <orientation>horizontal</orientation>
@@ -259,7 +259,7 @@
       <reverse>true</reverse>
       <clock name="system-clock" extra="true">
         <color>${secondaryColor}</color>
-        <fontSize>0.025</fontSize>
+        <fontSize>${fontSizeFooter}</fontSize>
         <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
         <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
         <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
@@ -268,7 +268,7 @@
       </clock>
       <batteryText name="system-battery-text" extra="true">
         <color>${secondaryColor}</color>
-        <fontSize>0.025</fontSize>
+        <fontSize>${fontSizeFooter}</fontSize>
         <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
         <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
         <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>

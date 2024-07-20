@@ -16,7 +16,7 @@
       <size>0.955 0.89</size>
       <alignment>left</alignment>
       <horizontalMargin>0.00</horizontalMargin>
-      <fontSize>0.029</fontSize>
+      <fontSize>${fontSizeTextList}</fontSize>
       <scrollbarColor>96969620</scrollbarColor>
       <scrollbarCorner>0.49</scrollbarCorner>
       <scrollbarSize>0.0065</scrollbarSize>

@@ -17,7 +17,7 @@
       <size>0.33 0.89</size>
       <alignment>left</alignment>
       <horizontalMargin>0.00</horizontalMargin>
-      <fontSize>0.029</fontSize>
+      <fontSize>${fontSizeTextList}</fontSize>
       <scrollbarColor>96969620</scrollbarColor>
       <scrollbarCorner>0.49</scrollbarCorner>
       <scrollbarSize>0.0065</scrollbarSize>
@@ -100,7 +100,7 @@
       <size>0.23 0</size>
       <alignment>left</alignment>
       <color>${secondaryColor}</color>
-      <fontSize>0.020</fontSize>
+      <fontSize>${fontSizeText}</fontSize>
       <zIndex>5</zIndex>
 			<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
 			<fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
@@ -113,7 +113,7 @@
       <size>0.23 0</size>
       <alignment>left</alignment>
       <color>${secondaryColor}</color>
-      <fontSize>0.020</fontSize>
+      <fontSize>${fontSizeText}</fontSize>
       <zIndex>5</zIndex>
       <visible>empty(expandseconds({game:gametime}))</visible>
 			<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
@@ -141,7 +141,7 @@
       <size>0.105 0.022</size>
       <alignment>left</alignment>
       <color>${secondaryColor}</color>
-      <fontSize>0.020</fontSize>
+      <fontSize>${fontSizeText}</fontSize>
       <zIndex>5</zIndex>
 			<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
 			<fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
@@ -168,7 +168,7 @@
       <size>0.105 0.022</size>
       <alignment>left</alignment>
       <color>${secondaryColor}</color>
-      <fontSize>0.020</fontSize>
+      <fontSize>${fontSizeText}</fontSize>
       <zIndex>5</zIndex>
 			<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
 			<fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
@@ -195,7 +195,7 @@
       <size>0.105 0.022</size>
       <alignment>left</alignment>
       <color>${secondaryColor}</color>
-      <fontSize>0.020</fontSize>
+      <fontSize>${fontSizeText}</fontSize>
       <zIndex>5</zIndex>
 			<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
 			<fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
@@ -209,7 +209,7 @@
       <size>0.105 0.017</size>
       <alignment>left</alignment>
       <color>${tertiaryColor}</color>
-      <fontSize>0.015</fontSize>
+      <fontSize>${fontSizeText}</fontSize>
       <zIndex>5</zIndex>
 			<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
 			<fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
@@ -218,11 +218,11 @@
     </text>
     <text name="Players" extra="true">
       <text>{game:players}</text>
-      <pos>0.89 0.280</pos>
+      <pos>0.89 0.285</pos>
       <size>0.105 0.022</size>
       <alignment>left</alignment>
       <color>${secondaryColor}</color>
-      <fontSize>0.020</fontSize>
+      <fontSize>${fontSizeText}</fontSize>
       <zIndex>5</zIndex>
 			<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
 			<fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
@@ -251,7 +251,7 @@
       <alignment>left</alignment>
       <horizontalAlignment>top</horizontalAlignment>
       <color>${secondaryColor}</color>
-      <fontSize>0.020</fontSize>
+      <fontSize>${fontSizeText}</fontSize>
       <zIndex>5</zIndex>
 			<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
 			<fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>

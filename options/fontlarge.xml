@@ -3,12 +3,14 @@
     <formatVersion>7</formatVersion>
     <variables>
         <fontSizeText>0.029</fontSizeText>
+        <fontSizeTextList>0.034</fontSizeTextList>
         <fontSizeLabel>0.029</fontSizeLabel>
-        <fontSizeHeader>0.032</fontSizeHeader>        
+        <fontSizeHeader>0.033</fontSizeHeader>        
         <fontSizeMenu>0.037</fontSizeMenu>
         <fontSizeMenuSmall>0.026</fontSizeMenuSmall>
         <fontSizeMenuGroup>0.033</fontSizeMenuGroup>
         <fontSizeMenuTitle>0.041</fontSizeMenuTitle>
         <fontSizeMenuFooter>0.026</fontSizeMenuFooter>
+        <fontSizeFooter>0.033</fontSizeFooter>
     </variables>
 </theme>
