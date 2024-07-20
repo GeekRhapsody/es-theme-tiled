@@ -467,7 +467,9 @@
     <text name="mySystemInfo" extra="true">
       <text>{system:manufacturer} - {system:fullName} ({system:total} Games)</text>
       <size>1 0</size>
-      <pos>0.0 0.005</pos>
+      <pos ifSubset="fontsize:small">0.0 0.007</pos>
+      <pos ifSubset="fontsize:medium">0.0 0.005</pos>
+      <pos ifSubset="fontsize:large">0.0 0.001</pos>
       <alignment>center</alignment>
       <backgroundColor>FFFF0000</backgroundColor>
       <color>${secondaryColor}</color>
@@ -475,7 +477,7 @@
       <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
       <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
       <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
-      <fontSize>0.025</fontSize>
+      <fontSize>${fontSizeHeader}</fontSize>
       <zIndex>5</zIndex>
     </text>
   </view>

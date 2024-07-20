@@ -11,10 +11,12 @@
 		<text name="mySystemInfo" extra="true">
 			<text>{game:name}</text>
 			<size>1 0</size>
-			<pos>0.0 0.005</pos>
+			<pos ifSubset="fontsize:small">0.0 0.007</pos>
+			<pos ifSubset="fontsize:medium">0.0 0.005</pos>
+			<pos ifSubset="fontsize:large">0.0 0.001</pos>
 			<alignment>center</alignment>
 			<color>${secondaryColor}</color>
-			<fontSize>0.025</fontSize>
+			<fontSize>${fontSizeHeader}</fontSize>
 			<zIndex>5</zIndex>
 			<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
 			<fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
@@ -34,7 +36,9 @@
 
 
 		<imagegrid name="gamegrid">
-			<autoLayout>0 3</autoLayout>
+			<autoLayout ifSubset="fontsize:small">0 4</autoLayout>
+			<autoLayout ifSubset="fontsize:medium">0 3</autoLayout>
+			<autoLayout ifSubset="fontsize:large">0 2</autoLayout>
 			<cellProportion>1.5</cellProportion>
 
 			<cellProportion if="{system.name} == 'cdi'">1.4</cellProportion>
@@ -65,7 +69,7 @@
 
 		<imagegrid name="gamegrid">
 			<margin>${grid.itemspacing.px}</margin>
-			<padding>0.015 0.011 0.011 0.011</padding>
+			<padding>0.011 0.009 0.011 0.011</padding>
 			<animateSelection></animateSelection>
 			<showVideoAtDelay>1200</showVideoAtDelay>
 			<imageSource>image</imageSource>
@@ -98,7 +102,7 @@
 				</storyboard>
 				<storyboard event="deactivate">
 					<animation property="color" from="${secondaryColor}" to="${tertiaryColor}" duration="150" mode="linear"/>
-				</storyboard>				
+				</storyboard>
 			</image>
 
 			<image name="saveStateIndicator">
@@ -126,7 +130,7 @@
 				<verticalAlignment>center</verticalAlignment>
 				<alignment>center</alignment>
 				<multiLine>false</multiLine>
-				<fontSize>0.020</fontSize>
+				<fontSize>${fontSizeLabel}</fontSize>
 				<glowColor>000000</glowColor>
 				<glowSize>3</glowSize>
 				<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>

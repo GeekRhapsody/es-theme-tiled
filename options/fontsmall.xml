@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+    <variables>
+        <fontSizeText>0.016</fontSizeText>
+        <fontSizeTextList>0.023</fontSizeTextList>        
+        <fontSizeLabel>0.016</fontSizeLabel>
+        <fontSizeHeader>0.022</fontSizeHeader>
+        <fontSizeMenu>0.022</fontSizeMenu>
+        <fontSizeMenuSmall>0.011</fontSizeMenuSmall>
+        <fontSizeMenuGroup>0.014</fontSizeMenuGroup>
+        <fontSizeMenuTitle>0.028</fontSizeMenuTitle>
+        <fontSizeMenuFooter>0.016</fontSizeMenuFooter>
+        <fontSizeFooter>0.020</fontSizeFooter>
+    </variables>
+</theme>

@@ -9,13 +9,12 @@ license: creative commons CC-BY-NC-SA
   <view name="menu">
   
     <menuText name="menutitle">
-      <fontSize>0.034</fontSize>
+      <fontSize>${fontSizeMenuTitle}</fontSize>
       <color>${secondaryColor}</color>
     </menuText>
   
     <menuText name="menutext">
-      <fontSize>0.026</fontSize>
-      <fontSize tinyScreen="true">0.034</fontSize>
+      <fontSize>${fontSizeMenu}</fontSize>
       <color>${secondaryColor}</color>
       <separatorColor>${tertiaryColor}</separatorColor>
       <selectorColor>${secondaryColor}</selectorColor>
@@ -25,7 +24,7 @@ license: creative commons CC-BY-NC-SA
     </menuText>
 
     <menuTextSmall name="menutextsmall">
-      <fontSize>0.016</fontSize>
+      <fontSize>${fontSizeMenuSmall}</fontSize>
       <color>${tertiaryColor}</color>
     </menuTextSmall>
   
@@ -39,7 +38,7 @@ license: creative commons CC-BY-NC-SA
     </menuBackground>
   
     <menuText name="menufooter">
-      <fontSize>0.02</fontSize>
+      <fontSize>${fontSizeMenuFooter}</fontSize>
       <color>${tertiaryColor}</color>
     </menuText>
   
@@ -49,7 +48,7 @@ license: creative commons CC-BY-NC-SA
     </menuTextEdit>
 
     <menuGroup name="menugroup">
-      <fontSize>0.018</fontSize>
+      <fontSize>${fontSizeMenuGroup}</fontSize>
       <color>${secondaryColor}</color>
       <backgroundColor>${backgroundColor}</backgroundColor>
       <lineSpacing>2.5</lineSpacing>
