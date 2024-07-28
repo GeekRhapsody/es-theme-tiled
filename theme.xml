@@ -247,12 +247,12 @@
     <text name="clock">
       <visible>false</visible>
     </text>
-
+    
     <stackpanel name="system-indicators" extra="true">
       <visible>true</visible>
       <h>${fontSizeFooter}</h>
-      <size>0.1 0.07</size>
-      <pos>0.89 0.957</pos>
+      <size>0.3 0.07</size>
+      <pos>0.69 0.957</pos>
       <orientation>horizontal</orientation>
       <separator>6</separator>
       <horizontalAlignment>right</horizontalAlignment>
@@ -291,6 +291,7 @@
         <networkIcon>./_inc/images/network-icon-on.svg</networkIcon>
         <planemodeIcon>./_inc/images/network-icon-off.svg</planemodeIcon>
       </networkIcon>
+      <zIndex>55</zIndex>
     </stackpanel>
   </view>
 
