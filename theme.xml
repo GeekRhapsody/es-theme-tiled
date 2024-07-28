@@ -148,12 +148,13 @@
       <path>./_inc/images/bg_color.png</path>
     </image>
 
+
     <helpsystem name="help">
       <fontSize>${fontSizeFooter}</fontSize>
       <pos>0.012 0.957</pos>
+      <size>0.3 0.07</size>
       <textColor>${secondaryColor}</textColor>
       <iconColor>${secondaryColor}</iconColor>
-      <backgroundColor>FF0000</backgroundColor>
       <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
       <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
       <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
@@ -247,7 +248,7 @@
     <text name="clock">
       <visible>false</visible>
     </text>
-    
+
     <stackpanel name="system-indicators" extra="true">
       <visible>true</visible>
       <h>${fontSizeFooter}</h>
