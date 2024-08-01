@@ -471,7 +471,6 @@
       <pos ifSubset="fontsize:medium">0.0 0.005</pos>
       <pos ifSubset="fontsize:large">0.0 0.001</pos>
       <alignment>center</alignment>
-      <backgroundColor>FFFF0000</backgroundColor>
       <color>${secondaryColor}</color>
       <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
       <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>

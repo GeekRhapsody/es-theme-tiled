@@ -239,9 +239,6 @@
   </view>
 
   <view name="screen">
-    <controllerActivity name="controllerActivity">
-      <visible>false</visible>
-    </controllerActivity>
     <batteryIndicator name="batteryIndicator">
       <visible>false</visible>
     </batteryIndicator>
@@ -249,18 +246,36 @@
       <visible>false</visible>
     </text>
 
+    <controllerActivity name="controllerActivity">
+      <pos>0.737 0.957</pos>
+      <size ifSubset="fontsize:small">0.250 0.019</size>
+      <size ifSubset="fontsize:medium">0.250 0.023</size>
+      <size ifSubset="fontsize:large">0.250 0.027</size>
+      <itemSpacing>0.003</itemSpacing>
+      <horizontalAlignment>right</horizontalAlignment>
+      <color>${secondaryColor}</color>
+      <imagePath>./art/gamepad.svg</imagePath>
+      <gunPath>./art/gun.svg</gunPath>
+      <wheelPath>./art/wheel.svg</wheelPath>
+      <activityColor>A0A0FFC0</activityColor>
+      <hotkeyColor>FFA0A0C0</hotkeyColor>
+    </controllerActivity>
+
     <stackpanel name="system-indicators" extra="true">
       <visible>true</visible>
-      <h>${fontSizeFooter}</h>
-      <size>0.3 0.07</size>
-      <pos>0.69 0.957</pos>
+      <h>${fontSizeHeader}</h>
+      <size>0.3 0.1</size>
+      <pos ifSubset="fontsize:small">0.684 0.013</pos>
+      <pos ifSubset="fontsize:medium">0.684 0.010</pos>
+      <pos ifSubset="fontsize:large">0.684 0.007</pos>
       <orientation>horizontal</orientation>
       <separator>6</separator>
       <horizontalAlignment>right</horizontalAlignment>
       <reverse>true</reverse>
+      <zIndex>55</zIndex>
       <clock name="system-clock" extra="true">
         <color>${secondaryColor}</color>
-        <fontSize>${fontSizeFooter}</fontSize>
+        <fontSize>${fontSizeHeader}</fontSize>
         <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
         <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
         <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
@@ -269,7 +284,7 @@
       </clock>
       <batteryText name="system-battery-text" extra="true">
         <color>${secondaryColor}</color>
-        <fontSize>${fontSizeFooter}</fontSize>
+        <fontSize>${fontSizeHeader}</fontSize>
         <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
         <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
         <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
@@ -291,8 +306,8 @@
         <color>${secondaryColor}</color>
         <networkIcon>./_inc/images/network-icon-on.svg</networkIcon>
         <planemodeIcon>./_inc/images/network-icon-off.svg</planemodeIcon>
+        <lineSpacing>1</lineSpacing>
       </networkIcon>
-      <zIndex>55</zIndex>
     </stackpanel>
   </view>
 
