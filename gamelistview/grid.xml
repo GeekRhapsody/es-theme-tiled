@@ -36,9 +36,7 @@
 
 
 		<imagegrid name="gamegrid">
-			<autoLayout ifSubset="fontsize:small">0 4</autoLayout>
-			<autoLayout ifSubset="fontsize:medium">0 3</autoLayout>
-			<autoLayout ifSubset="fontsize:large">0 2</autoLayout>
+			<autoLayout>0 3</autoLayout>
 			<cellProportion>1.5</cellProportion>
 
 			<cellProportion if="{system.name} == 'cdi'">1.4</cellProportion>
