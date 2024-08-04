@@ -48,6 +48,10 @@
 			<autoLayout if="{system.name} == 'nds'">0 2</autoLayout>
 			<cellProportion if="{system.name} == 'nds'">0.75</cellProportion>
 
+			<autoLayout if="{system.name} == 'vectrex'">0 2</autoLayout>
+			<cellProportion if="{system.name} == 'vectrex'">0.75</cellProportion>
+
+
 			<cellProportion if="{system.name} == '3ds'">1.4</cellProportion>
 			<cellProportion if="{system.name} == 'wii'">1.65</cellProportion>
 			<cellProportion if="{system.name} == 'wiiu'">1.65</cellProportion>
