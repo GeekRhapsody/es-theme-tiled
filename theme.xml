@@ -300,6 +300,7 @@
         <at25>./_inc/images/battery-icon-25.svg</at25>
         <empty>./_inc/images/battery-icon-0.svg</empty>
         <incharge>./_inc/images/battery-icon-charging.svg</incharge>
+        <lineSpacing>1</lineSpacing>
       </batteryIcon>
       <networkIcon name="system-network-icon" extra="true">
         <maxSize>1 0.88</maxSize>
