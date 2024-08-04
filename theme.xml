@@ -292,7 +292,7 @@
         <lineSpacing>1</lineSpacing>
       </batteryText>
       <batteryIcon name="system-battery-icon" extra="true">
-        <maxSize>1 1</maxSize>
+        <maxSize>1 0.88</maxSize>
         <color>${secondaryColor}</color>
         <full>./_inc/images/battery-icon-100.svg</full>
         <at75>./_inc/images/battery-icon-75.svg</at75>
@@ -302,7 +302,7 @@
         <incharge>./_inc/images/battery-icon-charging.svg</incharge>
       </batteryIcon>
       <networkIcon name="system-network-icon" extra="true">
-        <maxSize>1 1</maxSize>
+        <maxSize>1 0.88</maxSize>
         <color>${secondaryColor}</color>
         <networkIcon>./_inc/images/network-icon-on.svg</networkIcon>
         <planemodeIcon>./_inc/images/network-icon-off.svg</planemodeIcon>
