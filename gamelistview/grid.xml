@@ -36,9 +36,7 @@
 
 
 		<imagegrid name="gamegrid">
-			<autoLayout ifSubset="fontsize:small">0 4</autoLayout>
-			<autoLayout ifSubset="fontsize:medium">0 3</autoLayout>
-			<autoLayout ifSubset="fontsize:large">0 2</autoLayout>
+			<autoLayout>0 3</autoLayout>
 			<cellProportion>1.5</cellProportion>
 
 			<cellProportion if="{system.name} == 'cdi'">1.4</cellProportion>
@@ -49,6 +47,10 @@
 
 			<autoLayout if="{system.name} == 'nds'">0 2</autoLayout>
 			<cellProportion if="{system.name} == 'nds'">0.75</cellProportion>
+
+			<autoLayout if="{system.name} == 'vectrex'">0 2</autoLayout>
+			<cellProportion if="{system.name} == 'vectrex'">0.75</cellProportion>
+
 
 			<cellProportion if="{system.name} == '3ds'">1.4</cellProportion>
 			<cellProportion if="{system.name} == 'wii'">1.65</cellProportion>
