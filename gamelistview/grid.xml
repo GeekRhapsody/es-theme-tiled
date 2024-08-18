@@ -29,11 +29,20 @@
 			<size>0.99 0.91</size>
 		</imagegrid>
 
-		<imagegrid name="gamegrid" ifSubset="factbox:yes">
+		<imagegrid name="gamegrid" ifSubset="factbox:mix">
 			<pos>0.005 0.04</pos>
 			<size>0.74 0.91</size>
 		</imagegrid>
 
+		<imagegrid name="gamegrid" ifSubset="factbox:mediadesc">
+			<pos>0.005 0.04</pos>
+			<size>0.74 0.91</size>
+		</imagegrid>
+
+		<imagegrid name="gamegrid" ifSubset="factbox:description">
+			<pos>0.005 0.04</pos>
+			<size>0.74 0.91</size>
+		</imagegrid>
 
 		<imagegrid name="gamegrid">
 			<autoLayout>0 3</autoLayout>

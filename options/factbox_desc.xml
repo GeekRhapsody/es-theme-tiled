@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+    <view name="grid" ifSubset="factbox:description">
+        <text name="md_description">
+            <text>{game:desc}</text>
+            <pos>0.76 0.045</pos>
+            <size>0.23 0.905</size>
+            <alignment>left</alignment>
+            <horizontalAlignment>top</horizontalAlignment>
+            <color>${secondaryColor}</color>
+            <fontSize>${fontSizeText}</fontSize>
+            <zIndex>5</zIndex>
+            <fontPath>${fontPath}</fontPath>
+        </text>
+    </view>
+
+    <view name="detailed" ifSubset="factbox:description">
+        <text name="md_description">
+            <text>{game:desc}</text>
+            <pos>0.37 0.72</pos>
+            <size>0.61 0.225</size>
+            <alignment>left</alignment>
+            <horizontalAlignment>top</horizontalAlignment>
+            <color>${secondaryColor}</color>
+            <fontSize>${fontSizeText}</fontSize>
+            <zIndex>5</zIndex>
+            <fontPath>${fontPath}</fontPath>
+        </text>
+    </view>
+</theme>

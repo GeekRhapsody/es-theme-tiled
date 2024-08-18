@@ -465,7 +465,7 @@
       <visible>false</visible>
     </text>
     <text name="mySystemInfo" extra="true">
-      <text>{system:manufacturer} - {system:fullName} ({system:total} Games)</text>
+      <text>{system:fullName} ({system:total} Games)</text>
       <size>1 0</size>
       <pos ifSubset="fontsize:small">0.0 0.007</pos>
       <pos ifSubset="fontsize:medium">0.0 0.005</pos>

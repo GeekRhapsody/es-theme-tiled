@@ -2,7 +2,7 @@
 <theme>
     <formatVersion>7</formatVersion>
     <variables>
-        <fontSizeText>0.029</fontSizeText>
+        <fontSizeText>0.027</fontSizeText>
         <fontSizeTextList>0.034</fontSizeTextList>
         <fontSizeLabel>0.029</fontSizeLabel>
         <fontSizeHeader>0.033</fontSizeHeader>        

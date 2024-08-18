@@ -6,16 +6,25 @@
   </variables>
 
   <subset name="factbox" displayName="Factbox">
-    <include name="yes" displayName="Yes"/>
-    <include name="no" displayName="No"/>
+    <include name="mediadesc" displayName="Media + Description"/>
+    <include name="mix" displayName="Media + Details + Description"/>
+    <include name="description" displayName="Description"/>
+    <include name="no" displayName="None"/>
   </subset>
 
-  <subset name="factboxmedia" displayName="Factbox Media">
+  <subset name="factboxmedia" displayName="Media Style">
     <include name="thumbcart" displayName="Thumbnail + Cartridge"/>
     <include name="mix" displayName="Mix Image"/>
     <include name="image" displayName="Image"/>
     <include name="thumb" displayName="Thumbnail"/>
     <include name="cartridge" displayName="Cartridge"/>
+  </subset>
+
+  <subset name="playvideo" displayName="Video">
+    <include name="yes1s" displayName="1s delay"/>
+    <include name="yes2s" displayName="2s delay"/>
+    <include name="yes5s" displayName="5s delay"/>
+    <include name="hide" displayName="Don't Play"/>
   </subset>
 
   <subset name="colorway" displayName="Colorway">
@@ -25,10 +34,10 @@
   </subset>
 
   <subset name="font" displayName="Font">
-    <include name="cabinbold" displayName="Cabin Bold"/>
-    <include name="couture" displayName="Couture"/>
-    <include name="nswitchui" displayName="Nintendo Switch UI"/>
-    <include name="gb" displayName="GameBoy"/>
+    <include name="cabinbold" displayName="Cabin Bold">./options/fontcabinbold.xml</include>
+    <include name="couture" displayName="Couture">./options/fontcouture.xml</include>
+    <include name="nswitchui" displayName="Nintendo Switch UI">./options/fontnswitchui.xml</include>
+    <include name="gb" displayName="GameBoy">./options/fontgb.xml</include>
   </subset>
 
   <subset name="fontsize" displayName="Font Size">
@@ -135,8 +144,10 @@
   <include>./gamelistview/detailed.xml</include>
   <include>./gamelistview/basic.xml</include>
   <include>./menu.xml</include>
-  <include>./gamelistview/factbox.xml</include>
-
+  <include>./options/factbox_mix.xml</include>
+  <include>./options/factbox_mediadesc.xml</include>
+  <include>./options/factbox_desc.xml</include>
+  
   <view name="system,grid,detailed,basic">
     <image name="background" extra="true">
       <origin>0 0</origin>
