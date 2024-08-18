@@ -10,11 +10,13 @@ license: creative commons CC-BY-NC-SA
   
     <menuText name="menutitle">
       <fontSize>${fontSizeMenuTitle}</fontSize>
+      <fontPath>${fontPath}</fontPath>
       <color>${secondaryColor}</color>
     </menuText>
   
     <menuText name="menutext">
       <fontSize>${fontSizeMenu}</fontSize>
+      <fontPath>${fontPath}</fontPath>
       <color>${secondaryColor}</color>
       <separatorColor>${tertiaryColor}</separatorColor>
       <selectorColor>${secondaryColor}</selectorColor>
@@ -25,6 +27,7 @@ license: creative commons CC-BY-NC-SA
 
     <menuTextSmall name="menutextsmall">
       <fontSize>${fontSizeMenuSmall}</fontSize>
+      <fontPath>${fontPath}</fontPath>
       <color>${tertiaryColor}</color>
     </menuTextSmall>
   
@@ -39,6 +42,7 @@ license: creative commons CC-BY-NC-SA
   
     <menuText name="menufooter">
       <fontSize>${fontSizeMenuFooter}</fontSize>
+      <fontPath>${fontPath}</fontPath>
       <color>${tertiaryColor}</color>
     </menuText>
   
@@ -49,11 +53,10 @@ license: creative commons CC-BY-NC-SA
 
     <menuGroup name="menugroup">
       <fontSize>${fontSizeMenuGroup}</fontSize>
+      <fontPath>${fontPath}</fontPath>
       <color>${secondaryColor}</color>
       <backgroundColor>${backgroundColor}</backgroundColor>
       <lineSpacing>2.5</lineSpacing>
     </menuGroup>
-
-  
   </view>
 </theme>

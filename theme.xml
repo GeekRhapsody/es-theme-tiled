@@ -36,6 +36,7 @@
   <subset name="font" displayName="Font">
     <include name="cabinbold" displayName="Cabin Bold">./options/fontcabinbold.xml</include>
     <include name="couture" displayName="Couture">./options/fontcouture.xml</include>
+    <include name="changa" displayName="Changa One">./options/fontchanga.xml</include>
     <include name="nswitchui" displayName="Nintendo Switch UI">./options/fontnswitchui.xml</include>
     <include name="gb" displayName="GameBoy">./options/fontgb.xml</include>
   </subset>
@@ -147,7 +148,7 @@
   <include>./options/factbox_mix.xml</include>
   <include>./options/factbox_mediadesc.xml</include>
   <include>./options/factbox_desc.xml</include>
-  
+
   <view name="system,grid,detailed,basic">
     <image name="background" extra="true">
       <origin>0 0</origin>
@@ -166,10 +167,7 @@
       <size>0.3 0.07</size>
       <textColor>${secondaryColor}</textColor>
       <iconColor>${secondaryColor}</iconColor>
-      <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
-      <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
-      <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
-      <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+      <fontPath>${fontPath}</fontPath>
       <iconA>:/help/buttons_east.svg</iconA>
       <iconB>:/help/buttons_south.svg</iconB>
       <iconX>:/help/buttons_north.svg</iconX>
@@ -287,19 +285,13 @@
       <clock name="system-clock" extra="true">
         <color>${secondaryColor}</color>
         <fontSize>${fontSizeHeader}</fontSize>
-        <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
-        <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
-        <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
-        <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+        <fontPath>${fontPath}</fontPath>
         <lineSpacing>1</lineSpacing>
       </clock>
       <batteryText name="system-battery-text" extra="true">
         <color>${secondaryColor}</color>
         <fontSize>${fontSizeHeader}</fontSize>
-        <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
-        <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
-        <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
-        <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+        <fontPath>${fontPath}</fontPath>
         <lineSpacing>1</lineSpacing>
       </batteryText>
       <batteryIcon name="system-battery-icon" extra="true">

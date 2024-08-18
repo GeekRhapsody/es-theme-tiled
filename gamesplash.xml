@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
     <formatVersion>7</formatVersion>
-    <include>./theme.xml</include>    
+    <include>./theme.xml</include>
     <view name="splash">
 
         <image name="background" visible="true">
@@ -24,10 +24,7 @@
         <text name="label">
             <color>${secondaryColor}</color>
             <forceUppercase>false</forceUppercase>
-            <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
-            <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
-            <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
-            <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+            <fontPath>${fontPath}</fontPath>
             <zIndex>500</zIndex>
         </text>
 

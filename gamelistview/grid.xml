@@ -17,11 +17,8 @@
 			<alignment>center</alignment>
 			<color>${secondaryColor}</color>
 			<fontSize>${fontSizeHeader}</fontSize>
+			<fontPath>${fontPath}</fontPath>
 			<zIndex>5</zIndex>
-			<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
-			<fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
-			<fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
-			<fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
 		</text>
 
 		<imagegrid name="gamegrid" ifSubset="factbox:no">
@@ -144,10 +141,7 @@
 				<fontSize>${fontSizeLabel}</fontSize>
 				<glowColor>000000</glowColor>
 				<glowSize>3</glowSize>
-				<fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
-				<fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
-				<fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
-				<fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+				<fontPath>${fontPath}</fontPath>
 			</text>
 
 			<image name="ArtShade" extra="true">

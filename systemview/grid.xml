@@ -472,10 +472,7 @@
       <pos ifSubset="fontsize:large">0.0 0.001</pos>
       <alignment>center</alignment>
       <color>${secondaryColor}</color>
-      <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
-      <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
-      <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
-      <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+      <fontPath>${fontPath}</fontPath>
       <fontSize>${fontSizeHeader}</fontSize>
       <zIndex>5</zIndex>
     </text>
