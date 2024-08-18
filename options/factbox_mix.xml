@@ -194,7 +194,28 @@
         </text>
     </view>
 
-    <customView name="gridthumbnails" ifSubset="factbox:mix">
+    <customView name="gridthumbnails,gridmarquees,gridcartridges" ifSubset="factbox:mix">
+
+        <image name="videoBackground" extra="true">
+            <pos>0.872 0.20</pos>
+            <size>0.24 0.365</size>
+            <origin>0.5 0.5</origin>
+            <zIndex>9</zIndex>
+            <visible>true</visible>
+            <color>${backgroundColor}</color>
+            <path>./_inc/images/bg_color.png</path>
+            <opacity>0</opacity>
+            <storyboard event="activate" ifSubset="playvideo:yes1s">
+                <animation enabled="exists({game:video})" property="opacity" from="0" to="1" begin="2100"/>
+            </storyboard>
+            <storyboard event="activate" ifSubset="playvideo:yes2s">
+                <animation enabled="exists({game:video})" property="opacity" from="0" to="1" begin="3100"/>
+            </storyboard>
+            <storyboard event="activate" ifSubset="playvideo:yes5s">
+                <animation enabled="exists({game:video})" property="opacity" from="0" to="1" begin="6100"/>
+            </storyboard>
+        </image>
+
         <video name="md_video">
             <pos>0.872 0.213</pos>
             <origin>0.5 0.5</origin>
@@ -202,7 +223,9 @@
             <horizontalAlignment>center</horizontalAlignment>
             <verticalAlignment>center</verticalAlignment>
             <maxSize>0.235 0.331</maxSize>
-            <delay>1.4</delay>
+            <delay ifSubset="playvideo:yes1s">1.5</delay>
+            <delay ifSubset="playvideo:yes2s">2.5</delay>
+            <delay ifSubset="playvideo:yes5s">5.5</delay>
             <zIndex>10</zIndex>
         </video>
     </customView>
