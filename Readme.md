@@ -10,6 +10,14 @@ A simple, clean, grid-based EmulationStation theme designed for Steam Deck and o
 ![System Carousel](./screenshots/systemcarousel.png)
 
 
+## **Art Styles**
+![Modern](./screenshots/systemgrid.png)
+![NSOis](./screenshots/systemgrid2.png)
+![Carbon](./screenshots/systemgrid3.png)
+![Logos](./screenshots/systemgrid4.png)
+
+
+
 ## **Default Grid**
 ![Game Grid](./screenshots/gamegrid.png)
 
