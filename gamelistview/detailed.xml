@@ -31,7 +31,7 @@
 
     <image name="GameThumbnail" extra="true" ifSubset="factboxmedia:mix">
       <path>{game:thumbnail}</path>
-      <pos>0.37 0.39</pos>
+      <pos>0.39 0.39</pos>
       <maxSize>0.21 0.32</maxSize>
       <horizontalAlignment>left</horizontalAlignment>
       <verticalAlignment>bottom</verticalAlignment>
@@ -51,7 +51,7 @@
     </image>
     <image name="GameCartridge" extra="true" ifSubset="factboxmedia:mix">
       <path>firstfile({game:cartridge},directory({game:path}) + "/images/" + {game:stem} + "-cartridge.png")</path>
-      <pos>0.86 0.485</pos>
+      <pos>0.82 0.485</pos>
       <maxSize>0.13 0.230</maxSize>
       <horizontalAlignment>right</horizontalAlignment>
       <verticalAlignment>bottom</verticalAlignment>
@@ -61,11 +61,11 @@
     </image>
     <image name="TheGameImage" extra="true" ifSubset="factboxmedia:mix">
       <path>{game:image}</path>
-      <pos>0.68 0.360</pos>
+      <pos>0.68 0.355</pos>
       <origin>0.5 0.5</origin>
       <horizontalAlignment>center</horizontalAlignment>
       <verticalAlignment>center</verticalAlignment>
-      <maxSize>0.550 0.590</maxSize>
+      <maxSize>0.550 0.610</maxSize>
       <zIndex>5</zIndex>
       <scale>1</scale>
     </image>
