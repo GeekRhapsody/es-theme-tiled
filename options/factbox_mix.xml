@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
     <formatVersion>7</formatVersion>
-    <view name="grid,gridthumbnails" ifSubset="factbox:yes">
+    <view name="grid" ifSubset="factbox:mix">
         <image name="GameThumbnail" extra="true" ifSubset="factboxmedia:mix">
             <path>{game:thumbnail}</path>
             <pos>0.76 0.18</pos>
@@ -92,10 +92,7 @@
             <color>${tertiaryColor}</color>
             <fontSize>0.015</fontSize>
             <zIndex>5</zIndex>
-            <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
-            <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
-            <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
-            <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+            <fontPath>${fontPath}</fontPath>
         </text>
         <text name="GameTime" extra="true">
             <text>expandseconds({game:gametime})</text>
@@ -104,10 +101,7 @@
             <alignment>left</alignment>
             <color>${secondaryColor}</color>
             <fontSize>${fontSizeText}</fontSize>
-            <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
-            <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
-            <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
-            <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+            <fontPath>${fontPath}</fontPath>
             <zIndex>5</zIndex>
         </text>
         <text name="GameTimeNone" extra="true">
@@ -119,10 +113,7 @@
             <fontSize>${fontSizeText}</fontSize>
             <zIndex>5</zIndex>
             <visible>empty(expandseconds({game:gametime}))</visible>
-            <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
-            <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
-            <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
-            <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+            <fontPath>${fontPath}</fontPath>
         </text>
 
         <text name="labelDev" extra="true">
@@ -133,10 +124,7 @@
             <color>${tertiaryColor}</color>
             <fontSize>0.015</fontSize>
             <zIndex>5</zIndex>
-            <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
-            <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
-            <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
-            <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+            <fontPath>${fontPath}</fontPath>
         </text>
         <text name="valDeveloper" extra="true">
             <text>{game:developer}</text>
@@ -146,10 +134,7 @@
             <color>${secondaryColor}</color>
             <fontSize>${fontSizeText}</fontSize>
             <zIndex>5</zIndex>
-            <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
-            <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
-            <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
-            <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+            <fontPath>${fontPath}</fontPath>
         </text>
 
         <text name="labelPublisher" extra="true">
@@ -160,10 +145,7 @@
             <color>${tertiaryColor}</color>
             <fontSize>0.015</fontSize>
             <zIndex>5</zIndex>
-            <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
-            <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
-            <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
-            <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+            <fontPath>${fontPath}</fontPath>
         </text>
         <text name="publisher" extra="true">
             <text>{game:publisher}</text>
@@ -173,10 +155,7 @@
             <color>${secondaryColor}</color>
             <fontSize>${fontSizeText}</fontSize>
             <zIndex>5</zIndex>
-            <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
-            <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
-            <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
-            <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+            <fontPath>${fontPath}</fontPath>
         </text>
 
         <text name="labelReleaseDate" extra="true">
@@ -187,10 +166,7 @@
             <color>${tertiaryColor}</color>
             <fontSize>0.015</fontSize>
             <zIndex>5</zIndex>
-            <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
-            <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
-            <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
-            <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+            <fontPath>${fontPath}</fontPath>
         </text>
         <text name="ReleaseDate" extra="true">
             <text>{game:releasedate}</text>
@@ -200,10 +176,7 @@
             <color>${secondaryColor}</color>
             <fontSize>${fontSizeText}</fontSize>
             <zIndex>5</zIndex>
-            <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
-            <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
-            <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
-            <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+            <fontPath>${fontPath}</fontPath>
         </text>
 
         <text name="labelDescription" extra="true">
@@ -214,10 +187,7 @@
             <color>${tertiaryColor}</color>
             <fontSize>0.015</fontSize>
             <zIndex>5</zIndex>
-            <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
-            <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
-            <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
-            <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+            <fontPath>${fontPath}</fontPath>
         </text>
 
         <text name="md_description">
@@ -229,22 +199,129 @@
             <color>${secondaryColor}</color>
             <fontSize>${fontSizeText}</fontSize>
             <zIndex>5</zIndex>
-            <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
-            <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
-            <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
-            <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+            <fontPath>${fontPath}</fontPath>
         </text>
     </view>
-    <customView name="gridthumbnails" ifSubset="factbox:yes">
-		<video name="md_video">
-			<pos>0.872 0.213</pos>
-			<origin>0.5 0.5</origin>
+    <customView name="gridthumbnails" ifSubset="factbox:mix">
+        <video name="md_video">
+            <pos>0.872 0.213</pos>
+            <origin>0.5 0.5</origin>
             <effect>none</effect>
-			<horizontalAlignment>center</horizontalAlignment>
-			<verticalAlignment>center</verticalAlignment>
-			<maxSize>0.235 0.331</maxSize>
-			<delay>1.4</delay>
-			<zIndex>10</zIndex>            
-		</video>
+            <horizontalAlignment>center</horizontalAlignment>
+            <verticalAlignment>center</verticalAlignment>
+            <maxSize>0.235 0.331</maxSize>
+            <delay>1.4</delay>
+            <zIndex>10</zIndex>
+        </video>
     </customView>
+
+
+    <view name="detailed" ifSubset="factbox:mix">
+        <text name="md_description">
+            <text>{game:desc}</text>
+            <pos>0.37 0.72</pos>
+            <size>0.295 0.225</size>
+            <alignment>left</alignment>
+            <horizontalAlignment>top</horizontalAlignment>
+            <color>${secondaryColor}</color>
+            <fontSize>${fontSizeText}</fontSize>
+            <zIndex>5</zIndex>
+            <fontPath>${fontPath}</fontPath>
+        </text>
+
+        <text name="labelGameTime" extra="true">
+            <text>Play Time</text>
+            <pos>0.675 0.73</pos>
+            <size>0.23 0.017</size>
+            <alignment>left</alignment>
+            <color>${tertiaryColor}</color>
+            <fontSize>${fontSizeText}</fontSize>
+            <zIndex>5</zIndex>
+            <fontPath>${fontPath}</fontPath>
+        </text>
+        <text name="GameTime" extra="true">
+            <text>expandseconds({game:gametime})</text>
+            <pos>0.75 0.73</pos>
+            <size>0.23 0.017</size>
+            <alignment>right</alignment>
+            <color>${secondaryColor}</color>
+            <fontSize>${fontSizeText}</fontSize>
+            <zIndex>5</zIndex>
+            <fontPath>${fontPath}</fontPath>
+        </text>
+        <text name="GameTimeNone" extra="true">
+            <text>None</text>
+            <pos>0.75 0.73</pos>
+            <size>0.23 0.017</size>
+            <alignment>right</alignment>
+            <color>${secondaryColor}</color>
+            <fontSize>${fontSizeText}</fontSize>
+            <zIndex>5</zIndex>
+            <visible>empty(expandseconds({game:gametime}))</visible>
+            <fontPath>${fontPath}</fontPath>
+        </text>
+
+        <text name="labelPlayCount" extra="true">
+            <text>Times Played</text>
+            <pos>0.675 0.78</pos>
+            <size>0.23 0.017</size>
+            <alignment>left</alignment>
+            <color>${tertiaryColor}</color>
+            <fontSize>${fontSizeText}</fontSize>
+            <zIndex>5</zIndex>
+            <fontPath>${fontPath}</fontPath>
+        </text>
+        <text name="playCount" extra="true">
+            <text>{game:playcount}</text>
+            <pos>0.75 0.78</pos>
+            <size>0.23 0.017</size>
+            <alignment>right</alignment>
+            <color>${secondaryColor}</color>
+            <fontSize>${fontSizeText}</fontSize>
+            <zIndex>5</zIndex>
+            <fontPath>${fontPath}</fontPath>
+        </text>
+
+
+        <text name="labelLastPlayed" extra="true">
+            <text>Last Played</text>
+            <pos>0.675 0.83</pos>
+            <size>0.23 0.017</size>
+            <alignment>left</alignment>
+            <color>${tertiaryColor}</color>
+            <fontSize>${fontSizeText}</fontSize>
+            <zIndex>5</zIndex>
+            <fontPath>${fontPath}</fontPath>
+        </text>
+        <datetime name="md_lastplayed" extra="true">
+            <pos>0.75 0.83</pos>
+            <size>0.23 0.017</size>
+            <alignment>right</alignment>
+            <color>${secondaryColor}</color>
+            <fontSize>${fontSizeText}</fontSize>
+            <zIndex>5</zIndex>
+            <fontPath>${fontPath}</fontPath>
+        </datetime >
+
+        <text name="labelReleaseDate" extra="true">
+            <text>Release Date</text>
+            <pos>0.675 0.88</pos>
+            <size>0.23 0.017</size>
+            <alignment>left</alignment>
+            <color>${tertiaryColor}</color>
+            <fontSize>${fontSizeText}</fontSize>
+            <zIndex>5</zIndex>
+            <fontPath>${fontPath}</fontPath>
+        </text>
+        <text name="valueReleaseDate" extra="true">
+            <text>{game:releasedate}</text>
+            <pos>0.75 0.88</pos>
+            <size>0.23 0.017</size>
+            <alignment>right</alignment>
+            <color>${secondaryColor}</color>
+            <fontSize>${fontSizeText}</fontSize>
+            <zIndex>5</zIndex>
+            <fontPath>${fontPath}</fontPath>
+        </text>
+    </view>
 </theme>

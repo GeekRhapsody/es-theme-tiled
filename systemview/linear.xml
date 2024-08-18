@@ -108,12 +108,12 @@
       <pos>0.0 0.65</pos>
       <backgroundColor>00000000</backgroundColor>
       <color>${secondaryColor}</color>
-      <fontPath>./_inc/fonts/Cabin-Bold.ttf</fontPath>
+      <fontPath>${fontPath}</fontPath>
       <fontSize>0.03</fontSize>
       <zIndex>5</zIndex>
     </text>
     <helpsystem name="help">
-      <fontPath>./_inc/fonts/Cabin-Bold.ttf</fontPath>
+      <fontPath>${fontPath}</fontPath>
       <fontSize>0.025</fontSize>
       <pos>0.01 0.97</pos>
       <textColor>${secondaryColor}</textColor>
