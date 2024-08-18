@@ -74,7 +74,7 @@
     <image name="GameThumbnailLarge" extra="true" ifSubset="factboxmedia:thumb">
       <path>{game:thumbnail}</path>
       <pos>0.68 0.377</pos>
-<maxSize>0.61 0.66</maxSize>
+      <maxSize>0.61 0.66</maxSize>
       <origin>0.5 0.5</origin>
       <linearSmooth>true</linearSmooth>
       <zIndex>6</zIndex>
@@ -116,7 +116,7 @@
     </image>
     <image name="GameCartridge" extra="true" ifSubset="factboxmedia:thumbcart">
       <path>firstfile({game:cartridge},directory({game:path}) + "/images/" + {game:stem} + "-cartridge.png")</path>
-      <pos>0.775 0.459</pos>
+      <pos>0.70 0.459</pos>
       <maxSize>0.20 0.260</maxSize>
       <horizontalAlignment>right</horizontalAlignment>
       <verticalAlignment>bottom</verticalAlignment>
@@ -126,11 +126,33 @@
     </image>
 
 
+
+    <image name="videoBackground" extra="true">
+      <pos>0.675 0.375</pos>
+      <size>0.63 0.688</size>
+      <origin>0.5 0.5</origin>
+      <zIndex>9</zIndex>
+      <visible>true</visible>
+      <color>${backgroundColor}</color>
+      <path>./_inc/images/bg_color.png</path>
+      <opacity>0</opacity>
+      <storyboard event="activate" ifSubset="playvideo:yes1s">
+        <animation enabled="exists({game:video})" property="opacity" from="0" to="1" begin="2100"/>
+      </storyboard>
+      <storyboard event="activate" ifSubset="playvideo:yes2s">
+        <animation enabled="exists({game:video})" property="opacity" from="0" to="1" begin="3100"/>
+      </storyboard>
+      <storyboard event="activate" ifSubset="playvideo:yes5s">
+        <animation enabled="exists({game:video})" property="opacity" from="0" to="1" begin="6100"/>
+      </storyboard>      
+    </image>
+
     <video name="GameVideo" extra="true">
       <visible ifSubset="playvideo:hide">false</visible>
       <path>{game:video}</path>
       <pos>0.675 0.375</pos>
       <origin>0.5 0.5</origin>
+      <effect>none</effect>
       <horizontalAlignment>center</horizontalAlignment>
       <verticalAlignment>center</verticalAlignment>
       <maxSize>0.61 0.675</maxSize>

@@ -6,6 +6,7 @@
   </variables>
 
   <subset name="factbox" displayName="Factbox">
+    <include name="mediadesc" displayName="Media + Description"/>
     <include name="mix" displayName="Media + Details + Description"/>
     <include name="description" displayName="Description"/>
     <include name="no" displayName="None"/>
@@ -144,8 +145,9 @@
   <include>./gamelistview/basic.xml</include>
   <include>./menu.xml</include>
   <include>./options/factbox_mix.xml</include>
+  <include>./options/factbox_mediadesc.xml</include>
   <include>./options/factbox_desc.xml</include>
-
+  
   <view name="system,grid,detailed,basic">
     <image name="background" extra="true">
       <origin>0 0</origin>

@@ -84,31 +84,32 @@
             <scale>1</scale>
         </image>
 
+
         <text name="labelGameTime" extra="true">
             <text>Play Time</text>
-            <pos>0.76 0.380</pos>
-            <size>0.23 0</size>
+            <pos>0.76 0.395</pos>
+            <size>0.23 0.017</size>
             <alignment>left</alignment>
             <color>${tertiaryColor}</color>
-            <fontSize>0.015</fontSize>
+            <fontSize>${fontSizeText}</fontSize>
             <zIndex>5</zIndex>
             <fontPath>${fontPath}</fontPath>
         </text>
         <text name="GameTime" extra="true">
             <text>expandseconds({game:gametime})</text>
-            <pos>0.76 0.395</pos>
-            <size>0.23 0</size>
-            <alignment>left</alignment>
+            <pos>0.75 0.395</pos>
+            <size>0.23 0.017</size>
+            <alignment>right</alignment>
             <color>${secondaryColor}</color>
             <fontSize>${fontSizeText}</fontSize>
-            <fontPath>${fontPath}</fontPath>
             <zIndex>5</zIndex>
+            <fontPath>${fontPath}</fontPath>
         </text>
         <text name="GameTimeNone" extra="true">
             <text>None</text>
-            <pos>0.76 0.395</pos>
-            <size>0.23 0</size>
-            <alignment>left</alignment>
+            <pos>0.75 0.395</pos>
+            <size>0.23 0.017</size>
+            <alignment>right</alignment>
             <color>${secondaryColor}</color>
             <fontSize>${fontSizeText}</fontSize>
             <zIndex>5</zIndex>
@@ -116,84 +117,74 @@
             <fontPath>${fontPath}</fontPath>
         </text>
 
-        <text name="labelDev" extra="true">
-            <text>Developer</text>
-            <pos>0.76 0.430</pos>
+        <text name="labelPlayCount" extra="true">
+            <text>Times Played</text>
+            <pos>0.76 0.445</pos>
             <size>0.23 0.017</size>
             <alignment>left</alignment>
             <color>${tertiaryColor}</color>
-            <fontSize>0.015</fontSize>
+            <fontSize>${fontSizeText}</fontSize>
             <zIndex>5</zIndex>
             <fontPath>${fontPath}</fontPath>
         </text>
-        <text name="valDeveloper" extra="true">
-            <text>{game:developer}</text>
-            <pos>0.76 0.445</pos>
-            <size>0.23 0.022</size>
-            <alignment>left</alignment>
+        <text name="playCount" extra="true">
+            <text>{game:playcount}</text>
+            <pos>0.75 0.445</pos>
+            <size>0.23 0.017</size>
+            <alignment>right</alignment>
             <color>${secondaryColor}</color>
             <fontSize>${fontSizeText}</fontSize>
             <zIndex>5</zIndex>
             <fontPath>${fontPath}</fontPath>
         </text>
 
-        <text name="labelPublisher" extra="true">
-            <text>Publisher</text>
-            <pos>0.76 0.480</pos>
+
+        <text name="labelLastPlayed" extra="true">
+            <text>Last Played</text>
+            <pos>0.76 0.495</pos>
             <size>0.23 0.017</size>
             <alignment>left</alignment>
             <color>${tertiaryColor}</color>
-            <fontSize>0.015</fontSize>
-            <zIndex>5</zIndex>
-            <fontPath>${fontPath}</fontPath>
-        </text>
-        <text name="publisher" extra="true">
-            <text>{game:publisher}</text>
-            <pos>0.76 0.495</pos>
-            <size>0.23 0.022</size>
-            <alignment>left</alignment>
-            <color>${secondaryColor}</color>
             <fontSize>${fontSizeText}</fontSize>
             <zIndex>5</zIndex>
             <fontPath>${fontPath}</fontPath>
         </text>
+        <datetime name="md_lastplayed" extra="true">
+            <pos>0.75 0.495</pos>
+            <size>0.23 0.017</size>
+            <alignment>right</alignment>
+            <color>${secondaryColor}</color>
+            <fontSize>${fontSizeText}</fontSize>
+            <zIndex>5</zIndex>
+            <fontPath>${fontPath}</fontPath>
+        </datetime >
 
         <text name="labelReleaseDate" extra="true">
             <text>Release Date</text>
-            <pos>0.76 0.530</pos>
+            <pos>0.76 0.545</pos>
             <size>0.23 0.017</size>
             <alignment>left</alignment>
             <color>${tertiaryColor}</color>
-            <fontSize>0.015</fontSize>
+            <fontSize>${fontSizeText}</fontSize>
             <zIndex>5</zIndex>
             <fontPath>${fontPath}</fontPath>
         </text>
-        <text name="ReleaseDate" extra="true">
+        <text name="valueReleaseDate" extra="true">
             <text>{game:releasedate}</text>
-            <pos>0.76 0.545</pos>
-            <size>0.23 0.022</size>
-            <alignment>left</alignment>
+            <pos>0.75 0.545</pos>
+            <size>0.23 0.017</size>
+            <alignment>right</alignment>
             <color>${secondaryColor}</color>
             <fontSize>${fontSizeText}</fontSize>
             <zIndex>5</zIndex>
             <fontPath>${fontPath}</fontPath>
         </text>
 
-        <text name="labelDescription" extra="true">
-            <text>Description</text>
-            <pos>0.76 0.580</pos>
-            <size>0.23 0</size>
-            <alignment>left</alignment>
-            <color>${tertiaryColor}</color>
-            <fontSize>0.015</fontSize>
-            <zIndex>5</zIndex>
-            <fontPath>${fontPath}</fontPath>
-        </text>
 
         <text name="md_description">
             <text>{game:desc}</text>
-            <pos>0.76 0.598</pos>
-            <size>0.23 0.34</size>
+            <pos>0.76 0.58</pos>
+            <size>0.23 0.36</size>
             <alignment>left</alignment>
             <horizontalAlignment>top</horizontalAlignment>
             <color>${secondaryColor}</color>
@@ -202,6 +193,7 @@
             <fontPath>${fontPath}</fontPath>
         </text>
     </view>
+
     <customView name="gridthumbnails" ifSubset="factbox:mix">
         <video name="md_video">
             <pos>0.872 0.213</pos>
@@ -219,7 +211,7 @@
     <view name="detailed" ifSubset="factbox:mix">
         <text name="md_description">
             <text>{game:desc}</text>
-            <pos>0.37 0.72</pos>
+            <pos>0.39 0.72</pos>
             <size>0.295 0.225</size>
             <alignment>left</alignment>
             <horizontalAlignment>top</horizontalAlignment>
@@ -231,7 +223,7 @@
 
         <text name="labelGameTime" extra="true">
             <text>Play Time</text>
-            <pos>0.675 0.73</pos>
+            <pos>0.70 0.73</pos>
             <size>0.23 0.017</size>
             <alignment>left</alignment>
             <color>${tertiaryColor}</color>
@@ -263,7 +255,7 @@
 
         <text name="labelPlayCount" extra="true">
             <text>Times Played</text>
-            <pos>0.675 0.78</pos>
+            <pos>0.70 0.78</pos>
             <size>0.23 0.017</size>
             <alignment>left</alignment>
             <color>${tertiaryColor}</color>
@@ -285,7 +277,7 @@
 
         <text name="labelLastPlayed" extra="true">
             <text>Last Played</text>
-            <pos>0.675 0.83</pos>
+            <pos>0.70 0.83</pos>
             <size>0.23 0.017</size>
             <alignment>left</alignment>
             <color>${tertiaryColor}</color>
@@ -305,7 +297,7 @@
 
         <text name="labelReleaseDate" extra="true">
             <text>Release Date</text>
-            <pos>0.675 0.88</pos>
+            <pos>0.70 0.88</pos>
             <size>0.23 0.017</size>
             <alignment>left</alignment>
             <color>${tertiaryColor}</color>

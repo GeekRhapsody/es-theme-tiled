@@ -34,6 +34,11 @@
 			<size>0.74 0.91</size>
 		</imagegrid>
 
+		<imagegrid name="gamegrid" ifSubset="factbox:mediadesc">
+			<pos>0.005 0.04</pos>
+			<size>0.74 0.91</size>
+		</imagegrid>
+
 		<imagegrid name="gamegrid" ifSubset="factbox:description">
 			<pos>0.005 0.04</pos>
 			<size>0.74 0.91</size>
