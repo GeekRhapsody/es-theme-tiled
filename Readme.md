@@ -1,8 +1,14 @@
 # ES-Theme-Tiled 
 A simple, clean, grid-based EmulationStation theme designed for Steam Deck and other Handhelds running Batocera or RetroBat
 
-## **System Grid**
+## **System Views**
+
+### **System Grid**
 ![System Grid](./screenshots/systemgrid.png)
+
+### **System Carousel**
+![System Carousel](./screenshots/systemcarousel.png)
+
 
 ## **Default Grid**
 ![Game Grid](./screenshots/gamegrid.png)
