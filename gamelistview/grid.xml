@@ -10,15 +10,16 @@
 	<view name="grid">
 		<text name="mySystemInfo" extra="true">
 			<text>{game:name}</text>
-			<size>1 0</size>
-			<pos ifSubset="fontsize:small">0.0 0.007</pos>
-			<pos ifSubset="fontsize:medium">0.0 0.005</pos>
-			<pos ifSubset="fontsize:large">0.0 0.001</pos>
+			<size>0.700 0.045</size>
+			<pos ifSubset="fontsize:small">0.5 0.007</pos>
+			<pos ifSubset="fontsize:medium">0.5 0.005</pos>
+			<pos ifSubset="fontsize:large">0.5 0.001</pos>
+			<origin>0.5 0</origin>
 			<alignment>center</alignment>
 			<color>${secondaryColor}</color>
 			<fontSize>${fontSizeHeader}</fontSize>
 			<fontPath>${fontPath}</fontPath>
-			<zIndex>5</zIndex>
+			<zIndex>55</zIndex>
 		</text>
 
 		<imagegrid name="gamegrid" ifSubset="factbox:no">
