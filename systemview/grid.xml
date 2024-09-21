@@ -466,6 +466,8 @@
     </text>
     <text name="mySystemInfo" extra="true">
       <text>{system:fullName} ({system:total} Games)</text>
+      <text if="{system.name} == 'screenshots'" >{system:fullName} ({system:total} Images)</text>
+      <text if="{system.name} == 'retrobat'" >{system:fullName} ({system:total} Emulators)</text>
       <size>1 0</size>
       <pos ifSubset="fontsize:small">0.0 0.007</pos>
       <pos ifSubset="fontsize:medium">0.0 0.005</pos>

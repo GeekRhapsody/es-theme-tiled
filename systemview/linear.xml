@@ -18,7 +18,7 @@
         </storyboard>
         <storyboard event="deactivate">
           <animation property="scale" to="1" duration="250" mode="easeOut"/>
-        </storyboard>      
+        </storyboard>
         <image name="background" extra="true">
           <origin>0 0</origin>
           <pos>0 0</pos>
@@ -67,7 +67,7 @@
           <opacity>${shadeStrength}</opacity>
           <path>./_inc/images/bg_color.png</path>
           <roundCorners>${corners}</roundCorners>
-          <storyboard event="activate" >
+          <storyboard event="activate">
             <animation property="opacity" from="${shadeStrength}" to="0" duration="150" mode="linear"/>
           </storyboard>
           <storyboard event="deactivate">
@@ -104,12 +104,19 @@
       <color>${backgroundColor}</color>
       <path>./_inc/images/bg_color.png</path>
     </image>
-    <text name="systemInfo">    
+    <text name="systemInfo">
+      <visible>false</visible>
+    </text>
+    <text name="mySystemInfo" extra="true">
+      <text>{system:fullName} ({system:total} Games)</text>
+      <text if="{system.name} == 'screenshots'">{system:fullName} ({system:total} Images)</text>
+      <text if="{system.name} == 'retrobat'">{system:fullName} ({system:total} Emulators)</text>
+      <size>1 0</size>
       <pos>0.0 0.65</pos>
-      <backgroundColor>00000000</backgroundColor>
+      <alignment>center</alignment>
       <color>${secondaryColor}</color>
       <fontPath>${fontPath}</fontPath>
-      <fontSize>0.03</fontSize>
+      <fontSize>${fontSizeHeader}</fontSize>
       <zIndex>5</zIndex>
     </text>
     <helpsystem name="help">
